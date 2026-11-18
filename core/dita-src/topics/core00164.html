@@ -1,0 +1,302 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="Проект состоит из элементов , но в функциональном смысле он разделен на изолированные части, каждая из которых может использоваться в других частях проекта. Для выделения изолированных частей ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00164"/><title>Модульная разработка</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00164.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00164.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00164" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Модульная разработка</h1>
+   <div class="- topic/body body">
+      <p class="- topic/p p">Проект состоит из <dfn class="- topic/term term">элементов</dfn>, но в функциональном смысле он разделен на изолированные части, каждая из
+         которых может использоваться в других частях проекта. </p>
+      <p class="- topic/p p">Для выделения изолированных частей используйте подсистемы (<a class="- topic/xref xref" href="core00390.html">свойства</a>) и пакеты. Внутрь подсистем и пакетов
+         добавляйте элементы: справочники, перечисления, интерфейсные компоненты, модули и т.д.</p>
+      <p class="- topic/p p">Стандартно внутри одной подсистемы вы можете использовать только элементы этой подсистемы. Элементы других подсистем недоступны вам без
+         дополнительных действий.</p>
+      <div class="- topic/p p">Чтобы элементы подсистемы Б использовать в подсистеме А, выполните следующие действия:<ul class="- topic/ul ul" id="core00164__ul_hsb_5m5_yqb" data-ofbid="core00164__ul_hsb_5m5_yqb">
+            <li class="- topic/li li">В подсистеме Б установите видимость у <a class="- topic/xref xref" href="#core00164__section_wgr_y5t_yqb">элементов</a> и у <a class="- topic/xref xref" href="#core00164__section_nt5_jh5_yqb">языковых конструкций</a>, которые вы хотите использовать «снаружи» нее;</li>
+            <li class="- topic/li li">В подсистеме А <a class="- topic/xref xref" href="#core00164__section_vg5_5xt_yqb">используйте</a> подсистему Б;<ul class="- topic/ul ul" id="core00164__ul_k4b_dn5_yqb" data-ofbid="core00164__ul_k4b_dn5_yqb">
+                  <li class="- topic/li li">или дополнительно <a class="- topic/xref xref" href="#core00164__section_sj4_lzt_yqb">импортируйте</a> в элементы/модули подсистемы А
+                     пространства имен из подсистемы Б.</li>
+               </ul></li>
+         </ul></div>
+      <section class="- topic/section section" id="core00164__section_wgr_y5t_yqb" data-ofbid="core00164__section_wgr_y5t_yqb"><h2 class="- topic/title title sectiontitle">Область видимости элемента проекта</h2>
+         
+         <p class="- topic/p p">У любого элемента проекта есть свойство <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ОбластьВидимости</span> со значениями:</p>
+         <ul class="- topic/ul ul" id="core00164__ul_dqz_hvt_yqb" data-ofbid="core00164__ul_dqz_hvt_yqb">
+            <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Подсистема</span> — элемент виден внутри своей подсистемы во всех пакетах. Значение по умолчанию;</li>
+            <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Проект</span> — элемент виден во всех подсистемах своего проекта;</li>
+            <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Глобально</span> — элемент виден в других проектах.</li>
+         </ul>
+         <p class="- topic/p p">Стандартно элемент виден только внутри своей подсистемы (<span class="+ topic/ph ui-d/uicontrol ph uicontrol">Подсистема</span>) и недоступен в других подсистемах. Если вам
+            хочется использовать этот элемент в других подсистемах или в других проектах, нужно установить у него область видимости в значение
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Проект</span> или <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Глобально</span>. </p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>ВидЭлемента: КомпонентИнтерфейса
+Имя: ДемонстрационноеПриложение
+Id: 76eb6f8f-e340-42ed-8dad-7a1104a6da02
+<strong class="+ topic/ph hi-d/b ph b">ОбластьВидимости: Проект</strong></code></pre>
+         <p class="- topic/p p">Тем самым вы сделаете элемент публичным, т. е. он может быть доступен в других подсистемах.</p>
+      </section>
+      <section class="- topic/section section" id="core00164__section_nt5_jh5_yqb" data-ofbid="core00164__section_nt5_jh5_yqb"><h2 class="- topic/title title sectiontitle">Видимость языковых конструкций</h2>
+         
+         <p class="- topic/p p">Переменным, методам, перечислениям, структурам, исключениям вы тоже можете задать в модуле область видимости. Для этого используйте
+            модификатор видимости, который может принимать следующие значения:</p>
+         <ul class="- topic/ul ul" id="core00164__ul_mpq_wh5_yqb" data-ofbid="core00164__ul_mpq_wh5_yqb">
+            <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">@локально</span> — конструкция видна только в своем модуле. Значение по умолчанию;</li>
+            <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">@подсистема</span> — конструкция видна только в подсистеме, которой принадлежит модуль;</li>
+            <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">@проект</span> — конструкция видна только в проекте, которому принадлежит модуль;</li>
+            <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">@глобально</span> — конструкция видна в других проектах.</li>
+         </ul>
+         <p class="- topic/p p">Например:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code><strong class="+ topic/ph hi-d/b ph b">@локально</strong>
+конст СЕКУНД_В_ДНЕ = 60 * 60 * 24
+ 
+<strong class="+ topic/ph hi-d/b ph b">@подсистема</strong>
+перечисление ВидКнопки
+    Круглая,
+    Квадратная
+;
+ 
+<strong class="+ topic/ph hi-d/b ph b">@проект</strong>
+метод ПолучитьОписание()
+    возврат новый МодульОбъекта.ОписаниеТовара()
+;</code></pre>
+      </section>
+      <section class="- topic/section section" id="core00164__section_ods_ywt_yqb" data-ofbid="core00164__section_ods_ywt_yqb"><h2 class="- topic/title title sectiontitle">Квалифицированное имя элемента</h2>
+         
+         <p class="- topic/p p">Все элементы проекта порождают типы встроенного языка. Помимо «обычного», неквалифицированного имени, типы имеют квалифицированные имена.
+            Квалифицированное имя типа состоит из пространства имен и «обычного» имени, разделенных символами «::». Типы, порождаемые элементами
+            проекта, принадлежат пространству имен совпадающему с именем подсистемы и пакета, в которой они были созданы. </p>
+         <p class="- topic/p p">Например, есть такой проект:</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00164__image_vyq_d53_nrb" src="../img/core00164/001.png"/></p>
+         <p class="- topic/p p">Тогда квалифицированные имена типов, порождаемых его объектами, будут выглядеть следующим образом:</p>
+         <ul class="- topic/ul ul" id="core00164__ul_dtv_kxt_yqb" data-ofbid="core00164__ul_dtv_kxt_yqb">
+            <li class="- topic/li li">КонтрольДанных::Пакет::СправочникВалюты</li>
+            <li class="- topic/li li">КонтрольДанных::СправочникСотрудники</li>
+            <li class="- topic/li li">Основная::ОбщийМодуль</li>
+            <li class="- topic/li li">Основная::СправочникТовары</li>
+         </ul>
+         <div class="- topic/note note important note_important" id="core00164__note_hdn_1l4_zqb" data-ofbid="core00164__note_hdn_1l4_zqb"><span class="note__title">Важно:</span> Имена, которые вы даете элементам проекта, участвуют в создании системы типов встроенного языка.
+            По этой причине в одном пространстве имен (в одной подсистеме или в одном пакете) не может быть двух элементов с одинаковыми
+            именами.</div>
+         <p class="- topic/p p">Для того, чтобы указать имя типа и имя элемента проекта из другой подсистемы/пакета, можно использовать либо квалифицированное, либо
+            неквалифицированное имя. Это зависит от того, только ли <a class="- topic/xref xref" href="#core00164__section_vg5_5xt_yqb">использует</a> данная
+            подсистема другую подсистему, или, дополнительно к этому, был выполнен <a class="- topic/xref xref" href="#core00164__section_sj4_lzt_yqb">импорт</a> пространства имен.</p>
+      </section>
+      <section class="- topic/section section" id="core00164__section_vg5_5xt_yqb" data-ofbid="core00164__section_vg5_5xt_yqb"><h2 class="- topic/title title sectiontitle">Использование подсистем</h2>
+         
+         <p class="- topic/p p">У подсистемы есть свойство <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Использование</span>. В этом свойстве вы можете перечислить подсистемы, публичные элементы
+            которых вы хотите использовать в данной подсистеме. К типам таких элементов вы сможете обращаться по квалифицированному имени, например: </p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00164__codeblock_h5g_czt_yqb" data-ofbid="core00164__codeblock_h5g_czt_yqb"><code>Реквизиты:
+   -
+      Имя: Владелец
+      Тип: <strong class="+ topic/ph hi-d/b ph b">КонтрольДанных::Сотрудники.Ссылка</strong></code></pre>
+         <p class="- topic/p p">Более сложный пример. Например, есть такой проект из предыдущего раздела:</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00164__image_czl_x53_nrb" src="../img/core00164/001.png"/></p>
+         <p class="- topic/p p">В нем подсистема <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Основная</span> использует подсистему <span class="+ topic/ph ui-d/uicontrol ph uicontrol">КонтрольДанных</span>:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00164__codeblock_kvp_b15_yqb" data-ofbid="core00164__codeblock_kvp_b15_yqb"><code>Использование: [ КонтрольДанных ]</code></pre>
+         <p class="- topic/p p">У <span class="+ topic/ph ui-d/uicontrol ph uicontrol">СправочникВалюты</span> и <span class="+ topic/ph ui-d/uicontrol ph uicontrol">СправочникСотрудники</span> область видимости установлена в значение
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Проект</span>:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>ВидЭлемента: Справочник
+Имя: СправочникВалюты
+Ид: f7c5212b-aa1b-4502-80c6-e40893f2a90d
+<strong class="+ topic/ph hi-d/b ph b">ОбластьВидимости: Проект</strong>
+Реквизиты:
+    -
+        Имя: Код</code></pre>
+         <p class="- topic/p p">У <span class="+ topic/ph ui-d/uicontrol ph uicontrol">СправочникВалюты</span> и <span class="+ topic/ph ui-d/uicontrol ph uicontrol">СправочникСотрудники</span> есть модули объекта и менеджера, в которых
+            определены публичные методы:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code><strong class="+ topic/ph hi-d/b ph b">@проект</strong>
+метод Метод_Менеджера()
+;</code></pre>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00164__codeblock_rxx_gz3_nrb" data-ofbid="core00164__codeblock_rxx_gz3_nrb"><code><strong class="+ topic/ph hi-d/b ph b">@проект</strong>
+метод Метод_Объекта()
+;</code></pre>
+         <p class="- topic/p p">Тогда реквизиты справочника <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Товары</span> будут иметь такой вид:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00164__codeblock_fwb_p15_yqb" data-ofbid="core00164__codeblock_fwb_p15_yqb"><code>ВидЭлемента: Справочник
+Имя: СправочникТовары
+Ид: afca4a1f-851f-47aa-8085-08e47a0f4afb
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+    -
+        Ид: 222d3946-8163-43ec-a851-4707ca436b2b
+        Имя: Сотрудник
+        Тип: <strong class="+ topic/ph hi-d/b ph b">КонтрольДанных::СправочникСотрудники.Ссылка</strong>?
+    -
+        Ид: 733fdb72-4304-4bea-a210-0aad34a492af
+        Имя: Валюта
+        Тип: <strong class="+ topic/ph hi-d/b ph b">КонтрольДанных::Пакет::СправочникВалюты.Ссылка</strong>?</code></pre>
+         <p class="- topic/p p">А в общем модуле обращение к данным справочников <span class="+ topic/ph ui-d/uicontrol ph uicontrol">СправочникСотрудники</span> и <span class="+ topic/ph ui-d/uicontrol ph uicontrol">СправочникВалюты</span>
+            может выглядеть так:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00164__codeblock_s2q_x15_yqb" data-ofbid="core00164__codeblock_s2q_x15_yqb"><code>@проект
+метод Пример1()
+    пер Справочник1 = новый <strong class="+ topic/ph hi-d/b ph b">КонтрольДанных::СправочникСотрудники.Объект()
+</strong>     
+    // Обращение к атрибуту справочника
+    Справочник1.Код = "0"
+     
+    // Вызов публичного метода объекта справочника
+    Справочник1.Метод_Объекта()
+     
+    // Вызов публичного метода менеджера справочника
+    <strong class="+ topic/ph hi-d/b ph b">КонтрольДанных::СправочникСотрудники.Метод_Менеджера()</strong>
+;
+ 
+@проект
+метод Пример2()
+    пер Справочник2 = новый <strong class="+ topic/ph hi-d/b ph b">КонтрольДанных::Пакет::СправочникВалюты.Объект()</strong>
+     
+    // Обращение к атрибуту справочника
+    Справочник2.Код = "0"
+     
+    // вызов публичного метода объекта справочника
+    Справочник2.Метод_Объекта()
+     
+    // вызов публичного метода менеджера справочника
+    <strong class="+ topic/ph hi-d/b ph b">КонтрольДанных::Пакет::СправочникВалюты.Метод_Менеджера()</strong>
+;</code></pre>
+      </section>
+      <section class="- topic/section section" id="core00164__section_sj4_lzt_yqb" data-ofbid="core00164__section_sj4_lzt_yqb"><h2 class="- topic/title title sectiontitle">Импорт пространств имен</h2>
+         
+         <p class="- topic/p p">В любые элементы проекта и в модули вы можете импортировать другие пространства имен.</p>
+         <p class="- topic/p p">В элементе проекта они перечисляются в свойстве <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Импорт</span>, а в модуле для этого используется оператор
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">импорт</span>. </p>
+         <p class="- topic/p p">Например в объекте:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>ВидЭлемента: Справочник
+Имя: ЛичныеКабинеты
+Id: a79bd05e-800d-4d9c-a292-eeec023d3f07
+ОбластьВидимости: Проект
+<strong class="+ topic/ph hi-d/b ph b">Импорт:</strong>
+  - ПоказателиСтатистикиESSОбщее
+  - ОбщиеСтандартные
+  - ПодключаемыеСтандартные
+  - ИнтерфейсныеКомпонентыСтандартные
+  - КонтрольДоступаСтандартные
+  - УведомленияСтандартные
+  - ПриложениеОбщее</code></pre>
+         <p class="- topic/p p">Например в модуле:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code><strong class="+ topic/ph hi-d/b ph b">импорт</strong> ПоказателиСтатистикиESSОбщее
+<strong class="+ topic/ph hi-d/b ph b">импорт</strong> ОбщиеСтандартные
+<strong class="+ topic/ph hi-d/b ph b">импорт</strong> ПодключаемыеСтандартные
+<strong class="+ topic/ph hi-d/b ph b">импорт</strong> ИнтерфейсныеКомпонентыСтандартные
+<strong class="+ topic/ph hi-d/b ph b">импорт</strong> КонтрольДоступаСтандартные
+<strong class="+ topic/ph hi-d/b ph b">импорт</strong> УведомленияСтандартные
+<strong class="+ topic/ph hi-d/b ph b">импорт</strong> ПриложениеОбщее
+
+метод ПередЗаписью()
+   ...
+;</code></pre>
+         <p class="- topic/p p">Публичные элементы проекта и конструкции языка из импортированных пространств вы можете использовать по неквалифицированному имени. Как
+            будто это «ваши собственные» объекты из этой же подсистемы.</p>
+         <p class="- topic/p p">Импорт, выполненный в элементе проекта, не влияет на его модули. То есть пространства имен, импортированные в элемент проекта, не
+            становятся автоматически доступны в модулях этого элемента. Если эти же пространства имен нужны вам и в модулях, то в каждый модуль их
+            нужно импортировать отдельно.</p>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#core00164__section_wgr_y5t_yqb" data-tocid="core00164__section_wgr_y5t_yqb">Область видимости элемента проекта</a></div></li><li class="section-item"><div class="section-title"><a href="#core00164__section_nt5_jh5_yqb" data-tocid="core00164__section_nt5_jh5_yqb">Видимость языковых конструкций</a></div></li><li class="section-item"><div class="section-title"><a href="#core00164__section_ods_ywt_yqb" data-tocid="core00164__section_ods_ywt_yqb">Квалифицированное имя элемента</a></div></li><li class="section-item"><div class="section-title"><a href="#core00164__section_vg5_5xt_yqb" data-tocid="core00164__section_vg5_5xt_yqb">Использование подсистем</a></div></li><li class="section-item"><div class="section-title"><a href="#core00164__section_sj4_lzt_yqb" data-tocid="core00164__section_sj4_lzt_yqb">Импорт пространств имен</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

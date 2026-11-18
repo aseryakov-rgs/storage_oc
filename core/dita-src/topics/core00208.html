@@ -1,0 +1,866 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="В проекте справочник имеет следующие свойства: ВключатьВАвтоИнтерфейс Булево . Признак того, что «1С:Кабинет сотрудника» включит команды открытия форм этого справочника в автоматический интерфейс . ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00208"/><title>Свойства элемента проекта вида «Справочник»</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00208.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00208.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00208" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Свойства элемента проекта вида «Справочник»</h1>
+   
+   <div class="- topic/body body">
+      <p class="- topic/p p">В проекте справочник имеет следующие свойства:</p>
+      <dl class="- topic/dl dl" id="core00208__dl_zsj_j23_grb" data-ofbid="core00208__dl_zsj_j23_grb">
+         
+            <dt class="- topic/dt dt dlterm">ВключатьВАвтоИнтерфейс</dt>
+            <dd class="- topic/dd dd"><span class="+ topic/keyword pr-d/apiname keyword apiname">Булево</span>. Признак того, что <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> включит команды открытия форм этого справочника в <dfn class="- topic/term term">автоматический интерфейс</dfn>. Стандартное значение <span class="+ topic/keyword pr-d/apiname keyword apiname">Истина</span> (<a class="- topic/xref xref" href="core00216.html#core00216__section_sk4_zzy_tqb">подробнее</a>). Пример
+               YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_dkc_n23_grb" data-ofbid="core00208__codeblock_dkc_n23_grb"><code>ВидЭлемента: Справочник
+ОбластьВидимости: Подсистема
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Интерфейс: 
+    <strong class="+ topic/ph hi-d/b ph b">ВключатьВАвтоИнтерфейс: Ложь</strong>
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm" id="core00208__владелец" data-ofbid="core00208__владелец">&lt;Владелец - стандартный реквизит&gt;</dt>
+            <dd class="- topic/dd dd">Справочник, элементы которого будут владельцами элементов данного справочника (<a class="- topic/xref xref" href="core00211.html">подробнее</a>). Имеет
+               следующие свойства:<dl class="- topic/dl dl" id="core00208__dl_ckr_qcw_pqb" data-ofbid="core00208__dl_ckr_qcw_pqb">
+                  
+                     <dt class="- topic/dt dt dlterm">Имя</dt>
+                     <dd class="- topic/dd dd">Владелец. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_qvx_w33_grb" data-ofbid="core00208__codeblock_qvx_w33_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        <strong class="+ topic/ph hi-d/b ph b">Имя: Владелец</strong>
+        Тип: Клиенты.Ссылка?
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+                  
+                  
+                     <dt class="- topic/dt dt dlterm">ИспользоватьВПолнотекстовомПоиске</dt>
+                     <dd class="- topic/dd dd"><span class="+ topic/keyword pr-d/apiname keyword apiname">Булево</span>. Признак индексирования данных этого реквизита для использования в полнотекстовом поиске.
+                        Стандартное значение — <span class="+ topic/keyword pr-d/apiname keyword apiname">Истина</span>. Пример
+                        YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_sgd_sj3_grb" data-ofbid="core00208__codeblock_sgd_sj3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Владелец
+        Тип: Клиенты.Ссылка?
+        <strong class="+ topic/ph hi-d/b ph b">ИспользоватьВПолнотекстовомПоиске: Ложь</strong>
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+                  
+                  
+                     <dt class="- topic/dt dt dlterm">Тип</dt>
+                     <dd class="- topic/dd dd">Тип ссылки на элемент справочника-владельца. Нельзя использовать ссылку на этот же справочник. Пример
+                        YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_zyd_pj3_grb" data-ofbid="core00208__codeblock_zyd_pj3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Владелец
+        <strong class="+ topic/ph hi-d/b ph b">Тип: Клиенты.Ссылка?</strong>
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+                  
+               </dl></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">Индексы</dt>
+            <dd class="- topic/dd dd">Наборы полей, по которым <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> создаст индексы в базе данных (<a class="- topic/xref xref" href="core00214.html">подробнее</a>). Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_yxy_hr3_grb" data-ofbid="core00208__codeblock_yxy_hr3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Индексы:
+    -
+        <strong class="+ topic/ph hi-d/b ph b">Имя: ПоВозрасту
+        Реквизиты: [ Возраст ]</strong>
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Число
+    -
+        Ид: 893da031-e0b3-4a07-a47b-3f261a6f9009
+        Имя: ФИО
+        Тип: Строка
+        ИспользоватьВПолнотекстовомПоиске: Ложь
+    -
+        Ид: fab34a90-6c40-4e7e-b3f3-9828dc51c539
+        Имя: Возраст
+        Тип: Число
+        ИспользоватьВПолнотекстовомПоиске: Ложь</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm" id="core00208__код" data-ofbid="core00208__код">&lt;Код - стандартный реквизит&gt;</dt>
+            <dd class="- topic/dd dd">Идентификатор элемента справочника, понятный для человека. Имеет следующие свойства:<dl class="- topic/dl dl" id="core00208__dl_i3y_ck3_grb" data-ofbid="core00208__dl_i3y_ck3_grb">
+                  
+                     <dt class="- topic/dt dt dlterm">Автонумерация</dt>
+                     <dd class="- topic/dd dd">Способ автоматического заполнения номера (<a class="- topic/xref xref" href="core00210.html">подробнее</a>). Имеет следующие свойства:<dl class="- topic/dl dl" id="core00208__dl_j3y_ck3_grb" data-ofbid="core00208__dl_j3y_ck3_grb">
+                           
+                              <dt class="- topic/dt dt dlterm">Использовать</dt>
+                              <dd class="- topic/dd dd">Признак использования автонумерации. <span class="+ topic/keyword pr-d/apiname keyword apiname">Булево</span>. Стандартное значение <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Истина</span>
+                                 (использовать). Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_at3_mk3_grb" data-ofbid="core00208__codeblock_at3_mk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        Автонумерация: 
+            <strong class="+ topic/ph hi-d/b ph b">Использовать: Ложь</strong></code></pre></dd>
+                           
+                           
+                              <dt class="- topic/dt dt dlterm">КонтрольФормата</dt>
+                              <dd class="- topic/dd dd">Необходимость контроля формата автонумерации при записи:<ul class="- topic/ul ul" id="core00208__ul_k3y_ck3_grb" data-ofbid="core00208__ul_k3y_ck3_grb">
+                                    <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Строгий</span> — код справочника должен строго совпадать с форматом кода. Запись нестандартных
+                                       кодов запрещена</li>
+                                    <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Выключено</span> — контроль не ведется, возможна запись элементов с нестандартным кодом</li>
+                                 </ul><div class="- topic/div div">
+                                    <div class="- topic/p p">Поведение при записи элемента: если элементу явно задан префикс или постфикс методами
+                                          <span class="+ topic/keyword pr-d/apiname keyword apiname">УстановитьПрефикс()</span>, <span class="+ topic/keyword pr-d/apiname keyword apiname">УстановитьПостфикс()</span>, то код считается
+                                       стандартным и обязан совпадать с форматом. В этом случае значение свойства <span class="+ topic/keyword pr-d/apiname keyword apiname">КонтрольФормата</span>
+                                       игнорируется. <div class="- topic/div div">Если префикс или постфикс не заданы, то при записи <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span>
+                                          разберет код на составные части и примет во внимание значение <span class="+ topic/keyword pr-d/apiname keyword apiname">КонтрольФормата</span>:<ul class="- topic/ul ul" id="core00208__ul_l3y_ck3_grb" data-ofbid="core00208__ul_l3y_ck3_grb">
+                                             <li class="- topic/li li">Если код стандартный (т. е. проходит контроль формата) то <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span>
+                                                выполнит стандартные действия: запишет вместе с элементом поля префикс, постфикс, номер и код;</li>
+                                             <li class="- topic/li li">Если код не проходит контроль формата, то:<ul class="- topic/ul ul" id="core00208__ul_m3y_ck3_grb" data-ofbid="core00208__ul_m3y_ck3_grb">
+                                                   <li class="- topic/li li">Если <span class="+ topic/keyword pr-d/apiname keyword apiname">КонтрольФормата</span> равно <span class="+ topic/keyword pr-d/apiname keyword apiname">Строгий</span> — будет выдано
+                                                      исключение;</li>
+                                                   <li class="- topic/li li">Если <span class="+ topic/keyword pr-d/apiname keyword apiname">КонтрольФормата</span> равно <span class="+ topic/keyword pr-d/apiname keyword apiname">Отключен</span>, то в поле
+                                                         <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Код</span> будет записан код, а в поля <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Префикс</span>,
+                                                         <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Постфикс</span> и <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Номер</span> будут записаны значения по
+                                                      умолчанию.</li>
+                                                </ul></li>
+                                          </ul></div></div>
+                                 </div>Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_cyz_mk3_grb" data-ofbid="core00208__codeblock_cyz_mk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        Автонумерация: 
+            <strong class="+ topic/ph hi-d/b ph b">КонтрольФормата: Выключено</strong></code></pre></dd>
+                           
+                           
+                              <dt class="- topic/dt dt dlterm" id="core00208__идентификатор" data-ofbid="core00208__идентификатор">Формат</dt>
+                              <dd class="- topic/dd dd">Описание формата префикса и постфикса. Имеет следующие свойства:<dl class="- topic/dl dl" id="core00208__dl_n3y_ck3_grb" data-ofbid="core00208__dl_n3y_ck3_grb">
+                                    
+                                       <dt class="- topic/dt dt dlterm">ДлинаПостфикса</dt>
+                                       <dd class="- topic/dd dd">Количество символов в постфиксе. <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span>:<ul class="- topic/ul ul" id="core00208__ul_o3y_ck3_grb" data-ofbid="core00208__ul_o3y_ck3_grb">
+                                             <li class="- topic/li li">Отрицательное — длина не ограничена</li>
+                                             <li class="- topic/li li">Стандартное значение <span class="+ topic/ph ui-d/uicontrol ph uicontrol">0</span> (постфикс запрещен)</li>
+                                          </ul>. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_j4m_nk3_grb" data-ofbid="core00208__codeblock_j4m_nk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        Автонумерация:
+            Постфикс: ПС 
+            Формат:
+                <strong class="+ topic/ph hi-d/b ph b">ДлинаПостфикса: 2</strong></code></pre></dd>
+                                    
+                                    
+                                       <dt class="- topic/dt dt dlterm">ДлинаПрефикса</dt>
+                                       <dd class="- topic/dd dd">Количество символов в префиксе. Число. <ul class="- topic/ul ul" id="core00208__ul_p3y_ck3_grb" data-ofbid="core00208__ul_p3y_ck3_grb">
+                                             <li class="- topic/li li">Отрицательное — длина не ограничена</li>
+                                             <li class="- topic/li li">Стандартное значение <span class="+ topic/ph ui-d/uicontrol ph uicontrol">0</span> (префикс запрещен)</li>
+                                          </ul>Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_iws_nk3_grb" data-ofbid="core00208__codeblock_iws_nk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        Автонумерация:
+            Префикс: НК 
+            Формат:
+                <strong class="+ topic/ph hi-d/b ph b">ДлинаПрефикса: 2</strong></code></pre></dd>
+                                    
+                                    
+                                       <dt class="- topic/dt dt dlterm">РазделительПостфикса</dt>
+                                       <dd class="- topic/dd dd">Символы, отделяющие код от постфикса. Строка. Стандартное значение — пустая строка (разделитель
+                                          отсутствует). Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_z4y_nk3_grb" data-ofbid="core00208__codeblock_z4y_nk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        Автонумерация:
+            Постфикс: ПС 
+            Формат:
+                ДлинаПостфикса: 2
+                <strong class="+ topic/ph hi-d/b ph b">РазделительПостфикса: "/"</strong></code></pre></dd>
+                                    
+                                    
+                                       <dt class="- topic/dt dt dlterm">Разделитель Префикса</dt>
+                                       <dd class="- topic/dd dd">Символы, отделяющие префикс от кода. Строка. Стандартное значение — пустая строка (разделитель
+                                          отсутствует). Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_yzz_nk3_grb" data-ofbid="core00208__codeblock_yzz_nk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        Автонумерация:
+            Префикс: НК 
+            Формат:
+                ДлинаПрефикса: 2
+                <strong class="+ topic/ph hi-d/b ph b">РазделительПрефикса: "-"</strong></code></pre></dd>
+                                    
+                                    
+                                       <dt class="- topic/dt dt dlterm">ОграниченияПоСимволам</dt>
+                                       <dd class="- topic/dd dd">Использовать или нет ограничения по символам. <span class="+ topic/keyword pr-d/apiname keyword apiname">Булево</span>. Ограничения следующие:<ul class="- topic/ul ul" id="core00208__ul_q3y_ck3_grb" data-ofbid="core00208__ul_q3y_ck3_grb">
+                                             <li class="- topic/li li">префикс не может заканчиваться на цифру</li>
+                                             <li class="- topic/li li">постфикс не может содержать цифры</li>
+                                          </ul>. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_gvf_4k3_grb" data-ofbid="core00208__codeblock_gvf_4k3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        Автонумерация:
+            Префикс: НК 
+            Формат:
+                ДлинаПрефикса: 2
+                РазделительПрефикса: "-"
+                <strong class="+ topic/ph hi-d/b ph b">ОграниченияПоСимволам: Истина</strong></code></pre></dd>
+                                    
+                                 </dl></dd>
+                           
+                           
+                              <dt class="- topic/dt dt dlterm">ДлинаНумерации</dt>
+                              <dd class="- topic/dd dd">Длина автоматически формируемого номера. <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span>:<ul class="- topic/ul ul" id="core00208__ul_r3y_ck3_grb" data-ofbid="core00208__ul_r3y_ck3_grb">
+                                    <li class="- topic/li li">
+                                       <span class="+ topic/ph ui-d/uicontrol ph uicontrol">0</span> — длина номера автоматически будет вычислена исходя из заданной длины кода
+                                       (Код.Длина)</li>
+                                    <li class="- topic/li li">Отрицательное — номер не дополняется нулями</li>
+                                    <li class="- topic/li li">Стандартное значение: <span class="+ topic/ph ui-d/uicontrol ph uicontrol">-1</span></li>
+                                 </ul>Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_czm_4k3_grb" data-ofbid="core00208__codeblock_czm_4k3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Число
+        Длина: 10
+        Автонумерация:
+            <strong class="+ topic/ph hi-d/b ph b">ДлинаНумерации: 0</strong></code></pre></dd>
+                           
+                           
+                              <dt class="- topic/dt dt dlterm">СерииНумерации</dt>
+                              <dd class="- topic/dd dd">Группа элементов справочника, внутри которой будет поддерживаться уникальная нумерация:<ul class="- topic/ul ul" id="core00208__ul_s3y_ck3_grb" data-ofbid="core00208__ul_s3y_ck3_grb">
+                                    <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">ВПределахПрефикса</span> — элементы, обладающие одинаковым префиксом</li>
+                                    <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">ВПределахПостфикса</span> — элементы, обладающие одинаковым постфиксом</li>
+                                    <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">ВПределахПрефиксаИПостфикса</span> — элементы, обладающие одинаковыми префиксом и
+                                       постфиксом</li>
+                                    <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Сквозной</span> — все элементы справочника</li>
+                                    <li class="- topic/li li">Стандартное значение — <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ВПределахПрефиксаИПостфикса</span></li>
+                                 </ul>Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_cdt_4k3_grb" data-ofbid="core00208__codeblock_cdt_4k3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        Автонумерация:
+            <strong class="+ topic/ph hi-d/b ph b">СерииНумерации: ВПределахПрефикса</strong>
+            Префикс: НК 
+            Формат:
+                ДлинаПрефикса: 2</code></pre></dd>
+                           
+                           
+                              <dt class="- topic/dt dt dlterm">Префикс</dt>
+                              <dd class="- topic/dd dd">Стандартный префикс, который <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> будет использовать для всех элементов
+                                 справочника. <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Пример
+                                 YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_jj2_pk3_grb" data-ofbid="core00208__codeblock_jj2_pk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        Автонумерация:
+            <strong class="+ topic/ph hi-d/b ph b">Префикс: НК</strong> 
+            Формат:
+                ДлинаПрефикса: 2</code></pre></dd>
+                           
+                           
+                              <dt class="- topic/dt dt dlterm">Постфикс</dt>
+                              <dd class="- topic/dd dd">Стандартный постфикс, который <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> будет использовать для всех элементов
+                                 справочника. <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Пример
+                                 YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_kng_pk3_grb" data-ofbid="core00208__codeblock_kng_pk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        Автонумерация:
+            <strong class="+ topic/ph hi-d/b ph b">Постфикс: ПС</strong> 
+            Формат:
+                ДлинаПостфикса: 2</code></pre></dd>
+                           
+                        </dl></dd>
+                  
+                  
+                     <dt class="- topic/dt dt dlterm">Длина</dt>
+                     <dd class="- topic/dd dd">Длина кода. <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span>. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_jjp_kk3_grb" data-ofbid="core00208__codeblock_jjp_kk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        <strong class="+ topic/ph hi-d/b ph b">Длина: 10</strong></code></pre></dd>
+                  
+                  
+                     <dt class="- topic/dt dt dlterm">Имя</dt>
+                     <dd class="- topic/dd dd">Код. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_aj3_hk3_grb" data-ofbid="core00208__codeblock_aj3_hk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        <strong class="+ topic/ph hi-d/b ph b">Имя: Код</strong>
+        Тип: Строка</code></pre></dd>
+                  
+                  
+                     <dt class="- topic/dt dt dlterm">ИспользоватьВПолнотекстовомПоиске</dt>
+                     <dd class="- topic/dd dd"><span class="+ topic/keyword pr-d/apiname keyword apiname">Булево</span>. Признак индексирования данных этого реквизита для использования в полнотекстовом поиске.
+                        Стандартное значение — <span class="+ topic/keyword pr-d/apiname keyword apiname">Истина</span>. Пример
+                        YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_zhn_pk3_grb" data-ofbid="core00208__codeblock_zhn_pk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        <strong class="+ topic/ph hi-d/b ph b">ИспользоватьВПолнотекстовомПоиске: Ложь</strong></code></pre></dd>
+                  
+                  
+                     <dt class="- topic/dt dt dlterm">Тип</dt>
+                     <dd class="- topic/dd dd">Тип кода. <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span> или <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Пример
+                        YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_qkz_jk3_grb" data-ofbid="core00208__codeblock_qkz_jk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        <strong class="+ topic/ph hi-d/b ph b">Тип: Строка</strong></code></pre></dd>
+                  
+                  
+                     <dt class="- topic/dt dt dlterm">Уникальность</dt>
+                     <dd class="- topic/dd dd">Уникальность кодов элементов справочника (<a class="- topic/xref xref" href="core00209.html">подробнее</a>):<ul class="- topic/ul ul" id="core00208__ul_t3y_ck3_grb" data-ofbid="core00208__ul_t3y_ck3_grb">
+                           <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">ВесьСправочник</span> — коды элементов будут уникальны во всем
+                              справочнике</li>
+                           <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">НеПроверяется</span> — элементы могут иметь одинаковые коды</li>
+                           <li class="- topic/li li">Стандартное значение — <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ВесьСправочник</span></li>
+                        </ul>Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_flw_pk3_grb" data-ofbid="core00208__codeblock_flw_pk3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Имя: Код
+        Тип: Строка
+        Длина: 10
+        <strong class="+ topic/ph hi-d/b ph b">Уникальность: НеПроверяется</strong></code></pre></dd>
+                  
+               </dl></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">КонтрольДоступа</dt>
+            <dd class="- topic/dd dd">Описание прав на справочник. Содержит набор записей следующего вида: Право: Способ контроля доступа (<a class="- topic/xref xref" href="core00248.html#core00248__section_qp2_cs5_5qb">подробнее</a>). Пример
+               YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_zt1_3r3_grb" data-ofbid="core00208__codeblock_zt1_3r3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+<strong class="+ topic/ph hi-d/b ph b">КонтрольДоступа:
+    Создание: РазрешеноАутентифицированным
+    Чтение: РазрешенияВычисляютсяДляКаждогоОбъекта
+    ПоУмолчанию: РазрешеноАдминистраторам</strong>
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">Представление</dt>
+            <dd class="- topic/dd dd">Реквизит справочника, значение которого <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> будет использовать в качестве представления элемента справочника
+                  (<a class="- topic/xref xref" href="core00212.html">подробнее</a>). Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_whg_pf3_grb" data-ofbid="core00208__codeblock_whg_pf3_grb"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+<strong class="+ topic/ph hi-d/b ph b">Представление: Название</strong>
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">ПредставлениеОбъекта</dt>
+            <dd class="- topic/dd dd"><span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Представление команды &lt;ИмяСправочника&gt;.СоздатьЭлемент.</dd>
+            <dd class="- topic/dd dd ddexpand">Стандартное значение — пустая строка (в качестве представления будет использоваться имя справочника в проекте) (<a class="- topic/xref xref" href="core00216.html#core00216__section_q3x_11z_tqb">подробнее</a>). Пример
+               YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_nfz_r23_grb" data-ofbid="core00208__codeblock_nfz_r23_grb"><code>ВидЭлемента: Справочник
+ОбластьВидимости: Подсистема
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Интерфейс: 
+    <strong class="+ topic/ph hi-d/b ph b">ПредставлениеОбъекта: Валюта</strong>
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">ПредставлениеСписка</dt>
+            <dd class="- topic/dd dd"><span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Представление команды &lt;ИмяСправочника&gt;.ОткрытьСписок.</dd>
+            <dd class="- topic/dd dd ddexpand">Стандартное значение — пустая строка (в качестве представления будет использоваться имя справочника с проекте) (<a class="- topic/xref xref" href="core00216.html#core00216__section_q3x_11z_tqb">подробнее</a>). Пример
+               YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_m2q_y23_grb" data-ofbid="core00208__codeblock_m2q_y23_grb"><code>ВидЭлемента: Справочник
+ОбластьВидимости: Подсистема
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Интерфейс: 
+    <strong class="+ topic/ph hi-d/b ph b">ПредставлениеСписка: Классификатор единиц измерения</strong>
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm" id="core00208__реквизитразработчика" data-ofbid="core00208__реквизитразработчика">&lt;Реквизит разработчика&gt;</dt>
+            <dd class="- topic/dd dd">Реквизит, добавленный разработчиком. Имеет следующие свойства:<dl class="- topic/dl dl" id="core00208__dl_gcn_vp3_sqb" data-ofbid="core00208__dl_gcn_vp3_sqb">
+            
+               <dt class="- topic/dt dt dlterm">ДлинаДробнойЧасти</dt>
+               <dd class="- topic/dd dd">Только у реквизитов, имеющих тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span>. Пример
+                  YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e596" data-ofbid="core00208__d36e596"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Вес
+        Тип: Число
+        ДлинаЦелойЧасти: 15
+        <strong class="+ topic/ph hi-d/b ph b">ДлинаДробнойЧасти: 3</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ДлинаЦелойЧасти</dt>
+               <dd class="- topic/dd dd">Только у реквизитов, имеющих тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span>. Пример
+                  YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e612" data-ofbid="core00208__d36e612"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Вес
+        Тип: Число
+        <strong class="+ topic/ph hi-d/b ph b">ДлинаЦелойЧасти: 15</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ЗначениеПоУмолчанию</dt>
+               <dd class="- topic/dd dd">Значение реквизита, которое будет использоваться <span class="- topic/ph ph">«1С:Кабинетом сотрудника»</span> по умолчанию. Может быть указано только
+                  если реквизит не множественный (<span class="+ topic/ph ui-d/uicontrol ph uicontrol">Множественный</span> == <span class="+ topic/keyword pr-d/apiname keyword apiname">Ложь</span>). Пример
+                  YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e634" data-ofbid="core00208__d36e634"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Возраст
+        Тип: Число
+        <strong class="+ topic/ph hi-d/b ph b">ЗначениеПоУмолчанию: 
+            18</strong> </code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Имя</dt>
+               <dd class="- topic/dd dd"><span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Имя реквизита. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e650" data-ofbid="core00208__d36e650"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        <strong class="+ topic/ph hi-d/b ph b">Имя: Название</strong>
+        Тип: Строка</code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Ид</dt>
+               <dd class="- topic/dd dd">Идентификатор реквизита. <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> создает этот идентификатор автоматически. Пример
+                  YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e667" data-ofbid="core00208__d36e667"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        <strong class="+ topic/ph hi-d/b ph b">Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29</strong>
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ИспользоватьВПолнотекстовомПоиске</dt>
+               <dd class="- topic/dd dd"><span class="+ topic/keyword pr-d/apiname keyword apiname">Булево</span>. Признак индексирования данных этого реквизита для использования в полнотекстовом поиске. Стандартное
+                  значение — <span class="+ topic/keyword pr-d/apiname keyword apiname">Истина</span>. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e687" data-ofbid="core00208__d36e687"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка
+        <strong class="+ topic/ph hi-d/b ph b">ИспользоватьВПолнотекстовомПоиске: Ложь</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">КонтрольДлины</dt>
+               <dd class="- topic/dd dd"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">ВыдаватьОшибку</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Исправлять</span>. Только у реквизитов, имеющих тип
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e708" data-ofbid="core00208__d36e708"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка
+        МаксимальнаяДлина: 50
+        <strong class="+ topic/ph hi-d/b ph b">КонтрольДлины: Исправлять</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">КонтрольОграничений</dt>
+               <dd class="- topic/dd dd"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">ВыдаватьОшибку</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Исправлять</span>. Только у реквизитов, имеющих тип
+                  <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span>. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e729" data-ofbid="core00208__d36e729"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Вес
+        Тип: Число
+        МинимальноеЗначение: 10
+        МаксимальноеЗначение: 100
+        <strong class="+ topic/ph hi-d/b ph b">КонтрольОграничений: Исправлять</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">КонтрольТочности</dt>
+               <dd class="- topic/dd dd"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">ВыдаватьОшибку</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Исправлять</span>. Только у реквизитов, имеющих тип
+                  <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span>. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e752" data-ofbid="core00208__d36e752"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Вес
+        Тип: Число
+        ДлинаЦелойЧасти: 15
+        ДлинаДробнойЧасти: 3
+        <strong class="+ topic/ph hi-d/b ph b">КонтрольТочности: Исправлять</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">МаксимальнаяДлина</dt>
+               <dd class="- topic/dd dd">Только у реквизитов, имеющих тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Пример
+                  YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e770" data-ofbid="core00208__d36e770"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка
+        <strong class="+ topic/ph hi-d/b ph b">МаксимальнаяДлина: 50</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">МаксимальноеЗначение</dt>
+               <dd class="- topic/dd dd">Только у реквизитов, имеющих тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span>. Пример
+                  YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e786" data-ofbid="core00208__d36e786"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Вес
+        Тип: Число
+        <strong class="+ topic/ph hi-d/b ph b">МаксимальноеЗначение: 100</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">МинимальноеЗначение</dt>
+               <dd class="- topic/dd dd">Только у реквизитов, имеющих тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span>. Пример
+                  YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e803" data-ofbid="core00208__d36e803"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Вес
+        Тип: Число
+        <strong class="+ topic/ph hi-d/b ph b">МинимальноеЗначение: 10</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Многострочная</dt>
+               <dd class="- topic/dd dd">Только у реквизитов, имеющих тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Пример
+                  YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e819" data-ofbid="core00208__d36e819"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка
+        <strong class="+ topic/ph hi-d/b ph b">Многострочная: Истина</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">НезаполненноеЗначение</dt>
+               <dd class="- topic/dd dd"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Разрешить</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ЗапретитьВсегда</span>. Только у реквизитов, имеющих тип
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e840" data-ofbid="core00208__d36e840"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка
+        <strong class="+ topic/ph hi-d/b ph b">НезаполненноеЗначение: Разрешить</strong></code></pre></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Тип</dt>
+               <dd class="- topic/dd dd">Тип реквизита. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e853" data-ofbid="core00208__d36e853"><code>ВидЭлемента: Справочник
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        <strong class="+ topic/ph hi-d/b ph b">Тип: Строка</strong></code></pre></dd>
+            
+         </dl></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">ФормаОбъекта</dt>
+            <dd class="- topic/dd dd"><span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Имя компонента пользовательского интерфейса, являющегося формой элемента для данного справочника.
+               Стандартное значение — пустая строка (форма будет сгенерирована автоматически) (<a class="- topic/xref xref" href="core00216.html#core00216__section_djp_1jz_tqb">подробнее</a>). Пример
+               YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_kcg_ff3_grb" data-ofbid="core00208__codeblock_kcg_ff3_grb"><code>ВидЭлемента: Справочник
+ОбластьВидимости: Подсистема
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Интерфейс: 
+    <strong class="+ topic/ph hi-d/b ph b">ФормаОбъекта: МойСправочникФормаОбъекта</strong>
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">ФормаСписка</dt>
+            <dd class="- topic/dd dd"><span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Имя компонента пользовательского интерфейса, являющегося формой списка для данного справочника. Стандартное
+               значение — пустая строка (форма будет сгенерирована автоматически) (<a class="- topic/xref xref" href="core00216.html#core00216__section_djp_1jz_tqb">подробнее</a>). Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__codeblock_r1l_ff3_grb" data-ofbid="core00208__codeblock_r1l_ff3_grb"><code>ВидЭлемента: Справочник
+ОбластьВидимости: Подсистема
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+Интерфейс: 
+    <strong class="+ topic/ph hi-d/b ph b">ФормаСписка: МойСправочникФормаСписка</strong>
+Реквизиты:
+    -
+        Ид: c13bcc91-3361-4efd-ab9d-03360ece9f29
+        Имя: Название
+        Тип: Строка</code></pre></dd>
+         
+      </dl>
+      <div class="- topic/p p">
+         <div class="- topic/div div">
+            <dl class="- topic/dl dl">
+               
+                  <dt class="- topic/dt dt dlterm" id="core00208__d36e27" data-ofbid="core00208__d36e27">Внешний</dt>
+                  <dd class="- topic/dd dd">Является ли элемент проекта или компонент внешним. Пример
+                     YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e34" data-ofbid="core00208__d36e34"><code>ВидЭлемента: Пользователи
+<strong class="+ topic/ph hi-d/b ph b">Внешний: Истина</strong>
+Имя: Пользователи
+СобственныйПакет: Стд::Пользователи</code></pre></dd>
+               
+               
+                  <dt class="- topic/dt dt dlterm" id="core00208__d36e41" data-ofbid="core00208__d36e41">Имя</dt>
+                  <dd class="- topic/dd dd">Имя элемента проекта или компонента. Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e48" data-ofbid="core00208__d36e48"><code>ВидЭлемента: Справочник
+ОбластьВидимости: Подсистема
+<strong class="+ topic/ph hi-d/b ph b">Имя: МойСправочник</strong>
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600</code></pre></dd>
+               
+               
+                  <dt class="- topic/dt dt dlterm" id="core00208__d36e55" data-ofbid="core00208__d36e55">Импорт</dt>
+                  <dd class="- topic/dd dd">Список импортированных пространств имен (<a class="- topic/xref xref" href="reusables/../core00164.html#core00164__section_sj4_lzt_yqb">подробнее</a>). Пример
+                     YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e65" data-ofbid="core00208__d36e65"><code>ВидЭлемента: Справочник
+ОбластьВидимости: Подсистема
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600
+<strong class="+ topic/ph hi-d/b ph b">Импорт: 
+    - Главная
+    - Настройки::НовыйПакет</strong></code></pre></dd>
+               
+               
+                  <dt class="- topic/dt dt dlterm" id="core00208__d36e71" data-ofbid="core00208__d36e71">Ид</dt>
+                  <dd class="- topic/dd dd">Идентификатор элемента проекта или компонента. <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> создает этот идентификатор автоматически. Пример
+                     YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e81" data-ofbid="core00208__d36e81"><code>ВидЭлемента: Справочник
+ОбластьВидимости: Подсистема
+Имя: МойСправочник
+<strong class="+ topic/ph hi-d/b ph b">Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600</strong></code></pre></dd>
+               
+               
+                  <dt class="- topic/dt dt dlterm" id="core00208__d36e87" data-ofbid="core00208__d36e87">ОбластьВидимости</dt>
+                  <dd class="- topic/dd dd">Видимость элемента проекта (<a class="- topic/xref xref" href="reusables/../core00164.html#core00164__section_wgr_y5t_yqb">подробнее</a>):<ul class="- topic/ul ul" id="core00208__d36e97" data-ofbid="core00208__d36e97">
+                        <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Подсистема</span> — элемент виден внутри одной подсистемы во всех пакетах. Значение по умолчанию;</li>
+                        <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Проект</span> — элемент виден во всех подсистемах одного проекта;</li>
+                        <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Глобально</span> — элемент виден в других проектах.</li>
+                     </ul> Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e115" data-ofbid="core00208__d36e115"><code>ВидЭлемента: Справочник
+<strong class="+ topic/ph hi-d/b ph b">ОбластьВидимости: Подсистема</strong>
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600</code></pre></dd>
+               
+               
+                  <dt class="- topic/dt dt dlterm" id="core00208__d36e123" data-ofbid="core00208__d36e123">СобственныйПакет</dt>
+                  <dd class="- topic/dd dd">Имя пакета собственного объекта. . Пример YAML-файла:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e130" data-ofbid="core00208__d36e130"><code>ВидЭлемента: Пользователи
+Внешний: Истина
+Имя: Пользователи
+<strong class="+ topic/ph hi-d/b ph b">СобственныйПакет: Стд::Пользователи</strong></code></pre></dd>
+               
+               
+                  <dt class="- topic/dt dt dlterm" id="core00208__d36e136" data-ofbid="core00208__d36e136">ВидЭлемента</dt>
+                  <dd class="- topic/dd dd">Вид элементов проекта (<a class="- topic/xref xref" href="reusables/../core00163.html#core00163__section_j4t_g3y_4qb">подробнее</a>) либо компонент интерфейса
+                        (<a class="- topic/xref xref" href="reusables/../core00199.html">подробнее</a>). Пример YAML-файла элемента
+                     проекта:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e149" data-ofbid="core00208__d36e149"><code><strong class="+ topic/ph hi-d/b ph b">ВидЭлемента: Справочник</strong>
+ОбластьВидимости: Подсистема
+Имя: МойСправочник
+Ид: 64cdbccd-a768-4877-9fdd-4f7ea44c2600</code></pre>Пример YAML-файла
+                     компонента:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00208__d36e154" data-ofbid="core00208__d36e154"><code><strong class="+ topic/ph hi-d/b ph b">ВидЭлемента: КомпонентИнтерфейса</strong>
+ОбластьВидимости: Подсистема
+Ид: d3f2fad1-4ce1-444b-8aaa-b37425f4f6bb
+Имя: МояГруппа
+Наследует:
+    Тип: ОбычнаяГруппа</code></pre></dd>
+               
+            </dl>
+         </div>
+      </div>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

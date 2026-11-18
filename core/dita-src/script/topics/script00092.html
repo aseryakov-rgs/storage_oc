@@ -1,0 +1,221 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="Вы можете использовать несколько способов объявления переменных: с указанием типа, с указанием значения, переменные составного типа. 1. Модификатор Имя : Тип 2. Модификатор Имя = Выражение 3. ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="script00010"/><title>Инструкция объявления переменной</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../../"/><meta name="wh-source-relpath" content="core/dita-src/script/topics/script00092.dita"/><meta name="wh-out-relpath" content="core/dita-src/script/topics/script00092.html"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../../oxygen-webhelp/app/topic-page.js" src="../../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../../its.css"/></head>
+
+    <body id="script00010" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Инструкция объявления переменной</h1>
+   
+   <div class="- topic/body body">
+      <div class="- topic/p p">Вы можете использовать несколько способов объявления переменных:<ol class="- topic/ol ol" id="script00010__ol_zlj_qv5_nmb" data-ofbid="script00010__ol_zlj_qv5_nmb">
+            <li class="- topic/li li">с указанием типа,</li>
+            <li class="- topic/li li">с указанием значения,</li>
+            <li class="- topic/li li">переменные составного типа.</li>
+         </ol></div>
+      <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>1. <dfn class="- topic/term term">Модификатор</dfn> <dfn class="- topic/term term">Имя</dfn><span class="+ topic/keyword pr-d/apiname keyword apiname">:</span> <dfn class="- topic/term term">Тип</dfn>
+2. <dfn class="- topic/term term">Модификатор</dfn> <dfn class="- topic/term term">Имя</dfn> <span class="+ topic/keyword pr-d/apiname keyword apiname">=</span> <dfn class="- topic/term term">Выражение</dfn>
+3. <dfn class="- topic/term term">Модификатор</dfn> <dfn class="- topic/term term">Имя</dfn><span class="+ topic/keyword pr-d/apiname keyword apiname">:</span> <dfn class="- topic/term term">Тип</dfn>[<span class="+ topic/keyword pr-d/apiname keyword apiname">|</span><dfn class="- topic/term term">Тип</dfn>...][<span class="+ topic/keyword pr-d/apiname keyword apiname">|</span><dfn class="- topic/term term">Тип</dfn> = <dfn class="- topic/term term">Выражение</dfn>]</code></pre>
+      <dl class="- topic/dl dl">
+         
+            <dt class="- topic/dt dt dlterm">Модификатор</dt>
+            <dd class="- topic/dd dd">Модификатор описывает вид переменной:<ul class="- topic/ul ul" id="script00010__ul_h5n_21w_sjb" data-ofbid="script00010__ul_h5n_21w_sjb">
+                  <li class="- topic/li li" id="script00010__пер-подробнее" data-ofbid="script00010__пер-подробнее"><span class="+ topic/keyword pr-d/apiname keyword apiname">пер</span> - переменная, доступная для записи и для
+                     чтения<pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>пер Переменная1: Строка</code></pre></li>
+                  <li class="- topic/li li" id="script00010__знч-подробнее" data-ofbid="script00010__знч-подробнее"><span class="+ topic/keyword pr-d/apiname keyword apiname">знч</span> - переменная, доступная только для
+                     чтения<pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>знч Исполняемый = Ложь // тип файла</code></pre></li>
+                  <li class="- topic/li li" id="script00010__исп-подробнее" data-ofbid="script00010__исп-подробнее"><span class="+ topic/keyword pr-d/apiname keyword apiname">исп</span> - переменная, тип которой является потомком типа <span class="+ topic/keyword pr-d/apiname keyword apiname">Закрываемое</span> (<a class="- topic/xref xref" href="script00036.html" title="Потомок данного типа удерживает системные ресурсы. Следует работать с потомками данного типа очень внимательно.">подробнее</a>). Такая переменная доступна только для чтения. При выходе из области видимости для
+                     такой переменной будет автоматически вызван метод
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">Закрыть()</span><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>исп ВременныйПотокЗаписи = ВременныйФайл.ОткрытьПотокЗаписи()</code></pre></li>
+                  <li class="- topic/li li" id="script00010__конст-подробнее" data-ofbid="script00010__конст-подробнее"><span class="+ topic/keyword pr-d/apiname keyword apiname">конст</span> - позволяет определить именованное значение, которое синтаксически выглядит как
+                     переменная, но его нельзя изменить после объявления. Константа быть объявлена только на уровне модуля. При объявлении константы
+                     обязательно должно присутствовать значение инициализации, вычисление которого гарантировано происходит во время компиляции
+                     модуля. При инициализации константы литералом коллекции, значение коллекции является неизменяемым. Правила вычислимости выражения
+                     приведены <a class="- topic/xref xref" href="#script00010__%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D0%BC%D1%8B%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F">здесь</a><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>конст ИМЯ_АРХИВА = "myZip.zip"</code></pre></li>
+               </ul></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">Имя</dt>
+            <dd class="- topic/dd dd">Имя определяемой переменной. Правила формирования имени переменной см. <a class="- topic/xref xref" href="script00004.html">Переменные</a>.</dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">Тип</dt>
+            <dd class="- topic/dd dd">Имя типа.</dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">Выражение</dt>
+            <dd class="- topic/dd dd"><a class="- topic/xref xref" href="script00010.html">Выражение</a>, которое описывает начальное значение определяемой переменной. Если выражение
+               инициализации указывается для константы (используется модификатор <span class="+ topic/keyword pr-d/apiname keyword apiname">конст</span>), то это выражение должно быть вычислимо во
+               время компиляции. Выражение является вычислимым на этапе компиляции, если оно удовлетворяет следующим критериям:</dd>
+            <dd class="- topic/dd dd ddexpand" id="script00010__вычислимые-выражения">
+               <ul class="- topic/ul ul" id="script00010__ul_ynj_ydw_nmb" data-ofbid="script00010__ul_ynj_ydw_nmb">
+                  <li class="- topic/li li"></li>
+               </ul>
+            </dd>
+            <dd class="- topic/dd dd ddexpand">Если выражение не указано, то переменная инициализируется значением по умолчанию для типа переменной. Если для выбранного типа нет
+               значения по умолчанию или в составном типе отсутствует тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span>, то во время компиляции возникает ошибка
+               инициализации переменной.</dd>
+            <dd class="- topic/dd dd ddexpand">Если в качестве типа переменной указан тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Любой</span> или тип включающий тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span>, то
+               переменная инициализируется значением <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span>. </dd>
+            <dd class="- topic/dd dd ddexpand">Если при определении переменной указано только выражение, то типом переменной будет тип результата выражения. В этом случае можно
+               говорить о кратком объявлении переменной.</dd>
+         
+      </dl>
+      <section class="- topic/section section" id="script00010__section_iqt_x5k_4mb" data-ofbid="script00010__section_iqt_x5k_4mb"><h2 class="- topic/title title sectiontitle">Переменные составного типа</h2>
+         
+         <div class="- topic/p p">Если определение типа переменной содержит несколько типов, разделенных символом <span class="+ topic/keyword pr-d/apiname keyword apiname">|</span>, то происходит описание переменной
+            составного типа. Если в составном типе отсутствует тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span>, то выражение инициализации переменной должно быть
+            указано.<pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>пер Переменная1: Строка|Число|Булево = 0</code></pre></div>
+         <div class="- topic/p p">Если в составном типе присутствует тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span>, то в списке типов он явно не указывается, вместо него используется
+            сокращение <span class="+ topic/keyword pr-d/apiname keyword apiname">?</span>, которое мы рекомендуем писать:<ul class="- topic/ul ul" id="script00010__ul_hly_cwk_4mb" data-ofbid="script00010__ul_hly_cwk_4mb">
+               <li class="- topic/li li">слитно с предыдущим типом, если типов всего два,</li>
+            </ul><ul class="- topic/ul ul" id="script00010__ul_ily_cwk_4mb" data-ofbid="script00010__ul_ily_cwk_4mb">
+               <li class="- topic/li li">
+                  <p class="- topic/p p">через символ <span class="+ topic/keyword pr-d/apiname keyword apiname">|</span>, если типов больше двух.</p>
+               </li>
+            </ul></div>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>пер Переменная1: Строка?
+пер Переменная1: Строка|Число|?</code></pre>
+         <p class="- topic/p p">В этом случае переменная инициализируется значением <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span>.</p>
+         <p class="- topic/p p">Если нужно объявить переменную произвольного типа, то следует указать для нее тип <code class="+ topic/ph pr-d/codeph ph codeph">Объект?</code>.</p>
+      </section>
+      <section class="- topic/section section" id="script00010__section_h3b_dvk_4mb" data-ofbid="script00010__section_h3b_dvk_4mb"><h2 class="- topic/title title sectiontitle">Общие рекомендации</h2>
+         
+         <p class="- topic/p p">Объявляя типизированную переменную надо понимать, что во время компиляции модуля <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> будет проверять совместимость
+            типов в выражении. Другими словами, если переменная объявлена как числовая, а ей пытаются присвоить строковое значение - это приведет к
+            ошибке. Но если переменная объявлена с типом <span class="+ topic/keyword pr-d/apiname keyword apiname">Любой</span>, то во время компиляции модуля контроль совместимости типов
+            выполняться не будет. Однако проверки времени исполнения будут выполняться в любом случае.</p>
+         <div class="- topic/p p">Объявление переменной может располагаться в любом месте метода. При объявлении переменной следует помнить о следующих особенностях и
+               ограничениях:<ul class="- topic/ul ul" id="script00010__ul_hnw_qkg_skb" data-ofbid="script00010__ul_hnw_qkg_skb">
+               <li class="- topic/li li">Не поддерживается объявление нескольких переменных в одной инструкции.</li>
+               <li class="- topic/li li">Переменная не может быть объявлена дважды в одной области видимости. Допускается объявлять переменную или описывать параметр метода
+                  так, что имя переменной или параметра будет совпадать с константой или именем свойства глобального контекста.</li>
+               <li class="- topic/li li">Имя переменной не может совпадать с именем параметра метода.</li>
+               <li class="- topic/li li">Переменная не может быть использована без предварительного объявления.</li>
+               <li class="- topic/li li">Переменная не может быть использована в собственном инициализаторе.</li>
+               <li class="- topic/li li">Не поддерживается объявление переменной без указания типа или явного значения инициализации.</li>
+               <li class="- topic/li li">Если при объявлении переменной не указан тип, то тип будет вычислен из значения инициализации.</li>
+            </ul></div>
+      </section>
+      <div class="- topic/example example"><h2 class="- topic/title title sectiontitle">Пример</h2>
+         
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    // Допустимые объявления переменных
+    пер А: любой // Неопределено
+    пер Б: Число // 0
+    пер В: Строка // пустая строка
+    пер Г: Строка? // Неопределено
+    пер Д: Строка|Число = 5 // 5
+    конст К = "myZip.zip"
+    
+    // Недопустимы объявления переменных
+    пер Е: Строка|Число // не указано значение инициализации
+    пер Ж: Строка = [1, 2] // данные инициализации не совпадают с указанным типом
+;</code></pre>
+      </div>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#script00010__section_iqt_x5k_4mb" data-tocid="script00010__section_iqt_x5k_4mb">Переменные составного типа</a></div></li><li class="section-item"><div class="section-title"><a href="#script00010__section_h3b_dvk_4mb" data-tocid="script00010__section_h3b_dvk_4mb">Общие рекомендации</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="Фрагмент командного интерфейса объединяет несколько команд и групп команд для того, чтобы показать их в интерфейсе. Используется, например, в свойствах компонента ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00009"/><title>Типы встроенного языка и свойства элемента проекта вида «ФрагментКомандногоИнтерфейса»</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00009.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00009.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00009" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Типы встроенного языка и свойства элемента проекта вида «ФрагментКомандногоИнтерфейса»</h1>
+   
+   <div class="- topic/body body">
+      <div class="- topic/p p">Фрагмент командного интерфейса объединяет несколько команд и групп команд для того, чтобы показать их в интерфейсе. Используется, например, в
+         свойствах компонента <a class="- topic/xref xref" href="core00007.html">СтандартноеКлиентскоеПриложениеСРазделами</a>:<ul class="- topic/ul ul" id="core00009__ul_c3c_qsj_grb" data-ofbid="core00009__ul_c3c_qsj_grb">
+            <li class="- topic/li li"><a class="- topic/xref xref" href="core00007.html#core00007__%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D1%8B%D0%B9%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9F%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%B8">КомандныйИнтерфейсПанелиНавигации</a></li>
+            <li class="- topic/li li"><a class="- topic/xref xref" href="core00007.html#core00007__%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D1%8B%D0%B9%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%D0%9F%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8%D0%94%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D0%B9">КомандныйИнтерфейсПанелиДействий</a></li>
+            <li class="- topic/li li"><a class="- topic/xref xref" href="core00007.html#core00007__%D0%94%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D1%8B%D0%B9%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81">ДополнительныйКомандныйИнтерфейс</a>;</li>
+         </ul></div>
+      <p class="- topic/p p">Пример фрагмента командного интерфейса в форме:</p>
+      <p class="- topic/p p"><img class="- topic/image image" id="core00009__image_chq_yrj_grb" src="../img/core00163/049.png"/></p>
+      <p class="- topic/p p">Пример фрагмента командного интерфейса в панели навигации:</p>
+      <p class="- topic/p p"><img class="- topic/image image" id="core00009__image_gld_trj_grb" src="../img/core00163/046.png"/></p>
+      <p class="- topic/p p">После того, как вы добавили в проект фрагмент командного интерфейса и дали ему имя, <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> создаст один тип встроенного
+         языка. Имя этого типа совпадает с именем вашего фрагмента командного интерфейса.</p>
+      <p class="- topic/p p">Например, если в проекте есть фрагмент командного интерфейса <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ПанельНавигации</span>, то будет создан тип
+            <span class="+ topic/keyword pr-d/apiname keyword apiname">ПанельНавигации</span>. В общем случае имя этого типа выглядит следующим образом:
+            <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяФрагментаКомандногоИнтерфейса&gt;</span>.</p>
+      <section class="- topic/section section" id="core00009__section_sll_nxp_nrb" data-ofbid="core00009__section_sll_nxp_nrb"><h2 class="- topic/title title sectiontitle">Тип &lt;ИмяФрагментаКомандногоИнтерфейса&gt;</h2>
+         
+         <p class="- topic/p p">Этот тип встроенного языка доступен на клиенте.</p>
+         <p class="- topic/p p">Он не имеет конструктора и имеет единственный объект, обращение к которому выполняется по имени типа:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00009__codeblock_em5_4xb_sqb" data-ofbid="core00009__codeblock_em5_4xb_sqb"><code>// Получить фрагмент командного интерфейса «ПанельНавигации»
+пер Навигация = ПанельНавигации</code></pre>
+      </section>
+      <section class="- topic/section section" id="core00009__section_otj_nxp_nrb" data-ofbid="core00009__section_otj_nxp_nrb"><h2 class="- topic/title title sectiontitle">Модуль фрагмента командного интерфейса</h2>
+         
+         <p class="- topic/p p">В проекте модуль, расширяющий тип <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяФрагментаКомандногоИнтерфейса&gt;</span>, называется <dfn class="- topic/term term">модулем фрагмента командного
+               интерфейса</dfn>. Он исполняется на клиенте. </p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00009__image_mpv_wyp_nrb" src="../img/core00009/001.png"/></p>
+         <p class="- topic/p p">В этом модуле вы можете обработать события нажатия на команды, которые описаны в свойстве <span class="+ topic/keyword pr-d/apiname keyword apiname">Элементы</span> этого фрагмента.</p>
+      </section>
+      <section class="- topic/section section" id="core00009__section_yw5_qwj_grb" data-ofbid="core00009__section_yw5_qwj_grb"><h2 class="- topic/title title sectiontitle">Свойства элемента проекта</h2>
+         
+         <dl class="- topic/dl dl" id="core00009__dl_sln_5wj_grb" data-ofbid="core00009__dl_sln_5wj_grb">
+            
+               <dt class="- topic/dt dt dlterm" id="core00009__элементы" data-ofbid="core00009__элементы">Элементы</dt>
+               <dd class="- topic/dd dd">Массив команд, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ФрагментКомандногоИнтерфейса</span>, состоящий из команд или
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">ГруппаКомандногоИнтерфейса</span>, состоящая из команд. Пример YAML-файла, в котором используются различные способы
+                  формирования фрагмента интерфейса:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00009__codeblock_dfr_hpj_grb" data-ofbid="core00009__codeblock_dfr_hpj_grb"><code>ВидЭлемента: ФрагментКомандногоИнтерфейса
+ОбластьВидимости: Подсистема
+Ид: 58e451d8-20ff-4ba8-8b92-d8dacae520cc
+Имя: ФрагментИнтерфейса
+Элементы:
+    - # --- Вызов собственных команд, добавленных в проект
+        =МояОбычнаяКоманда
+    -
+        =МояНавигационнаяКоманда
+    -
+        =МояПереключаемаяКоманда
+    -
+        =МойФрагментИнтерфейса
+
+    - # --- Использование группы командного интерфейса      
+        Тип: ГруппаКомандногоИнтерфейса&lt;Команда&gt;
+        Представление: Стандартные команды элементов проекта
+        Изображение: icon-desc.svg
+        Элементы:
+            - # --- Вызов стандартных команд элементов проекта: открытие форм справочников
+                =Сотрудники.ОткрытьСписок
+            - 
+                =События.СоздатьОбъект
+
+    - # --- Навигационная команда, описанная внутри фрагмента                   
+        Тип: НавигационнаяКоманда
+        Представление: Задачи
+        ТипФормы: МояФорма
+
+    - # --- Обычная команда, описанная внутри фрагмента      
+        Тип: ОбычнаяКоманда
+        Представление: Подсказать
+        Изображение: icon-q.svg
+        Обработчик: ОбработчикКомандыПодсказать 
+
+    - # --- Переключаемая команда, описанная внутри фрагмента
+        Тип: ПереключаемаяКоманда
+        ПредставлениеАктивного: Избранное
+        ПредставлениеНеактивного: В избранное
+        Обработчик: ОбработчикПереключаемойКоманды
+
+    - # --- Фрагмент инетрфейса, описанный внутри фрагмента    
+        Тип: ФрагментКомандногоИнтерфейса&lt;Команда&gt;
+        Элементы:
+            -
+                Тип: ОбычнаяКоманда
+                Представление: Настройки
+                Изображение: РазделНастройки.svg
+                Обработчик: ОбработчикКомандыНастройки
+            -
+                Тип: ОбычнаяКоманда
+                Представление: Сервис
+                Изображение: РазделСервис.svg
+                Обработчик: ОбработчикКомандыСервис</code></pre></dd>
+            
+         </dl>
+         <div class="- topic/div div"></div>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#core00009__section_sll_nxp_nrb" data-tocid="core00009__section_sll_nxp_nrb">Тип &lt;ИмяФрагментаКомандногоИнтерфейса&gt;</a></div></li><li class="section-item"><div class="section-title"><a href="#core00009__section_otj_nxp_nrb" data-tocid="core00009__section_otj_nxp_nrb">Модуль фрагмента командного интерфейса</a></div></li><li class="section-item"><div class="section-title"><a href="#core00009__section_yw5_qwj_grb" data-tocid="core00009__section_yw5_qwj_grb">Свойства элемента проекта</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

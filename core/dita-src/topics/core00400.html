@@ -1,0 +1,261 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="При реализации HTTP-сервиса вам нужно определить следующие элементы: КорневойUrl — базовая часть URL, по которой будет выполняться обращение к сервису; ШаблоныUrl — состав предоставляемой ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00400"/><title>Элемент проекта вида «HttpСервис»</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00400.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00400.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00400" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Элемент проекта вида «HttpСервис»</h1>
+   
+    <div class="- topic/body body">
+      <p class="- topic/p p">При реализации HTTP-сервиса вам нужно определить следующие элементы:</p>
+      <ol class="- topic/ol ol" id="core00400__ol_vsh_mlh_prb" data-ofbid="core00400__ol_vsh_mlh_prb">
+         <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">КорневойUrl</span> — базовая часть URL, по которой будет выполняться обращение к сервису;</li>
+         <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">ШаблоныUrl</span> — состав предоставляемой функциональности и структуру ресурсов, на которые эта функциональность будет
+            отображаться (шаблоны);</li>
+         <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Методы</span> — действия, которые можно будет выполнить при обращении к тому или иному ресурсу.</li>
+         <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Обработчик</span> — для каждого выбранного действия вы пишите на встроенном языке метод, который и реализует необходимую
+            функциональность. Методы находятся в <a class="- topic/xref xref" href="core00218.html#core00218__%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8Chttp%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%B0">модуле HTTP-сервиса</a>. Например,
+            HTTP-сервис может выглядеть следующим образом:</li>
+      </ol>
+      <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00400__codeblock_omh_3mh_prb" data-ofbid="core00400__codeblock_omh_3mh_prb"><code>ВидЭлемента: HttpСервис
+Id: a565661f-f458-465b-8f71-1f90cd490890
+ОбластьВидимости: Подсистема
+Имя: СделкиHttpСервис
+<strong class="+ topic/ph hi-d/b ph b">КорневойUrl</strong>: /opportunities
+<strong class="+ topic/ph hi-d/b ph b">ШаблоныUrl</strong>:
+    -
+        Имя: ПолучитьСделки
+        <strong class="+ topic/ph hi-d/b ph b">Шаблон</strong>: /
+        Методы:
+            -
+                <strong class="+ topic/ph hi-d/b ph b">Метод</strong>: GET
+                <strong class="+ topic/ph hi-d/b ph b">Обработчик</strong>: ПолучитьСделки
+    -
+        Имя: ПолучитьСделку
+        <strong class="+ topic/ph hi-d/b ph b">Шаблон</strong>: /{opportunity}
+        Методы:
+            -
+                <strong class="+ topic/ph hi-d/b ph b">Метод</strong>: GET
+                <strong class="+ topic/ph hi-d/b ph b">Обработчик</strong>: ПолучитьСделку
+КонтрольДоступа:
+    Вызов: РазрешеноАутентифицированным
+    ПоУмолчанию: РазрешеноАутентифицированным
+</code></pre>
+      <p class="- topic/p p">Корректный URL запроса к HTTP-сервису должен иметь следующую структуру:</p>
+      <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00400__codeblock_fsc_3b3_prb" data-ofbid="core00400__codeblock_fsc_3b3_prb"><code>{АдресПубликацииПриложения}/api/{КорневойURLСервиса}/{ПутьКРесурсу}?{ПараметрыЗапроса}</code></pre>
+      <p class="- topic/p p">например:</p>
+      <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00400__codeblock_gsc_3b3_prb" data-ofbid="core00400__codeblock_gsc_3b3_prb"><code>http://myserver:9090/applications/tasks/api/myservice/myMethod?param1=value1</code></pre>
+      <p class="- topic/p p">Рассмотрите части запроса по-порядку:</p>
+      <dl class="- topic/dl dl" id="core00400__dl_f5k_kph_prb" data-ofbid="core00400__dl_f5k_kph_prb">
+         
+            <dt class="- topic/dt dt dlterm">http или https</dt>
+            <dd class="- topic/dd dd">Используемый
+               протокол<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00400__codeblock_hzn_nph_prb" data-ofbid="core00400__codeblock_hzn_nph_prb"><code><strong class="+ topic/ph hi-d/b ph b">http://</strong>myserver:9090/applications/tasks/api/myservice/myMethod?param1=value1</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">АдресПубликацииПриложения</dt>
+            <dd class="- topic/dd dd">Адрес HTTP-сервера и путь публикации приложения на
+               сервере<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00400__codeblock_yr5_qph_prb" data-ofbid="core00400__codeblock_yr5_qph_prb"><code>http://<strong class="+ topic/ph hi-d/b ph b">myserver:9090/applications/tasks</strong>/api/myservice/myMethod?param1=value1</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">api</dt>
+            <dd class="- topic/dd dd">Признак того, что данный URL представляет запрос к публичному api
+               приложения<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00400__codeblock_hpx_qph_prb" data-ofbid="core00400__codeblock_hpx_qph_prb"><code>http://myserver:9090/applications/tasks/<strong class="+ topic/ph hi-d/b ph b">api</strong>/myservice/myMethod?param1=value1</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">КорневойURLСервиса</dt>
+            <dd class="- topic/dd dd">Относительный URL сервиса. Должен быть уникальным среди всех сервисов в проекте. Определяет конкретный сервис, который должен
+               обработать
+               запрос<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00400__codeblock_egz_qph_prb" data-ofbid="core00400__codeblock_egz_qph_prb"><code>http://myserver:9090/applications/tasks/api/<strong class="+ topic/ph hi-d/b ph b">myservice</strong>/myMethod?param1=value1</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">ПутьКРесурсу</dt>
+            <dd class="- topic/dd dd">Путь к ресурсу в пределах сервиса. Сопоставляется по определенным правилам с шаблонами URL сервиса и в итоге выбирается один шаблон,
+               который отвечает за обработку
+               запроса<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00400__codeblock_xr1_rph_prb" data-ofbid="core00400__codeblock_xr1_rph_prb"><code>http://myserver:9090/applications/tasks/api/myservice/<strong class="+ topic/ph hi-d/b ph b">myMethod</strong>?param1=value1</code></pre></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm">ПараметрыЗапроса</dt>
+            <dd class="- topic/dd dd">Стандартный способ передачи параметров запроса через URL. Параметры запроса передаются через URL только для GET- и HEAD-запросов. Для
+               всех остальных методов параметры передаются в теле
+               запроса<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00400__codeblock_ehc_rph_prb" data-ofbid="core00400__codeblock_ehc_rph_prb"><code>http://myserver:9090/applications/tasks/api/myservice/myMethod?<strong class="+ topic/ph hi-d/b ph b">param1=value1</strong></code></pre></dd>
+         
+      </dl>
+      <p class="- topic/p p">Кроме URL на маршрутизацию запроса также влияет HTTP-метод запроса. Например, для одного и того же URL запроса может быть несколько
+         обработчиков для разных методов.</p>
+      <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00400__codeblock_shj_5qh_prb" data-ofbid="core00400__codeblock_shj_5qh_prb"><code>ШаблоныURL:
+    -
+        Имя: ГрафикиРаботы
+        Шаблон: /
+        Методы: 
+            -
+                Имя: ОбновлениеГрафиковРаботы
+                Тип: PUT
+                Обработчик: ОбновитьГрафикиРаботы
+    -
+        Имя: ГрафикРаботы
+        Шаблон: /{ID}
+        Методы: 
+            -
+                Имя: ОбновлениеГрафикаРаботы
+                Тип: PUT
+                <strong class="+ topic/ph hi-d/b ph b">Обработчик</strong>: ОбновитьГрафикРаботы
+            -
+                Имя: ПолучениеГрафикаРаботы
+                Тип: GET
+                <strong class="+ topic/ph hi-d/b ph b">Обработчик</strong>: ПолучитьГрафикРаботы
+            -
+                Имя: УдалениеГрафикаРаботы
+                Тип: DELETE
+                <strong class="+ topic/ph hi-d/b ph b">Обработчик</strong>: УдалитьГрафикРаботы</code></pre>
+      <p class="- topic/p p">Вид <span class="+ topic/ph ui-d/uicontrol ph uicontrol">HttpСервис</span> предоставляет следующую функциональность и логику работы:</p>
+      <dl class="- topic/dl dl" id="core00400__dl_xjd_xf3_prb" data-ofbid="core00400__dl_xjd_xf3_prb">
+         
+            <dt class="- topic/dt dt dlterm"><a class="- topic/xref xref" href="core00218.html">Порождаемые типы встроенного языка</a></dt>
+            <dd class="- topic/dd dd">HTTP-сервис, добавленный в проект, порождает во встроенном языке один тип, в модуле которого вы можете разместить все обработчики
+               методов HTTP-сервиса </dd>
+         
+         
+            <dt class="- topic/dt dt dlterm"><a class="- topic/xref xref" href="core00409.html">Выбор сервиса</a></dt>
+            <dd class="- topic/dd dd">Относительный URL сервиса может состоять из нескольких сегментов. Это может быть полезно в сценариях, когда требуется одновременная
+               работа с разными версиями сервиса</dd>
+         
+         
+            <dt class="- topic/dt dt dlterm"><a class="- topic/xref xref" href="core00231.html">Выбор шаблона URL</a></dt>
+            <dd class="- topic/dd dd">Шаблоны URL служат двум целям: они выбирают обработчик для заданного пути к ресурсу и предоставляют удобный способ работы с
+               параметрами, включенными в путь к ресурсу</dd>
+         
+         
+            <dt class="- topic/dt dt dlterm"><a class="- topic/xref xref" href="core00410.html">Выбор обработчика</a></dt>
+            <dd class="- topic/dd dd">Вы можете использовать обработчик для конкретного метода или обработчик, назначенный по-умолчанию</dd>
+         
+         
+            <dt class="- topic/dt dt dlterm"><a class="- topic/xref xref" href="core00411.html">Параметры запроса</a></dt>
+            <dd class="- topic/dd dd">Существует три способа передачи параметров в HTTP-запрос</dd>
+         
+         
+            <dt class="- topic/dt dt dlterm"><a class="- topic/xref xref" href="core00412.html">Обработка запроса</a></dt>
+            <dd class="- topic/dd dd">Для обработки запросов необходимо для каждого метода в описании HTTP-сервиса создать в модуле HTTP-сервиса метод-обработчик, с именем,
+               совпадающим с именем обработчика, заданном в реквизитах метода</dd>
+         
+         
+            <dt class="- topic/dt dt dlterm"><a class="- topic/xref xref" href="core00372.html">Аутентификация внешних программ</a></dt>
+            <dd class="- topic/dd dd">Если пользователь представляет собой не человека, а внешнюю информационную систему, то для аутентификации используются токены
+               доступа</dd>
+         
+         
+         
+            <dt class="- topic/dt dt dlterm" id="core00400__права" data-ofbid="core00400__права">Права</dt>
+            <dd class="- topic/dd dd">
+               <span class="- topic/ph ph">Элемент проекта вида <span class="+ topic/ph ui-d/uicontrol ph uicontrol">HttpСервис</span> обладает правом <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Вызов</span></span> (<a class="- topic/xref xref" href="core00248.html#core00248__Http%D0%A1%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%B0">подробнее</a>).</dd>
+            <dd class="- topic/dd dd ddexpand">
+               <span class="- topic/ph ph">Событие <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступа</span> следует <a class="- topic/xref xref" href="core00244.html#core00244__%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%B4%D0%B5%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D1%80%D0%BE%D0%B2%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0">обрабатывать</a> в <a class="- topic/xref xref" href="core00218.html#core00218__%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8Chttp%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%B0">модуле Http-сервиса</a>.</span></dd>
+         
+         
+            <dt class="- topic/dt dt dlterm"><a class="- topic/xref xref" href="core00171.html">Все свойства HTTP-сервиса</a></dt>
+            <dd class="- topic/dd dd">Здесь описано назначение всех свойств HTTP-сервиса, которые вы можете менять в проекте</dd>
+         
+      </dl>
+    </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

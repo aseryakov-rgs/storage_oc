@@ -1,0 +1,191 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="Интерфейс приложения строится из различных компонентов, которые могут располагаться в группах. Каждая группа располагает свои компоненты вертикально, горизонтально или, если это матричная группа, по ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00011"/><title>Размещение компонентов на экране</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00011.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00011.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00011" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Размещение компонентов на экране</h1>
+   <div class="- topic/body body">
+      
+      <p class="- topic/p p">Интерфейс приложения строится из различных компонентов, которые могут располагаться в группах. Каждая группа располагает свои компоненты
+         вертикально, горизонтально или, если это матричная группа, по какой-то сетке. Ось, по которой располагаются компоненты, называется главной
+         осью. Для горизонтальной группы это будет горизонтальная ось, для вертикальной — вертикальная.</p>
+      <p class="- topic/p p"><img class="- topic/image image" id="core00011__image_ytf_tns_hrb" src="../img/core00011/001.png"/>
+         <img class="- topic/image image" id="core00011__image_f15_tns_hrb" src="../img/core00011/002.png"/></p>
+      <p class="- topic/p p">Каждый компонент имеет свойства, позволяющие управлять его размерами и местоположением, такие как <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Ширина</span>,
+            <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Высота</span>, и т. д.</p>
+      <section class="- topic/section section" id="core00011__ШиринаВысота" data-ofbid="core00011__ШиринаВысота"><h2 class="- topic/title title sectiontitle">Ширина и Высота</h2>
+         
+         
+         <p class="- topic/p p"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Ширина</span> и <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Высота</span> — это самый простой способ указать компоненту конкретный размер в пикселях.
+            Если значение какого-либо из этих свойств отлично от нуля, то компонент будет иметь указанный размер. Несмотря на простоту этого способа,
+            не рекомендуется указывать компонентам конкретные размеры, так как это затрудняет для <span class="- topic/ph ph">«1С:Кабинета сотрудника»</span> адаптацию
+            компонентов к разным размерам экрана.</p>
+         <p class="- topic/p p">Если не задавать компоненту конкретные размеры, то <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> вычислит его размеры автоматически, например,ширину и
+            высоту группы. Они по умолчанию зависят от размера компонентов ее состава как по главной оси, так и по дополнительной. Если в вертикальную
+            группу поместить несколько компонентов с разными размерами, то ширина группы будет определяться самым широким компонентом состава, а
+            высота суммой высот всех компонентов:</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00011__image_axz_l4s_hrb" src="../img/core00011/003.png"/></p>
+      </section>
+      <section class="- topic/section section" id="core00011__section_dyl_krs_hrb" data-ofbid="core00011__section_dyl_krs_hrb"><h2 class="- topic/title title sectiontitle">МинимальнаяШирина и МинимальнаяВысота</h2>
+         
+         <p class="- topic/p p">Это минимальные размеры компонента в пикселях. Меньше этих размеров компонент не будет.</p>
+      </section>
+      <section class="- topic/section section" id="core00011__section_egk_krs_hrb" data-ofbid="core00011__section_egk_krs_hrb"><h2 class="- topic/title title sectiontitle">МаксимальнаяШирина и МаксимальнаяВысота</h2>
+         
+         <p class="- topic/p p">Это максимальные размеры компонента в пикселях. Больше этих размеров компонент не будет. </p>
+         <p class="- topic/p p">Эти свойства могут быть полезны в том случае, если у компонента включено растягивание, но хочется ограничить размер области, которую может
+            занять компонент при растягивании.</p>
+      </section>
+      <section class="- topic/section section" id="core00011__РастягиватьПоВертикалиРастягиватьПоГоризонтали" data-ofbid="core00011__РастягиватьПоВертикалиРастягиватьПоГоризонтали"><h2 class="- topic/title title sectiontitle">РастягиватьПоВертикали и РастягиватьПоГоризонтали</h2>
+         
+         <p class="- topic/p p">Эти свойства включают или выключают растягивание компонента по горизонтали или вертикали. Они имеют тип перечисления, со следующими
+            значениями: <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Авто</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Растягивать</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">НеРастягивать</span>.</p>
+         <p class="- topic/p p">Если установлено значение <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Авто</span>, то необходимость растягивания <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> определяет
+            автоматически.</p>
+         <p class="- topic/p p">Значение НеРастягивать означает, что <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> не будет растягивать компонент.</p>
+         <p class="- topic/p p">Значение Растягивать означает, что <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> будет растягивать компонент до размера его родительской группы.
+            Важной особенностью является то, что при включении растягивания у какого-то внутреннего компонента его родительские группы тоже начинают
+            растягиваться, если, конечно, растягивание у них не выключено вручную.</p>
+         <p class="- topic/p p">Например, в следующем примере включение растягивания у желтого компонента (переключение свойства
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">РастягиватьПоГоризонтали</span> с <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Авто</span> на <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Растягивать</span>) приводит к
+            растягиванию его родительской оранжевой группы. </p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00011__image_bpw_tts_hrb" src="../img/core00011/004.png"/></p>
+         <p class="- topic/p p">А у красной группы растягивание принудительно выключено (путем смены с <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Авто</span> на
+            <span class="+ topic/ph ui-d/uicontrol ph uicontrol">НеРастягивать</span>), поэтому дальше растягивание не распространяется, несмотря на то, что в синей группе ещё есть
+            место.</p>
+      </section>
+      <section class="- topic/section section" id="core00011__ВесПриРастягивании" data-ofbid="core00011__ВесПриРастягивании"><h2 class="- topic/title title sectiontitle">ВесПриРастягивании</h2>
+         
+         <p class="- topic/p p">Это свойство применяется только для растягивании по главной оси группы и позволяет задать пропорции места, занимаемого компонентом, по
+            отношению к его соседям. Стандартное значение 0 говорит о том, что каждый компонент занимает столько места, сколько ему надо, а остальное
+            место распределяется равномерно между всеми компонентами. </p>
+         <p class="- topic/p p">Если у одного компонента значение этого свойства больше, чем у другого компонента, например, в три раза, то и места этот компонент будет
+            занимать в три раза больше. </p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00011__image_xsh_k5s_hrb" src="../img/core00011/005.png"/></p>
+         <p class="- topic/p p">Аналогично и для нескольких компонентов: место в группе по главной оси распределяется в пропорции, определяемой значениями этого
+            свойства.</p>
+      </section>
+      <section class="- topic/section section" id="core00011__section_fmt_lss_hrb" data-ofbid="core00011__section_fmt_lss_hrb"><h2 class="- topic/title title sectiontitle">ВыравниваниеВГруппеПоГоризонтали и ВыравниваниеВГруппеПоВертикали</h2>
+         
+         <p class="- topic/p p">Данные свойства позволяют управлять индивидуальным положением компонента в группе, если размер группы больше размера, требуемого всем
+            компонентам ее содержимого. Например, если группа растягивается, а компоненты в ней нет.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00011__image_tf1_x5s_hrb" src="../img/core00011/006.png"/></p>
+         <p class="- topic/p p">При наличии конфликтных ситуаций, приоритет имеет первый компонент, с указанным выравниванием. Например, если у первого компонента в
+            группе указано положение в группе <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Конец</span>, а у второго <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Начало</span>, приоритет будет у первого
+            компонента и оба компонента окажутся в конце группы.</p>
+      </section>
+      <section class="- topic/section section" id="core00011__ВыравниваниеСодержимогоПоГоризонталиВыравниваниеСодержимогоПоВертикали_krs_hrb" data-ofbid="core00011__ВыравниваниеСодержимогоПоГоризонталиВыравниваниеСодержимогоПоВертикали_krs_hrb"><h2 class="- topic/title title sectiontitle">ВыравниваниеСодержимогоПоГоризонтали и ВыравниваниеСодержимогоПоВертикали</h2>
+         
+         <p class="- topic/p p">Данные свойства позволяют массово задать положение компонентов содержимого в группе, что бы не указывать их отдельно каждому компоненту.
+            При этом каждый компонент содержимого может переопределить это значение, установив нужное положение в собственное свойство
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ГоризонтальноеПоложениеВГруппе</span> или <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ВертикальноеПоложениеВГруппе</span>.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00011__image_bft_cws_hrb" src="../img/core00011/007.png"/></p>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#core00011__%D0%A8%D0%B8%D1%80%D0%B8%D0%BD%D0%B0%D0%92%D1%8B%D1%81%D0%BE%D1%82%D0%B0" data-tocid="core00011__ШиринаВысота">Ширина и Высота</a></div></li><li class="section-item"><div class="section-title"><a href="#core00011__section_dyl_krs_hrb" data-tocid="core00011__section_dyl_krs_hrb">МинимальнаяШирина и МинимальнаяВысота</a></div></li><li class="section-item"><div class="section-title"><a href="#core00011__section_egk_krs_hrb" data-tocid="core00011__section_egk_krs_hrb">МаксимальнаяШирина и МаксимальнаяВысота</a></div></li><li class="section-item"><div class="section-title"><a href="#core00011__%D0%A0%D0%B0%D1%81%D1%82%D1%8F%D0%B3%D0%B8%D0%B2%D0%B0%D1%82%D1%8C%D0%9F%D0%BE%D0%92%D0%B5%D1%80%D1%82%D0%B8%D0%BA%D0%B0%D0%BB%D0%B8%D0%A0%D0%B0%D1%81%D1%82%D1%8F%D0%B3%D0%B8%D0%B2%D0%B0%D1%82%D1%8C%D0%9F%D0%BE%D0%93%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D0%B8" data-tocid="core00011__РастягиватьПоВертикалиРастягиватьПоГоризонтали">РастягиватьПоВертикали и РастягиватьПоГоризонтали</a></div></li><li class="section-item"><div class="section-title"><a href="#core00011__%D0%92%D0%B5%D1%81%D0%9F%D1%80%D0%B8%D0%A0%D0%B0%D1%81%D1%82%D1%8F%D0%B3%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8" data-tocid="core00011__ВесПриРастягивании">ВесПриРастягивании</a></div></li><li class="section-item"><div class="section-title"><a href="#core00011__section_fmt_lss_hrb" data-tocid="core00011__section_fmt_lss_hrb">ВыравниваниеВГруппеПоГоризонтали и ВыравниваниеВГруппеПоВертикали</a></div></li><li class="section-item"><div class="section-title"><a href="#core00011__%D0%92%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%D0%9F%D0%BE%D0%93%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D0%B8%D0%92%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%A1%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%BC%D0%BE%D0%B3%D0%BE%D0%9F%D0%BE%D0%92%D0%B5%D1%80%D1%82%D0%B8%D0%BA%D0%B0%D0%BB%D0%B8_krs_hrb" data-tocid="core00011__ВыравниваниеСодержимогоПоГоризонталиВыравниваниеСодержимогоПоВертикали_krs_hrb">ВыравниваниеСодержимогоПоГоризонтали и ВыравниваниеСодержимогоПоВертикали</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

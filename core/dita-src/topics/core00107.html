@@ -1,0 +1,194 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="В операционной системе Windows : распакуйте архив дистрибутива, запустите файл 1ce-installer.exe от имени администратора. В операционной системе Linux : Распакуйте архив дистрибутива, откройте ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.relation" scheme="URI" content="../../../core/dita-src/topics/core00076.html"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00107"/><title>Установка и запуск сервера</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-toc-id" content="core00107-d1571e357"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00107.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00107.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00107" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../../../index.html"><span>Главная</span></a></span></li><li><span class="topicref" data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li><span class="topicref" data-id="core00076"><span class="title"><a href="../../../core/dita-src/topics/core00076.html">Установка</a></span></span></li><li class="active"><span class="topicref" data-id="core00107"><span class="title"><a href="../../../core/dita-src/topics/core00107.html">Сервер</a></span></span></li></ol></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
+  </span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 d-none d-md-block d-print-none">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="core00075-d1571e341" class="topicref" data-id="core00075" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action core00075-d1571e341-link" class="wh-expand-btn"></span><span class="title"><a href="../../../core/dita-src/topics/core00075.html" id="core00075-d1571e341-link">Сервер</a></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" aria-expanded="true"><span data-tocid="core00076-d1571e349" class="topicref" data-id="core00076" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action core00076-d1571e349-link" class="wh-expand-btn"></span><span class="title"><a href="../../../core/dita-src/topics/core00076.html" id="core00076-d1571e349-link">Установка</a></span></span><ul role="group" class="navbar-nav nav-list"><li role="treeitem" class="active"><span data-tocid="core00107-d1571e357" class="topicref" data-id="core00107" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../../core/dita-src/topics/core00107.html" id="core00107-d1571e357-link">Сервер</a></span></span></li><li role="treeitem"><span data-tocid="core00090-d1571e365" class="topicref" data-id="core00090" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../../core/dita-src/topics/core00090.html" id="core00090-d1571e365-link">PostgreSQL</a></span></span></li><li role="treeitem"><span data-tocid="core00089-d1571e373" class="topicref" data-id="core00089" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../../core/dita-src/topics/core00089.html" id="core00089-d1571e373-link">Microsoft SQL Server</a></span></span></li><li role="treeitem"><span data-tocid="core00104-d1571e381" class="topicref" data-id="core00104" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../../core/dita-src/topics/core00104.html" id="core00104-d1571e381-link">nginx</a></span></span></li><li role="treeitem"><span data-tocid="core00159-d1571e389" class="topicref" data-id="core00159" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../../../core/dita-src/topics/core00159.html" id="core00159-d1571e389-link">Модули криптографии</a></span></span></li></ul></li><li role="treeitem" aria-expanded="false"><span data-tocid="core00052-d1571e397" class="topicref" data-id="core00052" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action core00052-d1571e397-link" class="wh-expand-btn"></span><span class="title"><a href="../../../core/dita-src/topics/core00052.html" id="core00052-d1571e397-link">Устройство</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="core00077-d1571e453" class="topicref" data-id="core00077" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action core00077-d1571e453-link" class="wh-expand-btn"></span><span class="title"><a href="../../../core/dita-src/topics/core00077.html" id="core00077-d1571e453-link">Обслуживание</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="core00082-d1571e726" class="topicref" data-id="core00082" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action core00082-d1571e726-link" class="wh-expand-btn"></span><span class="title"><a href="../../../core/dita-src/topics/core00082.html" id="core00082-d1571e726-link">Справочная информация</a></span></span></li></ul></li></ul></div>
+                        </nav>
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Установка и запуск сервера</h1>
+   
+   <div class="- topic/body body">
+      
+      
+
+
+         <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">В операционной системе Windows</strong>: распакуйте архив дистрибутива, запустите файл 1ce-installer.exe от имени администратора.</p>
+         <div class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">В операционной системе Linux</strong>: Распакуйте архив дистрибутива, откройте терминал, перейдите в директорию с дистрибутивом и
+            выполните:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00107__codeblock_lg4_rcm_mrb" data-ofbid="core00107__codeblock_lg4_rcm_mrb"><code> sudo ./1ce-installer</code></pre></div>
+      
+      <section class="- topic/section section" id="core00107__section_rwt_3cm_mrb" data-ofbid="core00107__section_rwt_3cm_mrb"><h2 class="- topic/title title sectiontitle">Процесс установки</h2>
+         
+         <p class="- topic/p p">Начнется запуск «Установщика». «Установщик» кроссплатформенный, он имеет одинаковый (насколько это возможно) графический интерфейс на всех
+            перечисленных операционных системах.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00107__image_v45_mdm_mrb" src="../img/core00107/001.png"/></p>
+         <p class="- topic/p p">Через некоторое время «Установщик» покажет название и характеристики устанавливаемой версии <span class="- topic/ph ph">«1С:Кабинета сотрудника»</span>.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00107__image_ryb_xdm_mrb" src="../img/core00107/002.png"/></p>
+         
+         <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Проверка цифровой подписи</strong></p>
+         <p class="- topic/p p">Все компоненты комплекта поставки подписываются цифровой подписью. «Установщик» проверяет эту подпись и отображает результат проверки
+            рядом с названием версии.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00107__image_brn_d2m_mrb" src="../img/core00107/003.png"/></p>
+         
+         <p class="- topic/p p">Если отображается зеленая «медаль», значит, цифровая подпись успешно проверена и вы можете устанавливать дистрибутив.</p>
+         <p class="- topic/p p">Если отображается красный треугольник, значит, цифровая подпись не прошла проверку.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00107__image_bzz_d2m_mrb" src="../img/core00107/004.png"/></p>
+         
+         <p class="- topic/p p">В этом случае вы тоже можете установить дистрибутив, но на свой страх и риск. Цифровая подпись может не пройти проверку по двум причинам:
+            либо файлы дистрибутива были скомпрометированы (то есть это не те файлы, которые поставляет фирма «1С»), либо на вашем компьютере
+            неправильно настроена проверка цифровых подписей. Нажмите на красный треугольник, и вы получите более подробную информацию о проверке
+            цифровой подписи по каждому компоненту, входящему в комплект поставки.</p>
+         <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Назначение домашней директории установки при первом запуске</strong></p>
+         <p class="- topic/p p">Только при первом запуске нового «Установщика» вы можете выбрать домашнюю директорию, в которую будут устанавливаться все версии <span class="- topic/ph ph">«1С:Кабинета сотрудника»</span> и другие программы. Отдельная собственная домашняя директория, которую использует «Установщик»,
+            позволяет всегда иметь только одну копию <span class="- topic/ph ph">«1С:Кабинета сотрудника»</span> некоторой версии, без дублирования.</p>
+         <p class="- topic/p p">При следующих запусках «Установщика» вы уже не сможете изменить домашнюю директорию в его диалоге. Но при необходимости вы можете
+            перенести домашнюю директорию на любой диск, поставив ссылку на файловой системе на первоначальную директорию.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00107__image_ukc_k2m_mrb" src="../img/core00107/005.png"/></p>
+         <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Установка</strong></p>
+         <p class="- topic/p p">Чтобы начать установку, нажмите <strong class="+ topic/ph hi-d/b ph b">Установить</strong>. О ходе установки вас будет информировать индикатор.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00107__image_yqs_q2m_mrb" src="../img/core00107/006.png"/></p>
+         
+         <p class="- topic/p p">Когда установка закончится, ее результат будет показан на экране. Вы можете перейти по ссылке <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Панель управления будет доступна
+               после запуска</span>, чтобы дождаться запуска сервера и <a class="- topic/xref xref" href="core00091.html">изменить</a> пароль администратора.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00107__image_zdc_r2m_mrb" src="../img/core00107/007.png"/></p>
+         
+      </section>
+      <section class="- topic/section section" id="core00107__section_j2r_3cm_mrb" data-ofbid="core00107__section_j2r_3cm_mrb"><h2 class="- topic/title title sectiontitle">Результат установки</h2>
+         
+         <div class="- topic/p p">После установки сервер будет запущен автоматически, поэтому вы можете:<ul class="- topic/ul ul" id="core00107__ul_gjf_l3m_mrb" data-ofbid="core00107__ul_gjf_l3m_mrb">
+               <li class="- topic/li li"><a class="- topic/xref xref" href="core00095.html">проверить</a> его работоспособность из браузера (серверу требуется некоторое время для
+                  запуска);</li>
+               <li class="- topic/li li"><a class="- topic/xref xref" href="core00091.html">изменить</a> пароль администратора.</li>
+            </ul> В результате установки на компьютере будут созданы два каталога:<ul class="- topic/ul ul" id="core00107__ul_avm_hhm_mrb" data-ofbid="core00107__ul_avm_hhm_mrb">
+               <li class="- topic/li li">каталог исполняемых файлов сервера, он содержит, в частности:<ul class="- topic/ul ul" id="core00107__ul_bmd_nhm_mrb" data-ofbid="core00107__ul_bmd_nhm_mrb">
+                     <li class="- topic/li li">исполняемый файл (скрипт) для запуска сервера;</li>
+                     <li class="- topic/li li">каталог instance-template, в котором находится шаблон экземпляра сервера. Этот шаблон вы можете использовать для запуска
+                        других экземпляров сервера на этом же компьютере;</li>
+                  </ul></li>
+               <li class="- topic/li li"><dfn class="- topic/term term">каталог экземпляра сервера</dfn>; изначально в него копируется instance-template, а после
+                  запуска этот каталог содержит всю информацию об исполняющемся экземпляре сервера.</li>
+            </ul></div>
+         <p class="- topic/p p">Кроме этих каталогов будут созданы и запущены сервис (демон) для исполнения сервера. Для их запуска будет создан пользователь USR1CE
+            (usr1ce). </p>
+         <p class="- topic/p p">В разных операционных системах каталоги и службы имеют разные имена.</p>
+         <p class="- topic/p p" id="core00107__пути-виндовс" data-ofbid="core00107__пути-виндовс"><strong class="+ topic/ph hi-d/b ph b">В операционной системе Windows</strong></p>
+         <div class="- topic/p p">Каталог исполняемых файлов сервера (версия поставляемого сервера может отличаться от указанной здесь версии):
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00107__codeblock_z5y_skm_4rb" data-ofbid="core00107__codeblock_z5y_skm_4rb"><code><span class="- topic/ph ph">C:\Program Files\1C\1CE\components\1c-enterprise-element-server-1.0.0+22-windows-x86_64</span></code></pre></div>
+         <div class="- topic/p p">Каталог экземпляра сервера: <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00107__codeblock_h4w_tkm_4rb" data-ofbid="core00107__codeblock_h4w_tkm_4rb"><code><span class="- topic/ph ph">C:\ProgramData\1C\1CE\instances\1c-enterprise-element-server-with-ide</span></code></pre></div>
+         <div class="- topic/p p">Служба сервера: <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00107__codeblock_wnh_5km_4rb" data-ofbid="core00107__codeblock_wnh_5km_4rb"><code><span class="- topic/ph ph">1c-enterprise-element-server-with-ide</span></code></pre></div>
+         <p class="- topic/p p" id="core00107__пути-линукс" data-ofbid="core00107__пути-линукс"><strong class="+ topic/ph hi-d/b ph b">В операционной системе Linux</strong></p>
+         <div class="- topic/p p">Каталог исполняемых файлов сервера (версия поставляемого сервера может отличаться от указанной здесь версии):
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00107__codeblock_t2s_5km_4rb" data-ofbid="core00107__codeblock_t2s_5km_4rb"><code><span class="- topic/ph ph">/opt/1C/1CE/components/1c-enterprise-element-server-1.0.0+22-linux-x86_64</span></code></pre></div>
+         <div class="- topic/p p">Каталог экземпляра сервера: <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00107__codeblock_ply_5km_4rb" data-ofbid="core00107__codeblock_ply_5km_4rb"><code><span class="- topic/ph ph">/var/opt/1C/1CE/instances/1c-enterprise-element-server-with-ide</span></code></pre></div>
+         <div class="- topic/p p">Служба сервера: <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00107__codeblock_vdk_vkm_4rb" data-ofbid="core00107__codeblock_vdk_vkm_4rb"><code><span class="- topic/ph ph">1c-enterprise-element-server-with-ide</span></code></pre></div>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#core00107__section_rwt_3cm_mrb" data-tocid="core00107__section_rwt_3cm_mrb">Процесс установки</a></div></li><li class="section-item"><div class="section-title"><a href="#core00107__section_j2r_3cm_mrb" data-tocid="core00107__section_j2r_3cm_mrb">Результат установки</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

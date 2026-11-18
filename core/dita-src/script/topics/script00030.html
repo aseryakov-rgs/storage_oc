@@ -1,0 +1,277 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="description" content="Фрагмент программного кода, к которому можно обратиться из другого места программы называется методом. Данный раздел описывает особенности описания и использования методов."/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="script00030"/>        
+      <title>Методы</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../../"/><meta name="wh-source-relpath" content="core/dita-src/script/topics/script00030.dita"/><meta name="wh-out-relpath" content="core/dita-src/script/topics/script00030.html"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../../oxygen-webhelp/app/topic-page.js" src="../../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../../its.css"/></head>
+
+    <body id="script00030" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Методы</h1>
+   
+   <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc">Фрагмент программного кода, к которому можно обратиться из другого места программы называется <dfn class="- topic/term term">методом</dfn>. Данный раздел
+      описывает особенности описания и использования методов.</p>
+      <section class="- topic/section section" id="script00030__section_cpj_lz5_23b" data-ofbid="script00030__section_cpj_lz5_23b"><h2 class="- topic/title title sectiontitle">Общая информация</h2>
+         
+         <p class="- topic/p p">При разработке программы часто возникает необходимость повторного использования какого-либо фрагмента программы. Если нам нужно просто
+            повторить этот фрагмент несколько раз - можно использовать цикл. А если этот фрагмент необходимо вызывать из разных мест программы -
+            необходимо каким-то образом выделить программный код и оформить его специальным образом. Такой обособленный фрагмент кода называется
+               <dfn class="- topic/term term">метод</dfn>. Метод всегда возвращает какое-либо значение. Подробнее о возвращаемом значении метода будет сказано <a class="- topic/xref xref" href="#script00030__%D0%B2%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%82-%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5">далее</a>.</p>
+      </section>
+      <section class="- topic/section section" id="script00030__section_mjn_11v_23b" data-ofbid="script00030__section_mjn_11v_23b"><h2 class="- topic/title title sectiontitle">Используемые определения</h2>
+         
+         <p class="- topic/p p">В процессе описания методов будут использоваться несколько терминов. Они уже могли использоваться и ранее в данном документе, но сейчас мы
+            дадим им конкретные определения.</p>
+         <dl class="- topic/dl dl">
+            
+               <dt class="- topic/dt dt dlterm">Определение метода</dt>
+               <dd class="- topic/dd dd">Место в исходном коде, где создан метод.</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Заголовок метода</dt>
+               <dd class="- topic/dd dd">Часть определения метода, которая содержит ключевое слово <span class="+ topic/keyword pr-d/apiname keyword apiname">метод</span>, имя метода, описание формальных параметров в
+                  круглых скобках и комментарий, описывающий назначение метода.</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm" id="script00030__тело-метода" data-ofbid="script00030__тело-метода">Тело метода</dt>
+               <dd class="- topic/dd dd">Инструкции, расположенные между заголовком метода и символом <code class="+ topic/ph pr-d/codeph ph codeph">;</code>, описывающим завершение метода.</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Вызов метода</dt>
+               <dd class="- topic/dd dd">Место в тексте программы, где указывается имя метода с указанием фактических параметров и использованием результата работы (только
+                  в случае возвращаемого значения).</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Определение параметров и передача аргументов</dt>
+               <dd class="- topic/dd dd"><dfn class="- topic/term term">Параметры</dfn> (<dfn class="- topic/term term">формальные параметры</dfn>) - это имена переменных, через которые тело метода получает доступ к
+                  значениям, которые предоставляются методу во время его вызова. <dfn class="- topic/term term">Аргументы</dfn> (<dfn class="- topic/term term">фактические параметры</dfn>) - это
+                  значения, которые указываются во время вызова метода. Сопоставление формального параметра и фактического параметра выполняется по
+                  порядку следования значения в вызове метода (позиционное сопоставление). Предоставление аргументов методу при его вызове называется
+                     <dfn class="- topic/term term">передача параметров</dfn>.</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Возврат значения</dt>
+               <dd class="- topic/dd dd">Передача вызывающему программному коду какого-либо значения при завершении работы метода. Метод не обязательно должен возвращать
+                  какое-либо значение.</dd>
+            
+         </dl>
+      </section>
+      <section class="- topic/section section" id="script00030__метод-подробнее" data-ofbid="script00030__метод-подробнее"><h2 class="- topic/title title sectiontitle">Определение метода</h2>
+         
+         <p class="- topic/p p">Прежде чем использовать метод, его надо определить. Определение метода выглядит следующим образом:</p>
+         <div class="- topic/p p">
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xbsl"><span class="+ topic/keyword pr-d/apiname keyword apiname">экспорт</span>
+<span class="+ topic/keyword pr-d/apiname keyword apiname">метод</span> <dfn class="- topic/term term">ИмяМетода</dfn><span class="+ topic/keyword pr-d/apiname keyword apiname">(</span>[<dfn class="- topic/term term">ФормальныйПараметр1</dfn>[<span class="+ topic/keyword pr-d/apiname keyword apiname">,</span> <dfn class="- topic/term term">ФормальныйПараметр2</dfn>[<span class="+ topic/keyword pr-d/apiname keyword apiname">,</span> ...]]]<span class="+ topic/keyword pr-d/apiname keyword apiname">)</span>[<span class="+ topic/keyword pr-d/apiname keyword apiname">:</span> <dfn class="- topic/term term">Тип</dfn>]
+    // тело метода 
+   [<dfn class="- topic/term term">возврат</dfn>[ <dfn class="- topic/term term">Значение</dfn>]]
+<span class="+ topic/keyword pr-d/apiname keyword apiname">;</span></pre>
+         </div>
+         <p class="- topic/p p">Каждый формальный параметр описывается следующим образом:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xbsl"><dfn class="- topic/term term">ИмяФормальногоПараметра</dfn><span class="+ topic/keyword pr-d/apiname keyword apiname">:</span> <dfn class="- topic/term term">ТипПараметра</dfn>[ <span class="+ topic/keyword pr-d/apiname keyword apiname">=</span> <dfn class="- topic/term term">ЗначениеПоУмолчанию</dfn>]</pre>
+         <p class="- topic/p p"><dfn class="- topic/term term">ИмяФормальногоПараметра</dfn> задает имя формального параметра в соответствии со стандартными правилами формирования имен. </p>
+         <p class="- topic/p p"><dfn class="- topic/term term">ТипПараметра</dfn> указывает, соответственно, тип формального параметра (в том числе и составной). </p>
+         <div class="- topic/p p"><dfn class="- topic/term term">ЗначениеПоУмолчанию</dfn> является необязательным элементом описания формального параметра и позволяет указать значение по
+            умолчанию, т.е. значение, которое будет присвоено формальному параметру, если при вызове метода данный параметра пропущен. Не допускается
+            пропускать указание значения при вызове метода, если для соответствующего формального параметра не указано значение по умолчанию. В
+            качестве значения по умолчанию выступает любое выражение, которое может быть вычислено на этапе компиляции:<ul class="- topic/ul ul" id="script00030__ul_uyk_q3v_nmb" data-ofbid="script00030__ul_uyk_q3v_nmb">
+               <li class="- topic/li li"></li>
+            </ul></div>
+      </section>
+      <section class="- topic/section section" id="script00030__section_pg5_5z5_23b" data-ofbid="script00030__section_pg5_5z5_23b"><h2 class="- topic/title title sectiontitle">Особенности передачи параметров</h2>
+         
+         <p class="- topic/p p">Переменные хранят ссылки на объекты. В методы передаются значения переменных. Таким образом можно в методе изменять состояние объекта, но
+            нельзя изменить значение переменной, передаваемого в качестве аргумента метода.</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    пер ДляТеста = 5
+    Тестовый(ДляТеста)
+    Консоль.Записать("ДляТеста = " + ДляТеста)
+;
+
+метод Тестовый(Параметр1: Число)
+    Параметр1 = 6
+;</code></pre>
+         <p class="- topic/p p">В данном примере, значение переменной <code class="+ topic/ph pr-d/codeph ph codeph">ДляТеста</code> в методе <code class="+ topic/ph pr-d/codeph ph codeph">Скрипт()</code> будет равно 5 и до вызова метода
+               <code class="+ topic/ph pr-d/codeph ph codeph">Тестовый()</code> и после вызова этого метода. Такое поведение обеспечивает передача параметра "по значению".</p>
+         <p class="- topic/p p">Однако, если в метод передается объект, который располагает методами для изменения своего содержимого, то ситуация будет немного другой.
+            Рассмотрим пример:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    пер ДляТеста = [1, 2]
+    Тестовый(ДляТеста)
+    Консоль.Записать("ДляТеста = " + ДляТеста)
+;
+
+метод Тестовый(Параметр1: Массив)
+    Параметр1.Очистить()
+;</code></pre>
+         <p class="- topic/p p">В этом примере до выполнения метода <code class="+ topic/ph pr-d/codeph ph codeph">Тестовый()</code>, в массиве <code class="+ topic/ph pr-d/codeph ph codeph">ДляТеста</code> будет 2 значения: 1 и 2. После вызова
+            метода <code class="+ topic/ph pr-d/codeph ph codeph">Тестовый()</code>, в массиве не будет ни одного элемента. В то же время, если в методе <code class="+ topic/ph pr-d/codeph ph codeph">Тестовый()</code> мы
+            попробуем присвоить формальному параметру <code class="+ topic/ph pr-d/codeph ph codeph">Параметр1</code> какое-либо значение - это не приведет к каким-либо изменениям
+            аргумента (переменной <code class="+ topic/ph pr-d/codeph ph codeph">ДляТеста</code>).</p>
+      </section>
+      <section class="- topic/section section" id="script00030__возврат-подробнее" data-ofbid="script00030__возврат-подробнее"><h2 class="- topic/title title sectiontitle">Завершение метода и возвращаемое значение</h2>
+         
+         <p class="- topic/p p">Метод завершает свою работу после того, как завершается исполнение тела метода. Другим способ прервать исполнение метода является указание
+            в необходимом месте метода ключевого слова <span class="+ topic/keyword pr-d/apiname keyword apiname">возврат</span>. </p>
+         <p class="- topic/p p">Если метод должен вернуть какое-либо значение, необходимо это значение указать в качестве параметра ключевого слова
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">возврат</span>. При этом тип фактически возвращаемого значения должен совпадать с типом возвращаемого значения, который
+            указан при описании метода. Тип возвращаемого значения указывается после окончания списка формальных параметров метода. Тип указывается
+            после символа ":" (двоеточие). Однако, если метод, в котором нет ключевого слова <span class="+ topic/keyword pr-d/apiname keyword apiname">возврат</span> (или, другими словами, в
+            котором не предполагается возвращаемого значения) будет использован в каком-то выражении или в качестве правого значения инструкции
+            присваивания, то в качестве возвращаемого значения такого метода будет выступать значение <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span>.</p>
+      </section>
+      <section class="- topic/section section" id="script00030__section_jtt_fqb_t3b" data-ofbid="script00030__section_jtt_fqb_t3b"><h2 class="- topic/title title sectiontitle">Повторное определение (перегрузка) методов</h2>
+         
+         <p class="- topic/p p">При разработке может возникнуть необходимость создать метод, который отличается количеством или типом параметров. При этом выполняемое
+            действие существенно зависит от типа или количества параметров. Такое поведение можно реализовать двумя способами: составным типом
+            параметров и значениями параметров по умолчанию или повторным определением метода. Повторное определение метода заключается в том, что вы
+            можете описать несколько методов с одним именем. Метод, который имеет несколько заголовков с разным составом параметров будет называться
+               <dfn class="- topic/term term">перегруженным</dfn>. При этом нужно помнить, что любой вызов перегруженного метода в исходном коде должен позволять компилятору
+               <strong class="+ topic/ph hi-d/b ph b">однозначно</strong> определить, какой вариант метода необходимо использовать в данном случае. Если определить используемый вариант метода
+            во время компиляции не представляется возможным, произойдет ошибка компиляции. Перегруженные методы не могут различаться только типом
+            возвращаемого значения.</p>
+         <div class="- topic/p p">В том случае, если требуется выполнить перегрузку обработчика событий, то следует учитывать следующее:<ul class="- topic/ul ul" id="script00030__ul_ef4_mgd_t3b" data-ofbid="script00030__ul_ef4_mgd_t3b">
+               <li class="- topic/li li">Не поддерживается перегрузка обработчиков событий, которые имеют фиксированные имена (например, <span class="+ topic/keyword pr-d/apiname keyword apiname">ПриЗаписи</span>,
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">ПриОткрытии</span> и т.д.).</li>
+            </ul></div>
+         <p class="- topic/p p">Рассмотрим примеры корректного и некорректного определения перегруженных методов:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xbsl">1. метод Пример1(Параметр1: Строка|Число)
+2. метод Пример1(Параметр1: Строка)
+3. метод Пример1(Параметр1: Строка|Булево)
+
+4. метод Пример2(Параметр1: Объект)
+5. метод Пример2(Параметр1: Число)
+6. метод Пример2(Параметр1: Число, Параметр2: любой)
+
+7. метод Пример3(Параметр1: Строка)
+8. метод Пример3(Параметр1: Число)
+9. метод Пример3(Параметр1: Строка, Параметр2: любой = 22)
+
+10. метод Пример4(Параметр1: Строка): Строка
+11. метод Пример4(Параметр1: Число): Число
+12. метод Пример4(Параметр1: Строка): Число</pre>
+         <p class="- topic/p p">Метод <code class="+ topic/ph pr-d/codeph ph codeph">Пример1()</code> (строки 1, 2 и 3) нельзя переопределить предложенным способом. Текущее определение типов параметра метода
+            не позволяет однозначно определить, какой вариант метода необходимо вызвать. Причина в том, что <code class="+ topic/ph pr-d/codeph ph codeph">Параметр1</code> описан с
+            использованием составного типа, при этом в каждом варианте метода присутствует тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>.</p>
+         <p class="- topic/p p">Метод <code class="+ topic/ph pr-d/codeph ph codeph">Пример2()</code> (строки 4, 5 и 6) можно описать только исключив строку 5. Причиной является тот факт, что тип
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">Объект</span> является базовым для всех типов <span class="- topic/ph ph">«1С:Кабинета сотрудника»</span>. В то же время, заголовок метода в строке
+            6 имеет другое количество параметров.</p>
+         <p class="- topic/p p">Метод <code class="+ topic/ph pr-d/codeph ph codeph">Пример3()</code> (строки 7, 8, 9) можно описать только исключив строку 9. Причиной является то, что второй параметр имеет
+            значение по умолчанию, а следовательно указав один параметр (первый), компилятор не будет понимать, какой из вариантов метода
+            использовать.</p>
+         <p class="- topic/p p">Наконец, метод <code class="+ topic/ph pr-d/codeph ph codeph">Пример4()</code> (строки 10, 11, 12) может быть описан или строками 10 и 11 или строками 11 и 12. Причиной
+            является тот факт, что перегруженные методы не могут отличаться только типом возвращаемого значения. Поэтому вариант со строками 10 и 12
+            отпадает.</p>
+         <div class="- topic/p p">Также стоит отметить несколько особенностей, касающихся перегруженных методов:<ul class="- topic/ul ul" id="script00030__ul_cvb_zfd_t3b" data-ofbid="script00030__ul_cvb_zfd_t3b">
+               <li class="- topic/li li">Основное назначение перегрузки метода - это удобство разработчика.</li>
+               <li class="- topic/li li">Если описываемый алгоритм изначально ориентирован на то, что в качестве параметров передаются составные типы - не нужно выполнять
+                  перегрузку такого метода.</li>
+               <li class="- topic/li li">Если алгоритм, описываемый методом, различается от типа переданного параметра, то стоит рассмотреть возможность перегрузки метода,
+                  реализующего такой алгоритм.</li>
+               <li class="- topic/li li">Перегруженными могут быть не только методы, но и конструкторы.</li>
+            </ul></div>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#script00030__section_cpj_lz5_23b" data-tocid="script00030__section_cpj_lz5_23b">Общая информация</a></div></li><li class="section-item"><div class="section-title"><a href="#script00030__section_mjn_11v_23b" data-tocid="script00030__section_mjn_11v_23b">Используемые определения</a></div></li><li class="section-item"><div class="section-title"><a href="#script00030__%D0%BC%D0%B5%D1%82%D0%BE%D0%B4-%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5" data-tocid="script00030__метод-подробнее">Определение метода</a></div></li><li class="section-item"><div class="section-title"><a href="#script00030__section_pg5_5z5_23b" data-tocid="script00030__section_pg5_5z5_23b">Особенности передачи параметров</a></div></li><li class="section-item"><div class="section-title"><a href="#script00030__%D0%B2%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%82-%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5" data-tocid="script00030__возврат-подробнее">Завершение метода и возвращаемое значение</a></div></li><li class="section-item"><div class="section-title"><a href="#script00030__section_jtt_fqb_t3b" data-tocid="script00030__section_jtt_fqb_t3b">Повторное определение (перегрузка) методов</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

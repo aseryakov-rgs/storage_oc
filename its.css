@@ -1,0 +1,133 @@
+body {
+	font-family: arial, helvetica, sans-serif;
+	/* font-size: 0.85em; */
+}
+caption {
+    margin-block-end: 0.3em;
+}
+.familylinks {
+    margin-block-start: 1em;
+}
+table {
+	font-size: 1em;
+}
+.sthead .stentry {
+	background-color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+th {
+    font-weight: normal;
+}
+a:link {
+	color: #0388a6;
+	text-decoration: none;
+}
+a:visited {
+	color: #0388a6;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+	text-decoration: none;
+}
+/* Белая ссылка 1С в футере */
+.wh_footer a {
+  color: #ffffff;
+}
+.dlterm {
+	margin-top: 1em;
+}
+pre {
+	white-space: pre;
+	font-family: monospace;
+	font-size: 1.1em;
+	line-height: 1.48;
+	background-color: #EEE;
+	border-color: #D0D0D0;
+	padding: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+    border-radius: 7px;
+	margin: .5em 0 .5em .5em;
+}
+.apiname {
+  padding: 1px 4px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  color: #d14;
+  white-space: nowrap;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  border-radius: 3px;
+}
+
+/* Исправляет неправильное отображение картинок в примечаниях в 23 версии */
+div.note > span.note__title {
+  font-weight: bold;
+  padding: 5px 5px 5px 30px;
+  display: inline-block;
+}
+
+/* Заголовок примечания trouble */
+span.troubletitle {
+	font-weight: bold;
+}
+
+/* Примечания */
+div.note,
+div.tip,
+div.important,
+div.warning,
+div.fastpath,
+div.remember,
+div.trouble {
+	margin-left: 30px;
+	border-style: dotted;
+	border-width: 2px;
+	padding: 5px;
+	border-radius: .5em;
+}
+
+div.note {
+	border-color: #F9A81B;
+}
+div.tip {
+	border-color: #0367B3;
+}
+div.important {
+	border-color: #5F3299;
+}
+div.warning {
+	border-color: #F01D26;
+}
+div.fastpath {
+	border-color: #00AFAF;
+}
+div.remember {
+	border-color: #FEF102;
+}
+div.trouble {
+	border-color: #02A762;
+}
+
+/* Адаптация шаблона WebHelp with Feedback */
+.wh_header,
+.navbar,
+.wh_publication_title > a,
+.wh_content_area {
+   padding: 0 0;
+}
+.wh_search_input {
+   padding: 1em 0 1em 0;
+}
+.wh_tools {
+  margin: 1em 1em;
+}
+.wh_logo {
+   padding: 1em 1em 0 0;
+}

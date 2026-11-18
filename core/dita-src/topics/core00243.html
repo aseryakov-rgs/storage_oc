@@ -1,0 +1,183 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="В простейшем случае «1С:Кабинет сотрудника» создает систему прав, которая не требует программирования. Права контролируются на уровне элементов проекта для нескольких предопределенных категорий ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00243"/><title>Автоматическая выдача прав</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00243.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00243.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00243" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Автоматическая выдача прав</h1>
+   
+   <div class="- topic/body body">
+      <p class="- topic/p p">В простейшем случае <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> создает систему прав, которая не требует программирования. Права контролируются на уровне
+         элементов проекта для нескольких предопределенных категорий пользователей.</p>
+      <div class="- topic/note note note note_note"><span class="note__title">Примечание:</span> В приложении этот вариант может совмещаться с более сложным вариантом, использующим самостоятельное формирование дескрипторов
+         и выдачу ключей (<a class="- topic/xref xref" href="core00244.html">подробнее</a>).</div>
+      <section class="- topic/section section" id="core00243__section_gj2_dyn_5qb" data-ofbid="core00243__section_gj2_dyn_5qb"><h2 class="- topic/title title sectiontitle">Предопределенные классы ключей доступа</h2><p class="- topic/p p">В <span class="- topic/ph ph">«1С:Кабинете сотрудника»</span> существует
+            три предопределенных класса ключей доступа, каждый из которых имеет единственный ключ:</p><ul class="- topic/ul ul" id="core00243__ul_bw5_3yn_5qb" data-ofbid="core00243__ul_bw5_3yn_5qb">
+            <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">КлючДоступаДляВсех</span> — этот ключ <span class="- topic/ph ph">
+                  <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span></span> автоматически выдает всем пользователям, в том числе анонимным; <div class="- topic/note note note note_note" id="core00243__note_m4l_pyn_5qb" data-ofbid="core00243__note_m4l_pyn_5qb"><span class="note__title">Примечание:</span> Коротко о том, кто такой анонимный пользователь. Интерфейсные компоненты:<ul class="- topic/ul ul" id="core00243__ul_hnr_hdh_prb" data-ofbid="core00243__ul_hnr_hdh_prb">
+                     <li class="- topic/li li"><a class="- topic/xref xref" href="core00007.html">СтандартноеКлиентскоеПриложениеСРазделами</a> и</li>
+                     <li class="- topic/li li"><a class="- topic/xref xref" href="core00268.html">ПроизвольноеКлиентскоеПриложение</a></li>
+                  </ul>имеют свойство <span class="+ topic/keyword pr-d/apiname keyword apiname">РежимАутентификации</span>. Стандартно это свойство имеет значение
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">Аутентифицированный</span>, но вы можете установить его в значение <span class="+ topic/keyword pr-d/apiname keyword apiname">НеАутентифицированный</span> и тогда
+                  пользователь не будет перенаправлен на страницу аутентификации при входе в приложение, то есть будет анонимным. Такого пользователя
+                  не будет в списке подключенных пользователей и <code class="+ topic/ph pr-d/codeph ph codeph">Пользователи.ТекущийПользователь</code> будет возвращать
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span>.</div></li>
+            <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">КлючДоступаДляАутентифицированных</span> — этот ключ <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> автоматически выдает всем
+               пользователям приложения кроме анонимных;</li>
+            <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">КлючДоступаАдминистратора</span> — этот ключ <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> автоматически выдает всем
+               пользователям приложения, являющимся его администраторами (свойство подключенного пользователя
+                  <code class="+ topic/ph pr-d/codeph ph codeph">Пользователи.Объект.Администратор</code>)</li>
+         </ul>Перечисленные ключи <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> использует самостоятельно, об этом будет рассказано <a class="- topic/xref xref" href="#core00243__section_rtz_dyn_5qb">далее</a>.<p class="- topic/p p">Кроме перечисленных ключей в <span class="- topic/ph ph">«1С:Кабинете сотрудника»</span> существует
+            еще один предопределенный класс ключей доступа <span class="+ topic/keyword pr-d/apiname keyword apiname">КлючДоступаПользователя</span>. Этот класс имеет параметр
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Пользователь</span>. Благодаря этому параметру класс имеет столько ключей (экземпляров класса), сколько существует
+            подключенных пользователей. <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> поддерживает уникальность ключей по набору значений их параметров и, значит,
+            для каждого пользователя она будет создавать свой уникальный ключ. Например, ключ для текущего
+            пользователя:</p><pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>пер Ключ = новый КлючДоступаПользователя.Объект(Пользователи.ТекущийПользователь)</code></pre><p class="- topic/p p">В отличие от
+            перечисленных выше трех классов ключей, ключи класса <span class="+ topic/keyword pr-d/apiname keyword apiname">КлючДоступаПользователя</span>
+            <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> самостоятельно только выдает пользователям, но никак не связывает с элементами проекта (не создает
+            дескрипторы доступа). Вы можете самостоятельно создать дескрипторы, если ваша система прав построена таким образом, что конкретное право
+            нужно ставить в соответствие конкретному пользователю, без промежуточных понятий типа «роль» и т. п. (<a class="- topic/xref xref" href="core00244.html">подробнее</a>).</p></section>
+      <section class="- topic/section section" id="core00243__section_rtz_dyn_5qb" data-ofbid="core00243__section_rtz_dyn_5qb"><h2 class="- topic/title title sectiontitle">Построение автоматической системы прав</h2>
+         
+         <p class="- topic/p p">В автоматической системе прав права контролируются на уровне элементов проекта. Например, если чтение справочника разрешено — значит можно
+            читать все его элементы. Если чтение справочника запрещено — ни один из элементов справочника прочитать нельзя.</p>
+         <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Управление доступом в проекте</strong></p>
+         <p class="- topic/p p">Каждый вид элементов проекта, для которого поддерживается управление доступом, имеет фиксированный набор прав, предоставляемый <span class="- topic/ph ph">«1С:Кабинетом сотрудника»</span>. Например, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Справочник</span> имеет права <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Создание</span>,
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Чтение</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Изменение</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Удаление</span>.</p>
+         <p class="- topic/p p">Каждый элемент таких видов имеет свойство <span class="+ topic/ph ui-d/uicontrol ph uicontrol">КонтрольДоступа</span>. В этом свойстве вы можете перечислить, каким образом
+            будет контролироваться доступ к тому или иному праву, например:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00243__codeblock_znl_3ch_prb" data-ofbid="core00243__codeblock_znl_3ch_prb"><code>КонтрольДоступа: 
+    Создание: РазрешеноАутентифицированным
+    Чтение: РазрешеноВсем
+    ПоУмолчанию: РазрешеноАдминистраторам</code></pre>
+         <p class="- topic/p p"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">ПоУмолчанию</span> — это специальное обозначение, которое подразумевает все права, не перечисленные явно.</p>
+         <div class="- topic/p p"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешеноАутентифицированным</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешеноВсем</span> и
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешеноАдминистраторам</span> — это способы контроля доступа, использующие предопределенные ключи:<ul class="- topic/ul ul" id="core00243__ul_pfx_2d4_5qb" data-ofbid="core00243__ul_pfx_2d4_5qb">
+               <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешеноАутентифицированным</span> использует <span class="+ topic/keyword pr-d/apiname keyword apiname">КлючДоступаДляАутентифицированных</span>;</li>
+               <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешеноВсем</span> использует <span class="+ topic/keyword pr-d/apiname keyword apiname">КлючДоступаДляВсех</span>;</li>
+               <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешеноАдминистраторам</span> использует <span class="+ topic/keyword pr-d/apiname keyword apiname">КлючДоступаАдминистратора</span>. </li>
+            </ul></div>
+         <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Вычисление дескрипторов и выдача ключей</strong></p>
+         <p class="- topic/p p">Благодаря такому описанию элемента проекта <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> автоматически запишет для него дескрипторы доступа со
+            следующими ключами:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>&lt;Создание: КлючДоступаДляАутентифицированных&gt;
+&lt;Чтение: КлючДоступаДляВсех&gt;
+&lt;Изменение, Удаление: КлючДоступаАдминистратора&gt;</code></pre>
+         <p class="- topic/p p">При создании этих ключей доступа <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> сразу же заполнит системную таблицу ключей пользователя, т. к. в
+            предопределенном элементе проекта <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Пользователи</span> есть вся информация для привязки того или иного ключа к пользователю
+               (<a class="- topic/xref xref" href="core00225.html">подробнее</a>).</p>
+         <div class="- topic/p p">В дальнейшем эта система прав доступа будет поддерживаться следующим образом:<ul class="- topic/ul ul" id="core00243__ul_brl_5d4_5qb" data-ofbid="core00243__ul_brl_5d4_5qb">
+               <li class="- topic/li li">При подключении к приложению нового пользователя <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> автоматически запишет для него нужный ему
+                  предопределенный ключ;</li>
+               <li class="- topic/li li">При изменении существующего пользователя (например, обычному пользователю включили признак того, что он является администратором)
+                     <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> также автоматически (при записи пользователя) обновит ключ с
+                     <span class="+ topic/ph ui-d/uicontrol ph uicontrol">КлючДоступаДляВсех</span> на <span class="+ topic/ph ui-d/uicontrol ph uicontrol">КлючДоступаАдминистратора</span>.</li>
+            </ul></div>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#core00243__section_gj2_dyn_5qb" data-tocid="core00243__section_gj2_dyn_5qb">Предопределенные классы ключей доступа</a></div></li><li class="section-item"><div class="section-title"><a href="#core00243__section_rtz_dyn_5qb" data-tocid="core00243__section_rtz_dyn_5qb">Построение автоматической системы прав</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

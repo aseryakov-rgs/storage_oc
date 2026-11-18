@@ -1,0 +1,205 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="В любом проекте есть пользователи. Это предопределенный элемент проекта, который описывает пользователей, подключенных к приложению. Этот элемент проекта создает «1С:Кабинет сотрудника» . Его не видно ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00226"/><title>Типы встроенного языка, порождаемые элементом проекта вида «Пользователи»</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00226.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00226.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00226" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Типы встроенного языка, порождаемые элементом проекта вида «Пользователи»</h1>
+   
+   <div class="- topic/body body">
+      <p class="- topic/p p">В любом проекте есть пользователи. Это предопределенный элемент проекта, который описывает пользователей, подключенных к приложению. </p>
+      <p class="- topic/p p">Этот элемент проекта создает <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span>. Его не видно в структуре проекта. Но во встроенном языке существует несколько типов
+         для работы с его данными:</p>
+      <ul class="- topic/ul ul" id="core00226__ul_x52_bkb_sqb" data-ofbid="core00226__ul_x52_bkb_sqb">
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи.Ссылка</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи.Объект</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи.Данные</span></li>
+      </ul>
+      <section class="- topic/section section" id="core00226__section_ikf_pkb_sqb" data-ofbid="core00226__section_ikf_pkb_sqb"><h2 class="- topic/title title sectiontitle">Тип Пользователи</h2>
+         
+         <p class="- topic/p p">Тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи</span> доступен на сервере. </p>
+         <p class="- topic/p p">Он содержит методы для работы с пользователями, подключенным в приложение и ссылками на них. Например, <span class="+ topic/keyword pr-d/apiname keyword apiname">Найти()</span>,
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ПолучитьСсылку()</span>, <span class="+ topic/keyword pr-d/apiname keyword apiname">Подключить()</span>, <span class="+ topic/keyword pr-d/apiname keyword apiname">СделатьАдминистратором()</span>.</p>
+         <p class="- topic/p p">Также он позволяет пересчитать ключи доступа — <span class="+ topic/keyword pr-d/apiname keyword apiname">ПересчитатьКлючиДоступа()</span> (<a class="- topic/xref xref" href="core00245.html#core00245__section_zy3_wb4_5qb">подробнее</a>).</p>
+         <p class="- topic/p p">Этот тип не имеет конструктора и имеет единственный объект, обращение к которому выполняется по имени типа:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00226__codeblock_em5_4xb_sqb" data-ofbid="core00226__codeblock_em5_4xb_sqb"><code>// Получить менеджера пользователей
+пер МенеджерПользователей = Пользователи</code></pre>
+      </section>
+      <section class="- topic/section section" id="core00226__section_ec4_44p_nrb" data-ofbid="core00226__section_ec4_44p_nrb"><h2 class="- topic/title title sectiontitle">Модуль пользователей</h2>
+         
+         <p class="- topic/p p">Поскольку <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Пользователи</span> — это предопределенный элемент проекта, который вам недоступен, вы не можете изменять
+            непосредственно его модули. Однако вы можете расширить этот предопределенный элемент проекта, добавив в свой проект элемент вида
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Пользователи</span>. И уже у этого своего элемента вы можете создать модуль.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00226__image_a21_j4v_nrb" src="../img/core00226/001.png"/></p>
+         <p class="- topic/p p">В проекте модуль, расширяющий тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи</span>, называется <dfn class="- topic/term term">модулем пользователей</dfn>. Он исполняется на
+            сервере. </p>
+         <p class="- topic/p p">Вы можете расширить этот тип, добавив в него собственные публичные методы. Например, метод, возвращающий список
+            пользователей-администраторов:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00226__codeblock_v24_b4b_sqb" data-ofbid="core00226__codeblock_v24_b4b_sqb"><code>// Возвращает список пользователей-администраторов
+@проект
+метод <strong class="+ topic/ph hi-d/b ph b">Администраторы()</strong>: Массив&lt;Пользователи.Ссылка&gt;
+   пер Администраторы: Массив&lt;Пользователи.Ссылка&gt;
+
+   // Получить список пользователей-администраторов.
+   // ...
+
+   возврат Администраторы
+;</code></pre>
+         <p class="- topic/p p">Этот метод будет доступен в других модулях:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00226__codeblock_yks_j4b_sqb" data-ofbid="core00226__codeblock_yks_j4b_sqb"><code>// Вызов метода разработчика у менеджера пользователей
+пер СписокАдминистраторов = Пользователи.<strong class="+ topic/ph hi-d/b ph b">Администраторы()</strong></code></pre>
+      </section>
+      <section class="- topic/section section" id="core00226__section_ij3_fpb_sqb" data-ofbid="core00226__section_ij3_fpb_sqb"><h2 class="- topic/title title sectiontitle">Тип Пользователи.Ссылка</h2>
+         
+         <p class="- topic/p p">Тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи.Ссылка</span> доступен и на клиенте, и на сервере. </p>
+         <p class="- topic/p p">Он предназначен для описания ссылки на одного подключенного пользователя. </p>
+         <p class="- topic/p p">Он имеет конструктор <span class="+ topic/keyword pr-d/apiname keyword apiname">новый Пользователи.Ссылка()</span>, который позволяет создать новую ссылку по <span class="+ topic/keyword pr-d/apiname keyword apiname">Ууид</span> и
+            метод <span class="+ topic/keyword pr-d/apiname keyword apiname">ЗагрузитьОбъект()</span>, который есть только на сервере и который позволяет получить объект
+               (<span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи.Объект</span>) из ссылки (<span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи.Ссылка</span>).</p>
+      </section>
+      <section class="- topic/section section" id="core00226__section_tsx_fpb_sqb" data-ofbid="core00226__section_tsx_fpb_sqb"><h2 class="- topic/title title sectiontitle">Тип Пользователи.Объект</h2>
+         
+         <p class="- topic/p p">Тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи.Объект</span> доступен на сервере. </p>
+         <p class="- topic/p p">Объект этого типа содержит данные одного подключенного пользователя и предназначен только для их чтения. </p>
+      </section>
+      <section class="- topic/section section" id="core00226__section_wkm_r4p_nrb" data-ofbid="core00226__section_wkm_r4p_nrb"><h2 class="- topic/title title sectiontitle">Модуль пользователя</h2>
+         
+         <p class="- topic/p p">Поскольку <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Пользователи</span> — это предопределенный элемент проекта, который вам недоступен, вы не можете изменять
+            непосредственно его модули. Однако вы можете расширить этот предопределенный элемент проекта, добавив в свой проект элемент вида
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Пользователи</span>. И уже у этого своего элемента вы можете создать модуль.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00226__image_tcm_lsv_nrb" src="../img/core00226/002.png"/></p>
+         <p class="- topic/p p">Модуль, расширяющий тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи.Объект</span>, называется <dfn class="- topic/term term">модулем пользователя</dfn>. Он исполняется на сервере. В
+            нем вы можете обработать такие события как:</p>
+         <ul class="- topic/ul ul" id="core00226__ul_q1c_r5b_sqb" data-ofbid="core00226__ul_q1c_r5b_sqb">
+            <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">ПослеПодключения</span></li>
+            <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">ПослеИзменения</span></li>
+            <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">ПослеОтключения</span></li>
+         </ul>
+         <p class="- topic/p p">Вы можете расширить этот тип, добавив в модуль пользователя собственные публичные методы. Например, метод, обновляющий сведения о
+            пользователе:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00226__codeblock_g3t_t5b_sqb" data-ofbid="core00226__codeblock_g3t_t5b_sqb"><code>@проект
+метод <strong class="+ topic/ph hi-d/b ph b">ОбновитьСведенияПользователя()</strong>
+    // Записать сведения о пользователе в отдельный справочник.
+    // ...
+;</code></pre>
+         <p class="- topic/p p">Этот метод будет доступен в других модулях:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00226__codeblock_h3t_t5b_sqb" data-ofbid="core00226__codeblock_h3t_t5b_sqb"><code>// Вызов собственного метода пользователя
+// В переменной Администратор находится значение типа Пользователи.Объект
+Администратор.<strong class="+ topic/ph hi-d/b ph b">ОбновитьСведенияПользователя()</strong></code></pre>
+      </section>
+      <section class="- topic/section section" id="core00226__section_uyl_gpb_sqb" data-ofbid="core00226__section_uyl_gpb_sqb"><h2 class="- topic/title title sectiontitle">Тип Пользователи.Данные</h2>
+         
+         <p class="- topic/p p">Тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи.Данные</span> доступен на сервере. </p>
+         <p class="- topic/p p">Он используется только в обработчике события <span class="+ topic/keyword pr-d/apiname keyword apiname">Пользователи.Объект.ПослеИзменения</span>.</p>
+         <p class="- topic/p p">Он не имеет конструктора.  <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> сам создает объект этого типа при наступлении упомянутого события.  Он
+            передает в обработчик события объект этого типа, наполненный «старыми» значениями.</p>
+      </section>
+      
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#core00226__section_ikf_pkb_sqb" data-tocid="core00226__section_ikf_pkb_sqb">Тип Пользователи</a></div></li><li class="section-item"><div class="section-title"><a href="#core00226__section_ec4_44p_nrb" data-tocid="core00226__section_ec4_44p_nrb">Модуль пользователей</a></div></li><li class="section-item"><div class="section-title"><a href="#core00226__section_ij3_fpb_sqb" data-tocid="core00226__section_ij3_fpb_sqb">Тип Пользователи.Ссылка</a></div></li><li class="section-item"><div class="section-title"><a href="#core00226__section_tsx_fpb_sqb" data-tocid="core00226__section_tsx_fpb_sqb">Тип Пользователи.Объект</a></div></li><li class="section-item"><div class="section-title"><a href="#core00226__section_wkm_r4p_nrb" data-tocid="core00226__section_wkm_r4p_nrb">Модуль пользователя</a></div></li><li class="section-item"><div class="section-title"><a href="#core00226__section_uyl_gpb_sqb" data-tocid="core00226__section_uyl_gpb_sqb">Тип Пользователи.Данные</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

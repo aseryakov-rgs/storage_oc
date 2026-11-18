@@ -1,0 +1,299 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="Свойства экземпляров компонентов интерфейса могут быть заданы не конкретным значением, а некоторой функцией. Иными словами они могут быть вычисляемыми. Прямым аналогом этого являются формулы ячеек в ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00018"/><title>Вычисляемые свойства экземпляров компонентов</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00018.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00018.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00018" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Вычисляемые свойства экземпляров компонентов</h1>
+   <div class="- topic/body body">
+      
+      <p class="- topic/p p">Свойства экземпляров компонентов интерфейса могут быть заданы не конкретным значением, а некоторой функцией. Иными словами они могут быть
+         вычисляемыми. Прямым аналогом этого являются формулы ячеек в Excel.</p>
+      <p class="- topic/p p">Например, в форме расположены поле ввода и флажок. </p>
+      <p class="- topic/p p"><img class="- topic/image image" id="core00018__image_ezg_clt_hrb" src="../img/core00018/001.png"/></p>
+      <p class="- topic/p p">Вы можете указать, что видимость поля ввода будет зависеть от состояния флажка, установлен он или нет.</p>
+      <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00018__codeblock_d2m_flt_hrb" data-ofbid="core00018__codeblock_d2m_flt_hrb"><code>ВидЭлемента: КомпонентИнтерфейса
+Ид: 29354d98-2467-4f72-a2b0-985e28106372
+Имя: ФормаПолеВводаФлажок
+Наследует:
+    Тип: Форма
+    ВключатьВАвтоИнтерфейс: Ложь
+    Содержимое:
+        Тип: ОбычнаяГруппа
+        Ориентация: Горизонтальная
+        Содержимое:
+            -
+                Тип: Флажок
+                <strong class="+ topic/ph hi-d/b ph b">Имя: МойФлажок</strong>
+            -
+                Тип: ПолеВвода
+                Имя: МоеПолеВвода
+                <strong class="+ topic/ph hi-d/b ph b">Видимость: =Компоненты.МойФлажок.Значение</strong></code></pre>
+      <p class="- topic/p p">Важным моментом здесь является то, что свойства компонентов не только вычисляемые, но и наблюдаемые. То есть при их изменении
+            (<code class="+ topic/ph pr-d/codeph ph codeph">МойФлажок.Значение</code>) автоматически выполняется пересчет зависящих от них вычисляемых свойств
+            (<code class="+ topic/ph pr-d/codeph ph codeph">МоеПолеВвода.Видимость</code>).</p>
+      <p class="- topic/p p">
+         <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> отслеживает изменение свойств компонентов и автоматически выполняет зависящую от них системную логику,
+         например:</p>
+      <ul class="- topic/ul ul" id="core00018__ul_k2d_llt_hrb" data-ofbid="core00018__ul_k2d_llt_hrb">
+         <li class="- topic/li li">обновление интерфейса, если свойство влияет на внешний вид компонента;</li>
+         <li class="- topic/li li">обновление данных, если свойство влияет на их выборку;</li>
+         <li class="- topic/li li">обновление отображаемых в компоненте данных при изменении свойства, ссылающегося на эти данные.</li>
+      </ul>
+      <div class="- topic/p p">В результате пример будет работать следующим образом:<ul class="- topic/ul ul" id="core00018__ul_ivk_fmt_hrb" data-ofbid="core00018__ul_ivk_fmt_hrb">
+            <li class="- topic/li li">если флажок сброшен, то виден только он;</li>
+            <li class="- topic/li li">если флажок установлен, то виден он и поле ввода.</li>
+         </ul></div>
+      <p class="- topic/p p"><img class="- topic/image image" id="core00018__image_a4s_tmt_hrb" src="../img/core00018/002.png"/></p>
+      <section class="- topic/section section" id="core00018__section_zfp_1nt_hrb" data-ofbid="core00018__section_zfp_1nt_hrb"><h2 class="- topic/title title sectiontitle">Методы значений</h2>
+         
+         <p class="- topic/p p">Как вы наверное заметили <code class="+ topic/ph pr-d/codeph ph codeph">Компоненты.МойФлажок.Значение</code> — это конструкция встроенного языка, которая обращается к объекту
+            типа <span class="+ topic/keyword pr-d/apiname keyword apiname">ФормаПолеВводаФлажок.Компоненты</span> (<a class="- topic/xref xref" href="core00267.html#ess00021__section_bnf_1k4_zqb">подробнее</a>) и
+            получает от него именованный компонент содержимого <code class="+ topic/ph pr-d/codeph ph codeph">МойФлажок</code> и далее значение этого флажка типа
+            <span class="+ topic/keyword pr-d/apiname keyword apiname">Булево</span>.</p>
+         <p class="- topic/p p">Это говорит о том, что при описании свойств компонентов вы можете использовать и другие возможности встроенного языка, например, методы
+            значений.</p>
+         <p class="- topic/p p">В этом примере значение флажка регулирует доступность поля ввода, а в само поле ввода записывается представление значения флажка:</p>
+         <div class="- topic/p p">
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00018__codeblock_xn1_14t_hrb" data-ofbid="core00018__codeblock_xn1_14t_hrb"><code>ВидЭлемента: КомпонентИнтерфейса
+Ид: 29354d98-2467-4f72-a2b0-985e28106372
+Имя: ФормаПолеВводаФлажок
+Наследует:
+    Тип: Форма
+    ВключатьВАвтоИнтерфейс: Ложь
+    Содержимое:
+        Тип: ОбычнаяГруппа
+        Ориентация: Горизонтальная
+        Содержимое:
+            -
+                Тип: Флажок
+                <strong class="+ topic/ph hi-d/b ph b">Имя: МойФлажок</strong>
+            -
+                Тип: ПолеВвода
+                Имя: МоеПолеВвода
+                Доступность: =Компоненты.МойФлажок.Значение
+                <strong class="+ topic/ph hi-d/b ph b">Значение: =Компоненты.МойФлажок.Значение.Представление()</strong></code></pre>
+         </div>
+         <p class="- topic/p p">Пример работает следующим образом:</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00018__image_ejx_s4t_hrb" src="../img/core00018/003.png"/></p>
+      </section>
+      <section class="- topic/section section" id="core00018__section_wkm_bnt_hrb" data-ofbid="core00018__section_wkm_bnt_hrb"><h2 class="- topic/title title sectiontitle">Методы модулей</h2>
+         
+         <p class="- topic/p p">Если для вычисления значения свойства компонента вам требуется более сложный алгоритм, вы можете разместить его в одном из модулей.
+            Например в модуле самого компонента интерфейса, в данном случае в модуле формы <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ФормаПолеВводаФлажок</span>:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00018__codeblock_vpx_z4t_hrb" data-ofbid="core00018__codeblock_vpx_z4t_hrb"><code>метод ЗначениеДляПоля(Флажок: Булево): Строка
+    выбор Флажок
+    когда Истина
+        возврат "Поле доступно"
+    иначе
+        возврат "Поле недоступно"
+    ;
+;</code></pre>
+         <p class="- topic/p p">А в свойстве компонента просто обратиться к этому методу:</p>
+         <div class="- topic/p p">
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00018__codeblock_vln_cpt_hrb" data-ofbid="core00018__codeblock_vln_cpt_hrb"><code>ВидЭлемента: КомпонентИнтерфейса
+Ид: 29354d98-2467-4f72-a2b0-985e28106372
+Имя: ФормаПолеВводаФлажок
+Наследует:
+    Тип: Форма
+    ВключатьВАвтоИнтерфейс: Ложь
+    Содержимое:
+        Тип: ОбычнаяГруппа
+        Ориентация: Горизонтальная
+        Содержимое:
+            -
+                Тип: Флажок
+                <strong class="+ topic/ph hi-d/b ph b">Имя: МойФлажок</strong>
+            -
+                Тип: ПолеВвода
+                Имя: МоеПолеВвода
+                Доступность: =Компоненты.МойФлажок.Значение
+                <strong class="+ topic/ph hi-d/b ph b">Значение: =ЗначениеДляПоля(Компоненты.МойФлажок.Значение) </strong></code></pre>
+         </div>
+         <p class="- topic/p p">Пример работает следующим образом:</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00018__image_tyc_4pt_hrb" src="../img/core00018/004.png"/></p>
+         <p class="- topic/p p">Если, например, в качестве флажка вы хотите использовать не стандартный компонент, экземпляр которого вы описываете прямо тут, а компонент
+            интерфейса, добавленный в проект, то вы тоже можете обращаться к методам, описанным в его модулях. Например, к методу
+               <code class="+ topic/ph pr-d/codeph ph codeph">СвоеЗначениеСтрокой()</code>:</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00018__image_ev1_cst_hrb" src="../img/core00018/005.png"/></p>
+         <p class="- topic/p p">Единственное, о чем нужно позаботиться, это о том, чтобы метод был виден снаружи модуля. Например, с помощью модификатора
+               <code class="+ topic/ph pr-d/codeph ph codeph">@подсистема</code> (<a class="- topic/xref xref" href="core00164.html#core00164__section_nt5_jh5_yqb">подробнее</a>):</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00018__codeblock_xsz_mst_hrb" data-ofbid="core00018__codeblock_xsz_mst_hrb"><code><strong class="+ topic/ph hi-d/b ph b">@подсистема</strong>
+метод СвоеЗначениеСтрокой(): Строка
+
+    выбор Значение
+    когда Истина
+        возврат "Поле доступно"
+    иначе
+        возврат "Поле недоступно"
+    ;
+;</code></pre>
+      </section>
+      <section class="- topic/section section" id="core00018__ВычисляемыеСвойстваТаблиц" data-ofbid="core00018__ВычисляемыеСвойстваТаблиц"><h2 class="- topic/title title sectiontitle">Вычисляемые свойства таблиц</h2>
+         
+         <p class="- topic/p p">При описании вычисляемых свойств колонок таблицы (<a class="- topic/xref xref" href="core00253.html">СтандартнаяКолонкаТаблицы</a>, <a class="- topic/xref xref" href="core00254.html">ПроизвольнаяКолонкаТаблицы</a>) вы можете использовать дополнительный параметр
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ДанныеЭлемента</span>. В него передаются данные строки таблицы, тип которых зависит от источника таблицы. </p>
+         <p class="- topic/p p">Например, источником таблицы может являться динамический список и тогда <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ДанныеЭлемента</span> будут иметь тип
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">СтрокаДинамическогоСписка</span>. Эти данные вы можете использовать для того, чтобы выбрать подходящее оформление для
+            колонки <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Возраст</span>, например:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00018__codeblock_tmd_wb5_hrb" data-ofbid="core00018__codeblock_tmd_wb5_hrb"><code>ВидЭлемента: КомпонентИнтерфейса
+Ид: 1612399b-4b7d-4dda-82e0-9d4110d9bcc8
+Имя: ФормаТаблица
+Наследует:
+    Тип: Форма
+    ВключатьВАвтоИнтерфейс: Ложь
+    Содержимое:
+        Тип: Таблица
+        Имя: Сетка
+        <strong class="+ topic/ph hi-d/b ph b">Источник:</strong>
+            <strong class="+ topic/ph hi-d/b ph b">Тип: ДинамическийСписок</strong>
+            ОсновнаяТаблица:
+                Таблица: Сотрудники
+            Поля:
+                -
+                    Выражение: Код
+                -
+                    Выражение: ФИО
+                -
+                    Выражение: Возраст
+            Порядок: 
+                -
+                    Тип: ЭлементПорядка
+                    Поле: Код
+                    НаправлениеСортировки: ПоВозрастанию                            
+        Колонки:
+            -
+                Тип: СтандартнаяКолонкаТаблицы
+                Заголовок: Код
+                ПолеЗначения: Код
+            -
+                Тип: СтандартнаяКолонкаТаблицы
+                Заголовок: ФИО
+                ПолеЗначения: ФИО
+            -
+                Тип: СтандартнаяКолонкаТаблицы
+                Заголовок: Возраст
+                ПолеЗначения: Возраст
+                <strong class="+ topic/ph hi-d/b ph b">СтилиОформления: =ОформлениеКолонки(ДанныеЭлемента)</strong></code></pre>
+         <p class="- topic/p p">В модуле формы метод <code class="+ topic/ph pr-d/codeph ph codeph">ОформлениеКолонки()</code> может выглядеть следующим образом:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00018__codeblock_e1w_cc5_hrb" data-ofbid="core00018__codeblock_e1w_cc5_hrb"><code>метод ОформлениеКолонки(ДанныеЭлемента: Объект?):  Массив&lt;СтильОформления&gt;
+    если ((ДанныеЭлемента как СтрокаДинамическогоСписка).Данные["Возраст"] как Число) &lt; 40
+        возврат [СтильОформления.ЦветКоннотацияПоложительная]
+    иначе
+        возврат [СтильОформления.ЦветКоннотацияОтрицательная]
+    ;
+;</code></pre>
+         <p class="- topic/p p">Здесь сначала <code class="+ topic/ph pr-d/codeph ph codeph">ДанныеЭлемента</code> нужно привести к типу <span class="+ topic/keyword pr-d/apiname keyword apiname">СтрокаДинамическогоСписка</span>, т. к. <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> не может самостоятельно определить их тип. После этого возраст, полученный из соответствия
+               <code class="+ topic/ph pr-d/codeph ph codeph">Данные</code>, тоже нужно привести к типу <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span>, чтобы была возможность использовать его в операции
+            сравнения.</p>
+         <p class="- topic/p p">Метод возвращает один из стилей оформления, которые <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> применит к колонке таблицы.</p>
+         <p class="- topic/p p">В результате возраст меньше сорока будет показан зеленым цветом, а остальные значения - красным.</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00018__image_hyc_dd5_hrb" src="../img/core00018/006.png"/></p>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#core00018__section_zfp_1nt_hrb" data-tocid="core00018__section_zfp_1nt_hrb">Методы значений</a></div></li><li class="section-item"><div class="section-title"><a href="#core00018__section_wkm_bnt_hrb" data-tocid="core00018__section_wkm_bnt_hrb">Методы модулей</a></div></li><li class="section-item"><div class="section-title"><a href="#core00018__%D0%92%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D1%8F%D0%B5%D0%BC%D1%8B%D0%B5%D0%A1%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86" data-tocid="core00018__ВычисляемыеСвойстваТаблиц">Вычисляемые свойства таблиц</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

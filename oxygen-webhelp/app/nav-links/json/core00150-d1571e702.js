@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Загрузить","href":"core\/dita-src\/topics\/core00087.html","attributes":{"data-id":"core00087"},"menu":{"hasChildren":false},"tocID":"core00087-d1571e710","topics":[]},{"title":"Скачать","href":"core\/dita-src\/topics\/core00151.html","attributes":{"data-id":"core00151"},"menu":{"hasChildren":false},"tocID":"core00151-d1571e718","topics":[]}]});

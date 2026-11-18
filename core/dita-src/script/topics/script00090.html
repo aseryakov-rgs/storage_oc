@@ -1,0 +1,235 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="В языке поддерживается стандартный набор арифметических операций: сложение, вычитание, умножение, деление. Кроме того, поддерживаются операции возведение в степень, смена знака и получения остатка от ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="script00090"/><title>Арифметические операции</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../../"/><meta name="wh-source-relpath" content="core/dita-src/script/topics/script00090.dita"/><meta name="wh-out-relpath" content="core/dita-src/script/topics/script00090.html"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../../oxygen-webhelp/app/topic-page.js" src="../../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../../its.css"/></head>
+
+    <body id="script00090" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Арифметические операции</h1>
+   
+   <div class="- topic/body concept/conbody body conbody">
+      <p class="- topic/p p">В языке поддерживается стандартный набор арифметических операций: сложение, вычитание, умножение, деление. Кроме того, поддерживаются
+         операции возведение в степень, смена знака и получения остатка от деления. Применимость арифметических операций зависит от типов
+         операндов:</p>
+      <div class="- topic/p p">
+         <ul class="- topic/ul ul">
+            <li class="- topic/li li"><div class="- topic/p p">Операция сложения: <span class="+ topic/keyword pr-d/apiname keyword apiname">+</span>. Операция применима для следующих типов:<div class="simpletable-container"><table class="- topic/simpletable simpletable"><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead><tr class="- topic/sthead sthead">
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__1">Операция</th>
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__2">Результат</th>
+                     </tr></thead><tbody><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span> + <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__2"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span> + <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__2"><span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">ДатаВремя</span> + <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__2"><span class="+ topic/keyword pr-d/apiname keyword apiname">ДатаВремя</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">Дата</span> + <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__2"><span class="+ topic/keyword pr-d/apiname keyword apiname">Дата</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">Время</span> + <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__2"><span class="+ topic/keyword pr-d/apiname keyword apiname">Время</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">Момент</span> + <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__2"><span class="+ topic/keyword pr-d/apiname keyword apiname">Момент</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span> + <span class="+ topic/keyword pr-d/apiname keyword apiname">Объект</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__2"><span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span> + <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__2"><span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span></td>
+                     </tr></tbody></table></div></div>
+               <div class="- topic/p p">Здесь:<ul class="- topic/ul ul">
+                     <li class="- topic/li li">при операции вида <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span> + <span class="+ topic/keyword pr-d/apiname keyword apiname">Объект</span> (конкатенации со строкой) объекты нестрокового типа
+                        неявно преобразуются в строку с помощью метода <span class="+ topic/keyword pr-d/apiname keyword apiname">ВСтроку()</span>;</li>
+                     <li class="- topic/li li">при операции вида <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span> + <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span> значение <span class="+ topic/keyword pr-d/apiname keyword apiname">Неопределено</span>
+                        преобразуется в строку <code class="+ topic/ph pr-d/codeph ph codeph">"undefined"</code>.</li>
+                  </ul></div></li>
+            <li class="- topic/li li"><p class="- topic/p p">Операция вычитания: <span class="+ topic/keyword pr-d/apiname keyword apiname">-</span>. Операция применима для следующих типов:</p>
+               <div class="- topic/p p"><div class="simpletable-container"><table class="- topic/simpletable simpletable"><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead><tr class="- topic/sthead sthead">
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__19">Операция</th>
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__20">Результат</th>
+                     </tr></thead><tbody><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__19"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span> - <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__20"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__19"><span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span> - <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__20"><span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__19"><span class="+ topic/keyword pr-d/apiname keyword apiname">ДатаВремя</span> - <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__20"><span class="+ topic/keyword pr-d/apiname keyword apiname">ДатаВремя</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__19"><span class="+ topic/keyword pr-d/apiname keyword apiname">Дата</span> - <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__20"><span class="+ topic/keyword pr-d/apiname keyword apiname">Дата</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__19"><span class="+ topic/keyword pr-d/apiname keyword apiname">Время</span> - <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__20"><span class="+ topic/keyword pr-d/apiname keyword apiname">Время</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__19"><span class="+ topic/keyword pr-d/apiname keyword apiname">Момент</span> - <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__20"><span class="+ topic/keyword pr-d/apiname keyword apiname">Момент</span></td>
+                     </tr></tbody></table></div></div></li>
+            <li class="- topic/li li"><p class="- topic/p p">Операция умножения: <span class="+ topic/keyword pr-d/apiname keyword apiname">*</span>. Операция применима для следующих типов:</p>
+               <div class="- topic/p p"><div class="simpletable-container"><table class="- topic/simpletable simpletable"><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead><tr class="- topic/sthead sthead">
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__33">Операция</th>
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__34">Результат</th>
+                     </tr></thead><tbody><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__33"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span> * <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__34"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__33"><span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span> * <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__34"><span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                     </tr></tbody></table></div></div></li>
+            <li class="- topic/li li"><p class="- topic/p p">Операция деления: <span class="+ topic/keyword pr-d/apiname keyword apiname">/</span>. Операция применима для следующих типов:</p>
+               <div class="- topic/p p"><div class="simpletable-container"><table class="- topic/simpletable simpletable"><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead><tr class="- topic/sthead sthead">
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__39">Операция</th>
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__40">Результат</th>
+                     </tr></thead><tbody><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__39"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span> / <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__40"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__39"><span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span> / <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__40"><span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                     </tr></tbody></table></div></div></li>
+            <li class="- topic/li li"><p class="- topic/p p">Операция получения остатка от деления: <span class="+ topic/keyword pr-d/apiname keyword apiname">%</span>. Операция применима для следующих типов:</p>
+               <div class="- topic/p p"><div class="simpletable-container"><table class="- topic/simpletable simpletable"><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead><tr class="- topic/sthead sthead">
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__45">Операция</th>
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__46">Результат</th>
+                     </tr></thead><tbody><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__45"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span> % <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__46"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                     </tr></tbody></table></div></div></li>
+            <li class="- topic/li li" id="script00090__возведение-в-степень" data-ofbid="script00090__возведение-в-степень"><p class="- topic/p p">Операция возведения в степень: <span class="+ topic/keyword pr-d/apiname keyword apiname">**</span>. Операция применима для следующих типов:</p>
+               <div class="- topic/p p"><div class="simpletable-container"><table class="- topic/simpletable simpletable"><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead><tr class="- topic/sthead sthead">
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__возведение-в-степень__stentry__1">Операция</th>
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__возведение-в-степень__stentry__2">Результат</th>
+                     </tr></thead><tbody><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__возведение-в-степень__stentry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span> ** <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__возведение-в-степень__stentry__2"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                     </tr></tbody></table></div></div></li>
+            <li class="- topic/li li"><p class="- topic/p p">Операция изменения знака: <span class="+ topic/keyword pr-d/apiname keyword apiname">-</span> (унарный минус). Операция применима для следующих типов:</p>
+               <div class="- topic/p p"><div class="simpletable-container"><table class="- topic/simpletable simpletable"><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead><tr class="- topic/sthead sthead">
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__53">Операция</th>
+                        <th class="- topic/stentry stentry" scope="col" id="script00090__stentry__54">Результат</th>
+                     </tr></thead><tbody><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__53">- <span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__54"><span class="+ topic/keyword pr-d/apiname keyword apiname">Число</span></td>
+                     </tr><tr class="- topic/strow strow">
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__53">- <span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                        <td class="- topic/stentry stentry" headers="script00090__stentry__54"><span class="+ topic/keyword pr-d/apiname keyword apiname">Длительность</span></td>
+                     </tr></tbody></table></div></div></li>
+         </ul>
+      </div>
+      <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Приоритет операций</h2>
+         
+         <div class="- topic/p p">При вычислении арифметических выражений используется следующий приоритет вычисления (в порядке уменьшения приоритета):<ol class="- topic/ol ol" id="script00090__ol_ngy_bfr_hlb" data-ofbid="script00090__ol_ngy_bfr_hlb">
+               <li class="- topic/li li">Выражения в круглых скобках.</li>
+               <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">-</span> (унарный минус).</li>
+               <li class="- topic/li li">Операция <span class="+ topic/keyword pr-d/apiname keyword apiname">**</span>.</li>
+               <li class="- topic/li li">Операции <span class="+ topic/keyword pr-d/apiname keyword apiname">*</span>, <span class="+ topic/keyword pr-d/apiname keyword apiname">/</span>, <span class="+ topic/keyword pr-d/apiname keyword apiname">%</span>.</li>
+               <li class="- topic/li li">Операция <span class="+ topic/keyword pr-d/apiname keyword apiname">+</span>, <span class="+ topic/keyword pr-d/apiname keyword apiname">-</span>.</li>
+            </ol></div>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

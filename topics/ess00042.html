@@ -1,0 +1,140 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="Общая схема работы «1С:Кабинета сотрудника» выглядит следующим образом: Центральным компонентом системы является сервер . Сервер исполняет приложение , которое реализует всю прикладную ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="ess00042"/><title>Общая схема работы «1С:Кабинета сотрудника»</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../"/><meta name="wh-toc-id" content="ess00042-d1571e291"/><meta name="wh-source-relpath" content="topics/ess00042.dita"/><meta name="wh-out-relpath" content="topics/ess00042.html"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../its.css"/></head>
+
+    <body id="ess00042" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../index.html" class=" wh_logo d-none d-sm-block "><img src="../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="../index.html"><span>Главная</span></a></span></li><li class="active"><span class="topicref" data-id="ess00042"><span class="title"><a href="../topics/ess00042.html">Общая схема работы</a></span></span></li></ol></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Общая схема работы
+		<span class="- topic/ph ph">«1С:Кабинета сотрудника»</span></h1>
+	
+    <div class="- topic/body body">
+		
+        <p class="- topic/p p">Общая схема работы
+			<span class="- topic/ph ph">«1С:Кабинета сотрудника»</span> выглядит следующим образом:</p>
+		<p class="- topic/p p"><img class="- topic/image image" id="ess00042__image_ars_vh3_qnb" src="../img/ess00042/001.png"/></p>
+		<p class="- topic/p p">Центральным компонентом системы является <dfn class="- topic/term term">сервер</dfn>. </p>
+		<p class="- topic/p p">Сервер исполняет <dfn class="- topic/term term">приложение</dfn>, которое реализует всю прикладную функциональность. Приложение использует внешнюю <a class="- topic/xref xref" href="../core/dita-src/topics/core00108.html">СУБД</a> для хранения своих данных.</p>
+		<div class="- topic/p p" id="ess00042__приложения" data-ofbid="ess00042__приложения">
+			<span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> работает только совместно с одним из приложений 1С:Предприятия 8:<div class="- topic/div div">
+			<ul class="- topic/ul ul">
+				<li class="- topic/li li"><a class="- topic/xref xref" href="https://v8.1c.ru/hrm/" target="_blank" rel="external noopener">«1С:Зарплата и управление персоналом 8»</a>;</li>
+				<li class="- topic/li li"><a class="- topic/xref xref" href="https://v8.1c.ru/statehrm/" target="_blank" rel="external noopener">«1С:Зарплата и кадры государственного учреждения
+					8»</a>;</li>
+				<li class="- topic/li li"><a class="- topic/xref xref" href="https://v8.1c.ru/erp/" target="_blank" rel="external noopener">«1С:ERP Управление предприятием»</a>;</li>
+				<li class="- topic/li li"><a class="- topic/xref xref" href="https://v8.1c.ru/ka/" target="_blank" rel="external noopener">«1С:Комплексная автоматизация»</a>.</li>
+			</ul>
+			<div class="- topic/note note note note_note"><span class="note__title">Примечание:</span> В документации для примера используется приложение «1С:Зарплата и управление персоналом 8». В остальных прикладных решениях все
+				действия выполняются аналогичным образом.</div>
+		</div></div>
+		<p class="- topic/p p">Из этих приложений
+			<span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> получает списки сотрудников, а также данные, необходимые для ответа на запросы сотрудников.</p>
+		<p class="- topic/p p">Как правило сотрудники находятся во внешней сети и подключаются к
+			<span class="- topic/ph ph">«1С:Кабинету сотрудника»</span> через Интернет. Чтобы такое подключение было безопасным, используется <a class="- topic/xref xref" href="../core/dita-src/topics/core00105.html">обратный
+			прокси-сервер</a>, который транслирует запросы пользователей серверу и наоборот.</p>
+		<p class="- topic/p p">Для работы с
+			<span class="- topic/ph ph">«1С:Кабинетом сотрудника»</span> сотрудники могут использовать браузер или мобильное приложение.</p>
+    	<p class="- topic/p p">Администраторы приложения используют <a class="- topic/xref xref" href="../core/dita-src/topics/core00114.html"><dfn class="- topic/term term">панель управления сервера</dfn></a>. Она позволяет настраивать
+			как сам сервер, так и приложения, исполняющиеся на нем.</p>
+    </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

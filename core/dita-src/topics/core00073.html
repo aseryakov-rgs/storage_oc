@@ -1,0 +1,312 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="Поле для ввода и редактирования данных разных типов. Иерархия наследования Компонент (абстрактный) ПолеВвода Свойства ВыравниваниеСодержимогоПоГоризонтали Способ выравнивания текста в поле ввода: ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00073"/><title>Свойства компонента интерфейса, унаследованного от компонента «ПолеВвода»</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00073.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00073.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00073" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Свойства компонента интерфейса, унаследованного от компонента «ПолеВвода»</h1>
+   
+   <div class="- topic/body body">
+      <p class="- topic/p p">Поле для ввода и редактирования данных разных типов. </p>
+      <p class="- topic/p p"><img class="- topic/image image" id="core00073__image_qnj_lh5_frb" src="../img/core00163/033.png"/></p>
+      <section class="- topic/section section" id="core00073__section_yxc_y2s_crb" data-ofbid="core00073__section_yxc_y2s_crb"><h2 class="- topic/title title sectiontitle">Иерархия наследования</h2>
+         
+         <div class="- topic/div div" id="core00073__иерархия">
+            <ul class="- topic/ul ul" id="core00073__ul_wmp_vds_crb" data-ofbid="core00073__ul_wmp_vds_crb">
+               <li class="- topic/li li">Компонент (абстрактный)<ul class="- topic/ul ul" id="core00073__ul_pmx_xds_crb" data-ofbid="core00073__ul_pmx_xds_crb">
+                     <li class="- topic/li li"><a class="- topic/xref xref" href="core00073.html">ПолеВвода</a></li>
+                  </ul></li>
+            </ul>
+         </div>
+      </section>
+      <section class="- topic/section section" id="core00073__section_bv1_y2s_crb" data-ofbid="core00073__section_bv1_y2s_crb"><h2 class="- topic/title title sectiontitle">Свойства</h2>
+         
+         <dl class="- topic/dl dl" id="core00073__dl_n1p_232s_crb" data-ofbid="core00073__dl_n1p_232s_crb">
+            
+               <dt class="- topic/dt dt dlterm">ВыравниваниеСодержимогоПоГоризонтали</dt>
+               <dd class="- topic/dd dd">Способ выравнивания текста в поле ввода: <span class="- topic/ph ph"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Начало</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Центр</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Конец</span>,
+                        <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ПоШирине</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Авто</span> — значение <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Начало</span>.</span></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ДопустимыеТипы</dt>
+               <dd class="- topic/dd dd">Перечень типов, значения которых поле ввода может редактировать</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ДиапазонВыделения</dt>
+               <dd class="- topic/dd dd">Только чтение. Границы выделенного текста</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Заголовок</dt>
+               <dd class="- topic/dd dd">Заголовок поля ввода</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Значение</dt>
+               <dd class="- topic/dd dd">Значение поля ввода. Изменяется при переходе на другой компонент интерфейса</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Изображение</dt>
+               <dd class="- topic/dd dd">Значение типа <span class="+ topic/keyword pr-d/apiname keyword apiname">ДвоичныйОбъект.Ссылка</span>. Ссылка на двоичные данные картинки, которая будет показана в начале поля
+                  ввода</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Картинка</dt>
+               <dd class="- topic/dd dd">Картинка, которую использует поле ввода</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">НастройкиВводаДатыВремени</dt>
+               <dd class="- topic/dd dd">Настройки редактирования даты и времени. Применяется если поле ввода редактирует значения типов <span class="+ topic/keyword pr-d/apiname keyword apiname">Дата</span>,
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">ДатаВремя</span>, <span class="+ topic/keyword pr-d/apiname keyword apiname">Время</span>, <span class="+ topic/keyword pr-d/apiname keyword apiname">Момент</span></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">НастройкиВводаСсылок</dt>
+               <dd class="- topic/dd dd">Настройки ввода для отдельных допустимых ссылочных типов</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">НастройкиВводаСтроки</dt>
+               <dd class="- topic/dd dd">Настройки редактирования значений типа <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Описание</dt>
+               <dd class="- topic/dd dd">Используется только в <dfn class="- topic/term term">веб-интерфейсе</dfn>. Напротив заголовка поля ввода будет показана иконка с
+                  вопросом. Нажатие на иконку открывает подсказку с данной строкой</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ПодсказкаВвода</dt>
+               <dd class="- topic/dd dd">Подсказка, отображается внутри поля ввода</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ПризнакОбязательности</dt>
+               <dd class="- topic/dd dd">Признак того, что в поле должно быть введено значение. Выглядит как красная звездочка перед заголовком. Установка этого признака
+                  имеет только визуальное значение и не оказывает никакого влияния на функционирование поля ввода</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">РежимВыбораИзСписка</dt>
+               <dd class="- topic/dd dd">Режим выбора из списка: <ul class="- topic/ul ul" id="core00073__ul_a41_ls3_2rb" data-ofbid="core00073__ul_a41_ls3_2rb">
+                     <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">НеИспользовать</span> — <a class="- topic/xref xref" href="#core00073__%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%B0">список выбора</a> не
+                        используется</li>
+                     <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Использовать</span> — можно выбирать значения из списка выбора или вводить любые допустимые значения
+                        вручную</li>
+                     <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">ТолькоЗначенияИзСписка</span> — можно выбирать из списка или вводить вручную только те значения, которые
+                        содержатся в списке выбора</li>
+                  </ul></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">РежимПароля</dt>
+               <dd class="- topic/dd dd">Признак того, что вводимые символы должны маскироваться символами *</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">СообщениеИнформация</dt>
+               <dd class="- topic/dd dd">Назначение поля ввода. Отображается когда свойство <span class="+ topic/ph ui-d/uicontrol ph uicontrol">СтилиОформления</span> не содержит ни значения
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">ЦветКоннотацияОтрицательная</span>, ни <span class="+ topic/keyword pr-d/apiname keyword apiname">ЦветКоннотацияПоложительная</span>. Отображается в две строки
+                  текста под полем ввода</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">СообщениеОшибка</dt>
+               <dd class="- topic/dd dd">Сообщение об ошибке заполнения поля ввода. Отображается когда свойство <span class="+ topic/ph ui-d/uicontrol ph uicontrol">СтилиОформления</span> имеет активное
+                  (примененное последним из списка) значение <span class="+ topic/keyword pr-d/apiname keyword apiname">ЦветКоннотацияОтрицательная</span>. Отображается в две строки текста под
+                  полем ввода</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">СообщениеУспех</dt>
+               <dd class="- topic/dd dd">Сообщение об успешном заполнении поля ввода. Отображается когда свойство <span class="+ topic/ph ui-d/uicontrol ph uicontrol">СтилиОформления</span> имеет активное
+                  (примененное последним из списка) значение <span class="+ topic/keyword pr-d/apiname keyword apiname">ЦветКоннотацияПоложительная</span>. Отображается в две строки текста под
+                  полем ввода</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">СообщениеПредупреждение</dt>
+               <dd class="- topic/dd dd">Предупреждающее сообщение. Отображается когда свойство <span class="+ topic/ph ui-d/uicontrol ph uicontrol">СтилиОформления</span> имеет активное (примененное последним
+                  из списка) значение ЦветКоннотацияПредупреждающая</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm" id="core00073__списоквыбора" data-ofbid="core00073__списоквыбора">СписокВыбора</dt>
+               <dd class="- topic/dd dd">Список значения для выбора в поле ввода</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">СтилиОформления</dt>
+               <dd class="- topic/dd dd">Стили оформления поля ввода. <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> применяет эти стили в порядке их перечисления</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ТекстРедактирования</dt>
+               <dd class="- topic/dd dd">Текущий текст редактирования. Обновляется через 200 мс после окончания ввода текста пользователем</dd>
+            
+         </dl>
+         <div class="- topic/div div"></div>
+      </section>
+      <section class="- topic/section section" id="core00073__section_m3x_x2s_crb" data-ofbid="core00073__section_m3x_x2s_crb"><h2 class="- topic/title title sectiontitle">События</h2>
+         
+         <dl class="- topic/dl dl" id="core00073__dl_n1p_32s_crb" data-ofbid="core00073__dl_n1p_32s_crb">
+            
+               <dt class="- topic/dt dt dlterm">ПриАвтоПодборе</dt>
+               <dd class="- topic/dd dd">
+                  <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> вызывает это событие:<ul class="- topic/ul ul" id="core00073__ul_tvq_qz3_2rb" data-ofbid="core00073__ul_tvq_qz3_2rb">
+                     <li class="- topic/li li">Во время ввода текста, с некоторым интервалом. Значение <code class="+ topic/ph pr-d/codeph ph codeph">Событие.Текст</code> может быть пустым, если пользователь
+                        стер текст в поле ввода;</li>
+                     <li class="- topic/li li">При нажатии клавиши «Стрелка вниз», кнопки открытия списка выбора или при активизации поля ввода мышью. Значение
+                           <code class="+ topic/ph pr-d/codeph ph codeph">Событие.Текст</code> может быть пустым, если событие вызывается, когда пользователь еще не начал редактировать
+                        текст в поле. Если пользователь находится в процессе редактирования текста, в событии находится этот редактируемый текст.</li>
+                  </ul></dd>
+               <dd class="- topic/dd dd ddexpand">
+                  <div class="- topic/div div">В этом событии вы можете сформировать собственный список подобранных значений и поместить его в
+                     <code class="+ topic/ph pr-d/codeph ph codeph">Событие.ЗначенияАвтоПодбора</code><div class="- topic/div div">Пример
+                        YAML-файла:</div><div class="- topic/div div">
+                           <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00073__codeblock_ylf_g3l_vrb" data-ofbid="core00073__codeblock_ylf_g3l_vrb"><code>ВидЭлемента: КомпонентИнтерфейса
+ОбластьВидимости: Подсистема
+Ид: d0d52e24-3a69-4d1d-8f27-cefcf359c116
+Имя: МоеПолеВвода
+Наследует:
+    Тип: ПолеВвода
+    <strong class="+ topic/ph hi-d/b ph b">ПриАвтоПодборе: ОбработчикПриАвтоПодборе</strong></code></pre>
+                        </div><div class="- topic/div div">Сигнатура обработчика события на встроенном языке:</div><div class="- topic/div div">
+                           <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00073__codeblock_jkv_g3l_vrb" data-ofbid="core00073__codeblock_jkv_g3l_vrb"><code>метод ОбработчикПриАвтоПодборе(Источник: ПолеВвода, Событие: СобытиеПриАвтоПодборе)
+;</code></pre>
+                        </div></div>
+               </dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ПриИзменении</dt>
+               <dd class="- topic/dd dd">
+                  <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> вызывает это событие после установки нового значения в свойство
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Значение</span><div class="- topic/div div">Пример
+                     YAML-файла:</div><div class="- topic/div div">
+                        <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00073__codeblock_ylf_g32l_vrb" data-ofbid="core00073__codeblock_ylf_g32l_vrb"><code>ВидЭлемента: КомпонентИнтерфейса
+ОбластьВидимости: Подсистема
+Ид: d0d52e24-3a69-4d1d-8f27-cefcf359c116
+Имя: МоеПолеВвода
+Наследует:
+    Тип: ПолеВвода
+    <strong class="+ topic/ph hi-d/b ph b">ПриИзменении: ОбработчикПриИзменении</strong></code></pre>
+                     </div><div class="- topic/div div">Сигнатура обработчика события на встроенном языке:</div><div class="- topic/div div">
+                        <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00073__codeblock_jkv_g32l_vrb" data-ofbid="core00073__codeblock_jkv_g32l_vrb"><code>метод ОбработчикПриИзменении(Источник: ПолеВвода, Событие: СобытиеПриИзменении&lt;любой&gt;)
+;</code></pre>
+                     </div></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ПриНажатииВвода</dt>
+               <dd class="- topic/dd dd">
+                  <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> вызывает это событие при нажатии пользователем клавиши <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Ввод</span>. Перед вызовом
+                  события введенные данные записываются в поле данных, связанное со свойством Значение. Если запись данных невозможна по причине их
+                  некорректности (например, несоответствия маске или доступному значению из списка), то запись не происходит и событие не
+                  вызывается.<div class="- topic/div div">Пример
+                     YAML-файла:</div><div class="- topic/div div">
+                        <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00073__codeblock_ylf_g33l_vrb" data-ofbid="core00073__codeblock_ylf_g33l_vrb"><code>ВидЭлемента: КомпонентИнтерфейса
+ОбластьВидимости: Подсистема
+Ид: d0d52e24-3a69-4d1d-8f27-cefcf359c116
+Имя: МоеПолеВвода
+Наследует:
+    Тип: ПолеВвода
+    <strong class="+ topic/ph hi-d/b ph b">ПриНажатииВвода: ОбработчикПриНажатииВвода</strong></code></pre>
+                     </div><div class="- topic/div div">Сигнатура обработчика события на встроенном языке:</div><div class="- topic/div div">
+                        <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00073__codeblock_jkv_g33l_vrb" data-ofbid="core00073__codeblock_jkv_g33l_vrb"><code>метод ОбработчикПриНажатииВвода(Источник: ПолеВвода, Событие: СобытиеКомпонента)
+;</code></pre>
+                     </div></dd>
+            
+         </dl>
+         <div class="- topic/div div"></div>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#core00073__section_yxc_y2s_crb" data-tocid="core00073__section_yxc_y2s_crb">Иерархия наследования</a></div></li><li class="section-item"><div class="section-title"><a href="#core00073__section_bv1_y2s_crb" data-tocid="core00073__section_bv1_y2s_crb">Свойства</a></div></li><li class="section-item"><div class="section-title"><a href="#core00073__section_m3x_x2s_crb" data-tocid="core00073__section_m3x_x2s_crb">События</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

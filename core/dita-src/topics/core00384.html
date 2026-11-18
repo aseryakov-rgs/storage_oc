@@ -1,0 +1,131 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="В этом примере вы скроете поле Код в форме списка справочника Задачи . Откройте демонстрационное приложение DEMO CRM в среде разработки и выполните следующие действия: Раскройте подсистему Мероприятия ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00384"/><title>Как скрыть поле компонента интерфейса</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00384.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00384.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00384" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Как скрыть поле компонента интерфейса</h1>
+   
+    <div class="- topic/body body">
+        <p class="- topic/p p">В этом примере вы скроете поле <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Код</span> в форме списка справочника <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Задачи</span>.</p>
+      <p class="- topic/p p"><img class="- topic/image image" id="core00384__image_t2m_sst_mrb" src="../img/core00384/001.png"/></p>
+      <p class="- topic/p p"><a class="- topic/xref xref" href="core00360.html">Откройте</a> демонстрационное приложение <span class="+ topic/ph ui-d/uicontrol ph uicontrol">DEMO CRM</span> в среде разработки и выполните
+         следующие действия:</p>
+      <ul class="- topic/ul ul" id="core00384__ul_i4l_vst_mrb" data-ofbid="core00384__ul_i4l_vst_mrb">
+         <li class="- topic/li li">Раскройте подсистему <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Мероприятия</span>, раскройте справочник <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Задачи</span> и нажмите на компонент
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ЗадачиФормаСписка</span>;<p class="- topic/p p"><img class="- topic/image image" id="core00384__image_vs5_wst_mrb" src="../img/core00384/002.png"/></p></li>
+         <li class="- topic/li li">В редакторе компонента раскройте структуру до конца и выделите последнее поле. Затем нажмите <span class="+ topic/ph ui-d/uicontrol ph uicontrol">EDIT IN SOURCE</span> в
+            панели <span class="+ topic/ph ui-d/uicontrol ph uicontrol">PROPERTIES</span>, чтобы перейти в YAML-редактор;<div class="- topic/note note note note_note" id="core00384__note_gwq_2tt_mrb" data-ofbid="core00384__note_gwq_2tt_mrb"><span class="note__title">Примечание:</span> Можно было бы сразу открыть
+               YAML-редактор (нажав <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Open In Source Editor</span> в контекстном меню компонента
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ЗадачиФормаСписка</span>), но YAML-файл может быть длинным и в нем сложно будет искать поле
+                  <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Код</span>. Когда же вы переходите в него описанным способом, файл будет спозиционирован на строках выбранного
+               экземпляра компонента.</div><p class="- topic/p p"><img class="- topic/image image" id="core00384__image_ok1_btt_mrb" src="../img/core00384/003.png"/></p></li>
+         <li class="- topic/li li">Выделите строки, описывающие поле <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Код</span> в составе таблицы, и нажмите
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol"><span class="+ topic/keyword ui-d/shortcut keyword shortcut">Ctrl+/</span></span>, чтобы закомментировать их;<p class="- topic/p p"><img class="- topic/image image" id="core00384__image_jfv_rtt_mrb" src="../img/core00384/004.png"/></p><div class="- topic/note note trouble note_trouble" id="core00384__note_q5n_ztt_mrb" data-ofbid="core00384__note_q5n_ztt_mrb"><span class="note__title">Возможная проблема:</span> Нажимайте <span class="+ topic/ph ui-d/uicontrol ph uicontrol"><span class="+ topic/keyword ui-d/shortcut keyword shortcut">/</span></span>,
+               который расположен на основной клавиатуре справа рядом с клавишей <span class="+ topic/ph ui-d/uicontrol ph uicontrol"><span class="+ topic/keyword ui-d/shortcut keyword shortcut">Shift</span></span><p class="- topic/p p"><img class="- topic/image image" id="core00384__image_apf_h5t_mrb" src="../img/core00384/005.png"/></p></div></li>
+         <li class="- topic/li li"><a class="- topic/xref xref" href="core00370.html">Опубликуйте</a> проект на сервере и перезапустите приложение. Нажмите <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Мероприятия</span> и
+            вы увидите список задач без поля <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Код</span>. </li>
+      </ul>
+    </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

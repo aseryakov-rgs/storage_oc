@@ -1,0 +1,272 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="Чтобы построить универсальную систему прав доступа вы можете самостоятельно формировать дескрипторы доступа, ключи и выдавать ключи пользователям. В этом случае можно контролировать права как на ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00244"/><title>Самостоятельное формирование дескрипторов и выдача ключей</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00244.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00244.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00244" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Самостоятельное формирование дескрипторов и выдача ключей</h1>
+   
+   <div class="- topic/body body">
+      <p class="- topic/p p">Чтобы построить универсальную систему прав доступа вы можете самостоятельно формировать дескрипторы доступа, ключи и выдавать ключи
+         пользователям. В этом случае можно контролировать права как на уровне элементов проекта, так и на уровне отдельных <dfn class="- topic/term term">элементов данных</dfn> (RLS).</p>
+      <div class="- topic/note note note note_note" id="core00244__note_o12_xxn_5qb" data-ofbid="core00244__note_o12_xxn_5qb"><span class="note__title">Примечание:</span> В приложении этот вариант может совмещаться с простым вариантом, использующим автоматическую выдачу прав
+            (<a class="- topic/xref xref" href="core00243.html">подробнее</a>).</div>
+      <section class="- topic/section section" id="core00244__section_c4m_k24_5qb" data-ofbid="core00244__section_c4m_k24_5qb"><h2 class="- topic/title title sectiontitle">Классы ключей доступа, добавленные разработчиком</h2>
+         
+         <p class="- topic/p p">Вы можете добавлять в проект собственные классы ключей доступа. Для этого предназначены элементы проекта вида
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">КлассКлючейДоступа</span>. Элементу проекта этого вида вы можете добавить параметры. Для каждого сочетания значений этих
+            параметров <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> будет создавать свой уникальный ключ. Подробнее о классах ключей доступа <a class="- topic/xref xref" href="core00246.html">читайте здесь</a>.</p>
+      </section>
+      <section class="- topic/section section" id="core00244__построениесобственнойсистемыправ" data-ofbid="core00244__построениесобственнойсистемыправ"><h2 class="- topic/title title sectiontitle">Построение собственной системы прав</h2>
+         
+         <p class="- topic/p p">В собственной системе прав можно контролировать права как на уровне элементов проекта, так и на уровне отдельных <dfn class="- topic/term term">элементов данных</dfn> (RLS). Например, если чтение справочника разрешено, то дальше проверяется право на
+            чтение конкретного элемента справочника. Если оно есть — значит можно читать этот элемент. Если чтение запрещено — значит этот элемент
+            справочника читать нельзя. Если же чтение всего справочника запрещено, то права на отдельные его элементы не проверяются и чтение любого
+            элемента запрещается.</p>
+         <p class="- topic/p p">Для реализации такой системы прав вам потребуется вручную создавать дескрипторы доступа, ключи и устанавливать соответствие пользователей
+            и ключей.</p>
+         <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Управление доступом в проекте</strong></p>
+         <p class="- topic/p p">Каждый вид элементов проекта, для которого поддерживается управление доступом, имеет фиксированный набор прав, предоставляемый платформой.
+            Например, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Справочник</span> имеет права <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Создание</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Чтение</span>,
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Изменение</span>, <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Удаление</span>.</p>
+         <p class="- topic/p p">Каждый элемент проекта этих видов содержит свойство <span class="+ topic/ph ui-d/uicontrol ph uicontrol">КонтрольДоступа</span>. В этом свойстве вы можете перечислить, каким
+            образом будет контролироваться доступ к тому или иному праву, например:</p>
+         <p class="- topic/p p">Чтобы получить возможность вручную создавать дескрипторы для того права (тех прав), которые вы хотите контролировать самостоятельно,
+            выберите способ контроля доступа <span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешенияВычисляются</span> или
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешенияВычисляютсяДляКаждогоОбъекта</span>. Например:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00244__codeblock_idp_22h_prb" data-ofbid="core00244__codeblock_idp_22h_prb"><code>КонтрольДоступа: 
+    Создание: РазрешеноАутентифицированным
+    Чтение: <strong class="+ topic/ph hi-d/b ph b">РазрешенияВычисляются</strong>
+    ПоУмолчанию: РазрешеноАдминистраторам</code></pre>
+         <div class="- topic/p p">Эти два способа контроля доступа отличаются следующим:<ul class="- topic/ul ul" id="core00244__ul_apq_fg4_5qb" data-ofbid="core00244__ul_apq_fg4_5qb">
+               <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешенияВычисляются</span> позволит вам контролировать права только на уровне всего элемента проекта;</li>
+               <li class="- topic/li li"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешенияВычисляютсяДляКаждогоОбъекта</span> позволит вам контролировать права и на уровне всего элемента проекта
+                  и на уровне отдельных его элементов (RLS). </li>
+            </ul></div>
+         
+         <p class="- topic/p p" id="core00244__вычислениедескрипторовдоступа" data-ofbid="core00244__вычислениедескрипторовдоступа"><strong class="+ topic/ph hi-d/b ph b">Вычисление дескрипторов доступа</strong></p>
+         <p class="- topic/p p">Для того чтобы вы могли создать дескрипторы доступа, у типов встроенного языка, порождаемых элементом проекта, есть события
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступа</span> и <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступаДляОбъектов</span>. Эти события нужно
+            обрабатывать в модулях этих типов, например, в <a class="- topic/xref xref" href="core00257.html#core00257__%D0%BF%D1%80%D0%B0%D0%B2%D0%B0">модуле справочника</a>, в <a class="- topic/xref xref" href="core00400.html#core00400__%D0%BF%D1%80%D0%B0%D0%B2%D0%B0">модуле Http-сервиса</a><a class="- topic/xref xref" href="core00399.html#core00399__%D0%BF%D1%80%D0%B0%D0%B2%D0%B0">, в модуле регистра
+               сведений</a>. </p>
+         <p class="- topic/p p">Предположим, что вы добавили в приложение собственный класс ключей доступа с именем <span class="+ topic/ph ui-d/uicontrol ph uicontrol">КлючиГруппСотрудников</span>. Этот
+            класс имеет один параметр <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Группа</span>, типа перечисление <span class="+ topic/ph ui-d/uicontrol ph uicontrol">ГруппыСотрудников</span>. Это перечисление вы
+            тоже добавили сами и оно имеет два элемента: <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Менеджеры</span> и <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Руководители</span>. Таким образом вы
+            сможете иметь два ключа этого класса, с помощью которых вы разделите всех пользователей на две группы.</p>
+         <p class="- topic/p p">Событие <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступа</span> предназначено для создания дескрипторов доступа для всего элемента проекта в целом.
+            Оно может выглядеть, например, следующим образом:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00244__codeblock_dln_qp4_5qb" data-ofbid="core00244__codeblock_dln_qp4_5qb"><code>метод ВычислитьДескрипторыДоступа() : Массив&lt;ДескрипторДоступа&gt;
+
+    пер Дескрипторы: Массив&lt;ДескрипторДоступа&gt;   // массив для возврата декскрипторов
+
+    // Получить ключи доступа
+    пер КлючМенеджеров = новый КлючиГруппСотрудников.Объект(ГруппыСотрудников.Менеджеры)
+    пер КлючРуководителей = новый КлючиГруппСотрудников.Объект(ГруппыСотрудников.Руководители)
+
+    // Создать дескриптор доступа
+    Дескрипторы.Добавить(новый ДескрипторДоступа([КлючМенеджеров, КлючРуководителей], [СправочникПраво.Чтение]))
+
+    возврат Дескрипторы
+;</code></pre>
+         <p class="- topic/p p">Здесь чтение справочника в целом разрешается всем пользователям: и тем, кто имеет ключ руководителей, и тем, кто имеет ключ
+            менеджеров.</p>
+         <p class="- topic/p p">Событие <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступаДляОбъектов</span> предназначено для создания дескрипторов доступа для отдельного элемента
+            справочника. Оно может выглядеть, например, следующим образом:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00244__codeblock_s3s_wh4_5qb" data-ofbid="core00244__codeblock_s3s_wh4_5qb"><code>метод ВычислитьДескрипторыДоступаДляОбъектов(Элементы: ЧитаемыйМассив&lt;Поставщики.Объект&gt;) : ЧитаемоеСоответствие&lt;Поставщики.Объект, Массив&lt;ДескрипторДоступа&gt;&gt;
+
+    пер Результат = &lt;Поставщики.Объект, Массив&lt;ДескрипторДоступа&gt;&gt;{:}   // соответствие для возврата
+
+    // Получить ключи доступа
+    пер КлючМенеджеров = новый КлючиГруппСотрудников.Объект(ГруппыСотрудников.Менеджеры)
+    пер КлючРуководителей = новый КлючиГруппСотрудников.Объект(ГруппыСотрудников.Руководители)
+ 
+    для Элемент из Элементы
+        пер Дескрипторы = &lt;ДескрипторДоступа&gt;[]   // массив для возврата дескрипторов
+
+        /* Проанализировать свойства элемента справочника, в зависимости от чего 
+           либо разрешить менеджерам его чтение, либо нет */
+        если Элемент.ВажноеСвойство
+            Дескрипторы.Добавить(новый ДескрипторДоступа([КлючРуководителей], [СправочникПраво.Чтение]))
+        иначе
+            Дескрипторы.Добавить(новый ДескрипторДоступа([КлючМенеджеров, КлючРуководителей], [СправочникПраво.Чтение]))
+        ;
+        Результат.Вставить(Элемент, Дескрипторы)
+    ;
+    возврат Результат
+;</code></pre>
+         <p class="- topic/p p">Здесь, если элемент справочника имеет <code class="+ topic/ph pr-d/codeph ph codeph">ВажноеСвойство == Истина</code>, то чтение этого элемента разрешается только тем, кто
+            имеет ключ руководителей. В противном случае элемент справочника могут читать и те, кто имеет ключ руководителей, и те, кто имеет ключ
+            менеджеров.</p>
+         <div class="- topic/p p">В каких случаях какие обработчики вам следует иметь? Это зависит от того, какой способ контроля доступа вы выбрали в элементе проекта:<ul class="- topic/ul ul" id="core00244__ul_eml_p34_5qb" data-ofbid="core00244__ul_eml_p34_5qb">
+               <li class="- topic/li li">
+                  <p class="- topic/p p">если вы выбрали <span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешенияВычисляются</span>, то вы должны иметь только обработчик события
+                        <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступа</span>;</p>
+               </li>
+               <li class="- topic/li li">
+                  <p class="- topic/p p">если вы выбрали <span class="+ topic/ph ui-d/uicontrol ph uicontrol">РазрешенияВычисляютсяДляКаждогоОбъекта</span>, то вы должны иметь обработчики обоих событий.</p>
+               </li>
+            </ul></div>
+         <p class="- topic/p p">После того, как вы добавили, например, в проект новый справочник, нужно запустить приложение и записать для этого справочника дескрипторы
+            доступа. </p>
+         <p class="- topic/p p">Но событие <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступа</span> не вызывается автоматически. Для его вызова используйте метод
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ПересчитатьДескрипторыДоступа()</span> (например, для справочника:
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяСправочника&gt;.ПересчитатьДескрипторыДоступа()</span>). Такой вызов можно разместить в <a class="- topic/xref xref" href="core00072.html#core00072__section_cgb_ndf_yqb">обработчике <span class="+ topic/keyword pr-d/apiname keyword apiname">ПриОбновлении</span></a>.</p>
+         <p class="- topic/p p">Событие <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступаДляОбъектов</span> вызывается автоматически при записи элемента справочника. Таким образом,
+            после добавления справочника и записи его элементов в приложении будут нужные дескрипторы как для самого справочника в целом, так и для
+            его элементов.</p>
+         <div class="- topic/note note note note_note" id="core00244__note_p31_cjg_wqb" data-ofbid="core00244__note_p31_cjg_wqb"><span class="note__title">Примечание:</span> Событие <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступаДляОбъектов</span> также вызывается в результате вызова метода
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ПересчитатьДескрипторыДоступаДляОбъектов()</span>. Поскольку этот метод позволяет пересчитать дескрипторы сразу для
+            нескольких или для всех объектов, первый параметр в обработчике <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступаДляОбъектов</span> является
+            массивом объектов.</div>
+         <p class="- topic/p p" id="core00244__выдачаключей" data-ofbid="core00244__выдачаключей"><strong class="+ topic/ph hi-d/b ph b">Выдача ключей доступа</strong></p>
+         <p class="- topic/p p">К этому же моменту (после добавления справочника и записи его элементов) в системной таблице ключей пользователя тоже будут все
+            необходимые записи. Это происходит потому, что данные в эту таблицу добавляются в момент первого получения ключей, которое выполнялось в
+            обработчике события <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступа</span>. Вспомните:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00244__codeblock_sdw_sp4_5qb" data-ofbid="core00244__codeblock_sdw_sp4_5qb"><code>...
+    // Получить ключи доступа
+    пер КлючМенеджеров = новый КлючиГруппСотрудников.Объект(ГруппыСотрудников.Менеджеры)
+    пер КлючРуководителей = новый КлючиГруппСотрудников.Объект(ГруппыСотрудников.Руководители)
+...</code></pre>
+         <p class="- topic/p p">В этот момент у менеджера этого класса ключей вызывается событие <span class="+ topic/keyword pr-d/apiname keyword apiname">ПроверитьНаличиеКлючейДоступа</span>, в обработчике которого
+            вы и формируете соответствие этого ключа пользователям. Например:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00244__codeblock_lzm_yp4_5qb" data-ofbid="core00244__codeblock_lzm_yp4_5qb"><code>метод ПроверитьНаличиеКлючейДоступа(Ключи: ЧитаемыйМассив&lt;КлючиГруппСотрудников.Объект&gt;, ПользователиДляПроверки: ЧитаемыйМассив&lt;Пользователи.Объект&gt;): Соответствие&lt;КлючиГруппСотрудников.Объект, Массив&lt;Пользователи.Ссылка&gt;&gt;
+
+    знч Результат = &lt;КлючиГруппСотрудников.Объект, Массив&lt;Пользователи.Ссылка&gt;&gt;{:}
+    
+    для Ключ из Ключи
+        знч ПользователиКлюча = &lt;Пользователи.Ссылка&gt;[]
+        для Пользователь из ПользователиДляПроверки
+ 
+            // Анализировать либо свойства пользователя, либо дополнительную информацию о нем
+            // в результате чего относим его либо к менеджерам (ЭтоМенеджер == Истина), либо к руководителям (ЭтоМенеджер == Ложь)
+            пер ЭтоМенеджер: Булево
+
+            // Если пользователь – менеджер и ключ менеджера – добавить пользователю этот ключ
+            если ЭтоМенеджер и Ключ.Группа == ГруппыСотрудников.Менеджеры
+                ПользователиКлюча.Добавить(Пользователь.Ссылка)
+            ;
+ 
+            // Если пользователь – руководитель и ключ руководителя – добавить пользователю этот ключ
+            если не ЭтоМенеджер и Ключ.Группа == ГруппыСотрудников.Руководители
+                ПользователиКлюча.Добавить(Пользователь.Ссылка)
+            ;
+        ;
+        Результат.Вставить(Ключ, ПользователиКлюча)
+    ;
+    возврат Результат
+;</code></pre>
+         <div class="- topic/p p">Ключ передается в этот обработчик как элемент массива потому, что событие <span class="+ topic/keyword pr-d/apiname keyword apiname">ПроверитьНаличиеКлючейДоступа</span> платформа
+            вызывает в следующих случаях:<ul class="- topic/ul ul" id="core00244__ul_n5b_dqp_5qb" data-ofbid="core00244__ul_n5b_dqp_5qb">
+               <li class="- topic/li li">При получении ключа доступа по набору параметров во встроенном языке: <code class="+ topic/ph pr-d/codeph ph codeph">новый &lt;ИмяКлассаКлючейДоступа&gt;.Объект()</code> —
+                  в этом случае в обработчик передается объект ключа и все подключенные пользователи;</li>
+               <li class="- topic/li li">При подключении нового пользователя к приложению — в этом случае обработчик вызывается у каждого класса ключей доступа, которые
+                  есть в проекте, и в него передаются все ключи конкретного класса и подключившийся пользователь.</li>
+            </ul></div>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#core00244__section_c4m_k24_5qb" data-tocid="core00244__section_c4m_k24_5qb">Классы ключей доступа, добавленные разработчиком</a></div></li><li class="section-item"><div class="section-title"><a href="#core00244__%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B%D0%BF%D1%80%D0%B0%D0%B2" data-tocid="core00244__построениесобственнойсистемыправ">Построение собственной системы прав</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

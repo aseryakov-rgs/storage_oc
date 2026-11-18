@@ -1,0 +1,228 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="description" content="После того, как вы добавили в проект регистр сведений и дали ему имя, «1С:Кабинет сотрудника» создаст несколько типов встроенного языка. Например, для регистра сведений с именем Цены будут созданы ..."/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="topic"/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="core00249"/><title>Типы встроенного языка, порождаемые элементом проекта вида «РегистрСведений»</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../"/><meta name="wh-source-relpath" content="core/dita-src/topics/core00249.dita"/><meta name="wh-out-relpath" content="core/dita-src/topics/core00249.html"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../oxygen-webhelp/app/topic-page.js" src="../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../its.css"/></head>
+
+    <body id="core00249" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Типы встроенного языка, порождаемые элементом проекта вида «РегистрСведений»</h1>
+   
+   <div class="- topic/body body">
+      <p class="- topic/p p">После того, как вы добавили в проект регистр сведений и дали ему имя, <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> создаст несколько типов встроенного языка.
+         Например, для регистра сведений с именем <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Цены</span> будут созданы следующие типы:</p>
+      <ul class="- topic/ul ul" id="core00249__ul_x52_bkb_sqb" data-ofbid="core00249__ul_x52_bkb_sqb">
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">Цены</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">Цены.КлючЗаписи</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">Цены.Запись</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">Цены.НаборЗаписей</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">Цены.КлючИзмерений</span></li>
+      </ul>
+      <p class="- topic/p p">В общем случае имена этих типов выглядят следующим образом:</p>
+      <ul class="- topic/ul ul" id="core00249__ul_exs_qf1_pqb" data-ofbid="core00249__ul_exs_qf1_pqb">
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.КлючЗаписи</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.Запись</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.НаборЗаписей</span></li>
+         <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.КлючИзмерений</span></li>
+      </ul>
+      <section class="- topic/section section" id="core00249__section_qtf_qzv_5qb" data-ofbid="core00249__section_qtf_qzv_5qb"><h2 class="- topic/title title sectiontitle">Тип &lt;ИмяРегистраСведений&gt;</h2>
+         
+         <p class="- topic/p p">Тип <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;</span> доступен на сервере. </p>
+         <p class="- topic/p p">Он содержит методы, которые позволяют, например, блокировать записи по измерениям, указанным в ключе или отборе. </p>
+         <p class="- topic/p p">Также он позволяет пересчитать дескрипторы доступа: <span class="+ topic/keyword pr-d/apiname keyword apiname">ПересчитатьДескрипторыДоступа</span>,
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ПересчитатьДескрипторыДоступаДляОбъектов</span> (<a class="- topic/xref xref" href="core00245.html#core00245__%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%87%D0%B5%D1%82%D0%B4%D0%B5%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D1%80%D0%BE%D0%B2">подробнее</a>). </p>
+         <p class="- topic/p p">Этот тип не имеет конструктора и имеет единственный объект, обращение к которому выполняется по имени типа:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00249__codeblock_em5_4xb_sqb" data-ofbid="core00249__codeblock_em5_4xb_sqb"><code>// Получить менеджера регистра «Цены»
+пер МенеджерРегистра = Цены
+
+// Пересчитать дескрипторы доступа для регистра «Цены»
+Цены.ПересчитатьДескрипторыДоступа()</code></pre>
+      </section>
+      <section class="- topic/section section" id="core00249__модульменеджерарегистрасведений" data-ofbid="core00249__модульменеджерарегистрасведений"><h2 class="- topic/title title sectiontitle">Модуль регистра сведений</h2>
+         
+         
+         <p class="- topic/p p">В проекте модуль, расширяющий тип <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;</span>, называется <dfn class="- topic/term term">модулем регистра сведений</dfn>. Он
+            исполняется на сервере. </p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00249__image_dyp_jmx_nrb" src="../img/core00249/005.png"/></p>
+         <p class="- topic/p p" id="core00249__получитьзначениевыбора" data-ofbid="core00249__получитьзначениевыбора">В этом модуле вы можете обработать события вычисления дескрипторов доступа:
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступа</span>, <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьДескрипторыДоступаДляОбъектов</span>,
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьКлючиДоступаДляЧтения</span> и <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьКлючиДоступаДляИзменения</span> (<a class="- topic/xref xref" href="core00244.html#core00244__%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D1%8B%D0%BF%D1%80%D0%B0%D0%B2">подробнее</a>).</p>
+         
+      </section>
+      <section class="- topic/section section" id="core00249__section_af2_qzv_5qb" data-ofbid="core00249__section_af2_qzv_5qb"><h2 class="- topic/title title sectiontitle">Тип &lt;ИмяРегистраСведений&gt;.КлючЗаписи</h2>
+         
+         <p class="- topic/p p">Тип <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.КлючЗаписи</span> доступен и на клиенте, и на сервере. Он предназначен для указания на какую-то
+            конкретную запись регистра. </p>
+         <p class="- topic/p p">Он имеет конструктор <span class="+ topic/keyword pr-d/apiname keyword apiname">новый &lt;ИмяРегистраСведений&gt;.КлючЗаписи()</span>, который позволяет создать новый ключ записи по
+            значениям всех измерений и метод <span class="+ topic/keyword pr-d/apiname keyword apiname">ЗагрузитьЗапись()</span>, который есть только на сервере и позволяет получить запись
+               (<span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.Запись</span>) из ключа (<span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.КлючЗаписи</span>).</p>
+      </section>
+      <section class="- topic/section section" id="core00249__section_qkh_2np_nrb" data-ofbid="core00249__section_qkh_2np_nrb"><h2 class="- topic/title title sectiontitle">Модуль ключа записи</h2>
+         
+         <p class="- topic/p p">В проекте модуль, расширяющий тип <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.КлючЗаписи</span>, называется <dfn class="- topic/term term">модулем ключа записи</dfn>. Он
+            исполняется и на клиенте, и на сервере. </p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00249__image_q34_wmx_nrb" src="../img/core00249/003.png"/></p>
+         
+      </section>
+      <section class="- topic/section section" id="core00249__section_sqc_qzv_5qb" data-ofbid="core00249__section_sqc_qzv_5qb"><h2 class="- topic/title title sectiontitle">Тип &lt;ИмяРегистраСведений&gt;.Запись</h2>
+         
+         <p class="- topic/p p">Тип <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.Запись</span> доступен на сервере. </p>
+         <p class="- topic/p p">Он содержит данные одной записи и предназначен для создания, изменения или удаления одной записи. </p>
+         <p class="- topic/p p">Он имеет несколько конструкторов <span class="+ topic/keyword pr-d/apiname keyword apiname">новый &lt;ИмяРегистраСведений&gt;.Запись()</span>, которые позволяют создать новую запись.
+            Заполнив эту запись данными вы можете затем сохранить ее в базе данных.</p>
+         <p class="- topic/p p">При записи данных вызываются события типа <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.НаборЗаписей</span>, поскольку <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> перед записью автоматически трансформирует эту запись в набор записей, содержащий одну запись и
+            необходимый для этого отбор.</p>
+      </section>
+      <section class="- topic/section section" id="core00249__section_oyr_knp_nrb" data-ofbid="core00249__section_oyr_knp_nrb"><h2 class="- topic/title title sectiontitle">Модуль записи</h2>
+         
+         <p class="- topic/p p">В проекте модуль, расширяющий тип <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.Запись</span>, называется <dfn class="- topic/term term">модулем записи</dfn>. Он
+            исполняется на сервере. </p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00249__image_bkj_mnx_nrb" src="../img/core00249/002.png"/></p>
+         
+      </section>
+      <section class="- topic/section section" id="core00249__section_ey1_qzv_5qb" data-ofbid="core00249__section_ey1_qzv_5qb"><h2 class="- topic/title title sectiontitle">Тип &lt;ИмяРегистраСведений&gt;.НаборЗаписей</h2>
+         
+         <p class="- topic/p p">Тип <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.НаборЗаписей</span> доступен на сервере. </p>
+         <p class="- topic/p p">Он содержит данные нескольких записей и предназначен для их создания, изменения или удаления в соответствии с некоторым отбором. </p>
+         <p class="- topic/p p">Он имеет конструктор <span class="+ topic/keyword pr-d/apiname keyword apiname">новый &lt;ИмяРегистраСведений&gt;.НаборЗаписей()</span>, который позволяет создать пустой набор. Заполнив
+            этот набор записями вы можете затем сохранить их все в базе данных. Также вы можете прочитать в пустой набор те записи из базы данных,
+            которые соответствуют отбору, установленному в пустом наборе записей.</p>
+      </section>
+      <section class="- topic/section section" id="core00249__section_nfn_pnp_nrb" data-ofbid="core00249__section_nfn_pnp_nrb"><h2 class="- topic/title title sectiontitle">Модуль набора записей</h2>
+         
+         <p class="- topic/p p">В проекте модуль, расширяющий тип <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.НаборЗаписей</span>, называется <dfn class="- topic/term term">модулем набора
+            записей</dfn>. Он исполняется на сервере. </p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00249__image_hvc_5nx_nrb" src="../img/core00249/004.png"/></p>
+         <p class="- topic/p p">В нем вы можете обработать такие события как:</p>
+         <ul class="- topic/ul ul" id="core00249__ul_rxb_rqw_5qb" data-ofbid="core00249__ul_rxb_rqw_5qb">
+            <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">ПередЗаписью</span></li>
+            <li class="- topic/li li"><span class="+ topic/keyword pr-d/apiname keyword apiname">ПослеЗаписи</span></li>
+         </ul>
+         <p class="- topic/p p">Во время записи набора записей <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> открывает в базе данных транзакцию записи и события вызываются
+            следующим образом:</p>
+         <p class="- topic/p p"><img class="- topic/image image" id="core00249__image_qm4_wrw_5qb" src="../img/core00249/001.png"/></p>
+         
+      </section>
+      <section class="- topic/section section" id="core00249__section_fgz_pzv_5qb" data-ofbid="core00249__section_fgz_pzv_5qb"><h2 class="- topic/title title sectiontitle">Тип &lt;ИмяРегистраСведений&gt;.КлючИзмерений</h2>
+         
+         <p class="- topic/p p">Тип <span class="+ topic/keyword pr-d/apiname keyword apiname">&lt;ИмяРегистраСведений&gt;.КлючИзмерений</span> существует только у периодических регистров сведений и доступен на сервере. </p>
+         <p class="- topic/p p">Он предназначен для указания на группу записей, которые имеют одинаковые значения измерений и отличаются значением поля
+               <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Период</span>. Такие группы записей нужны в системе прав доступа для установки права <span class="+ topic/ph ui-d/uicontrol ph uicontrol">Чтение</span> на
+            записи периодического регистра сведений.</p>
+         <p class="- topic/p p">Объекты этого типа <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> передает в обработчик события <span class="+ topic/keyword pr-d/apiname keyword apiname">ВычислитьКлючиДоступаДляЧтения</span>
+               (<a class="- topic/xref xref" href="core00250.html">подробнее</a>).</p>
+      </section>
+      <section class="- topic/section section" id="core00249__section_dkq_pzv_5qb" data-ofbid="core00249__section_dkq_pzv_5qb"><h2 class="- topic/title title sectiontitle">Тип РегистрыСведений</h2>
+         
+         <div class="- topic/p p">Независимо от того, есть в проекте <dfn class="- topic/term term">регистры сведений</dfn> или нет, во встроенном языке существует тип
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">РегистрыСведений</span>. Он предназначен для обхода всех регистров сведений и вызова пересчета дескрипторов доступа (<a class="- topic/xref xref" href="core00245.html#core00245__section_bxc_wb4_5qb">подробнее</a>),
+            например:<pre class="+ topic/pre pr-d/codeblock pre codeblock" id="core00249__codeblock_vg2_wzw_5qb" data-ofbid="core00249__codeblock_vg2_wzw_5qb"><code>для Регистр из РегистрыСведений
+    Регистр.ПересчитатьДескрипторыДоступа()
+;</code></pre> Этот тип не имеет конструктора и имеет единственный объект, обращение к которому выполняется по имени типа. </div>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#core00249__section_qtf_qzv_5qb" data-tocid="core00249__section_qtf_qzv_5qb">Тип &lt;ИмяРегистраСведений&gt;</a></div></li><li class="section-item"><div class="section-title"><a href="#core00249__%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B5%D0%B4%D0%B6%D0%B5%D1%80%D0%B0%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%81%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B9" data-tocid="core00249__модульменеджерарегистрасведений">Модуль регистра сведений</a></div></li><li class="section-item"><div class="section-title"><a href="#core00249__section_af2_qzv_5qb" data-tocid="core00249__section_af2_qzv_5qb">Тип &lt;ИмяРегистраСведений&gt;.КлючЗаписи</a></div></li><li class="section-item"><div class="section-title"><a href="#core00249__section_qkh_2np_nrb" data-tocid="core00249__section_qkh_2np_nrb">Модуль ключа записи</a></div></li><li class="section-item"><div class="section-title"><a href="#core00249__section_sqc_qzv_5qb" data-tocid="core00249__section_sqc_qzv_5qb">Тип &lt;ИмяРегистраСведений&gt;.Запись</a></div></li><li class="section-item"><div class="section-title"><a href="#core00249__section_oyr_knp_nrb" data-tocid="core00249__section_oyr_knp_nrb">Модуль записи</a></div></li><li class="section-item"><div class="section-title"><a href="#core00249__section_ey1_qzv_5qb" data-tocid="core00249__section_ey1_qzv_5qb">Тип &lt;ИмяРегистраСведений&gt;.НаборЗаписей</a></div></li><li class="section-item"><div class="section-title"><a href="#core00249__section_nfn_pnp_nrb" data-tocid="core00249__section_nfn_pnp_nrb">Модуль набора записей</a></div></li><li class="section-item"><div class="section-title"><a href="#core00249__section_fgz_pzv_5qb" data-tocid="core00249__section_fgz_pzv_5qb">Тип &lt;ИмяРегистраСведений&gt;.КлючИзмерений</a></div></li><li class="section-item"><div class="section-title"><a href="#core00249__section_dkq_pzv_5qb" data-tocid="core00249__section_dkq_pzv_5qb">Тип РегистрыСведений</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

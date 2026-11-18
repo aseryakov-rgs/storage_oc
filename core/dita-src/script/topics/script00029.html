@@ -1,0 +1,429 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="description" content="Данный раздел содержит описание работы с исключениями и закрываемыми ресурсами."/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="script00029"/>        
+      <title>Исключения</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../../"/><meta name="wh-source-relpath" content="core/dita-src/script/topics/script00029.dita"/><meta name="wh-out-relpath" content="core/dita-src/script/topics/script00029.html"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../../oxygen-webhelp/app/topic-page.js" src="../../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../../its.css"/></head>
+
+    <body id="script00029" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Исключения</h1>
+   
+   <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc">Данный раздел содержит описание работы с исключениями и закрываемыми ресурсами.</p>
+      <section class="- topic/section section" id="script00029__section_om3_mbx_c3b" data-ofbid="script00029__section_om3_mbx_c3b"><h2 class="- topic/title title sectiontitle">Общая информация</h2>
+         
+         <p class="- topic/p p" id="script00029__p_k2g_crf_z3b" data-ofbid="script00029__p_k2g_crf_z3b">Во время работы любой программы могут возникать различные ошибки. Некоторые ошибки вызываются некорректными
+            параметрами, некоторые ошибки возникают в результате каких-либо внешних факторов (права доступа, доступность канала связи и т.д.).
+            Некоторые ошибки позволяют каким-то образом продолжать работу метода или программы, какие-то ошибки не позволяют продолжить выполнение.
+            Однако принять решение о том, как вести себя в конкретной ситуации в месте возникновения ошибки бывает невозможно. Поэтому информацию о
+            том, что выполнить заказанное действие не удалось, рекомендуется передавать в программный код, который инициировал выполнение
+            прервавшегося действия. И уже вызывающий код будет принимать решение, что делать в случае возникновения той или иной ошибки.</p>
+         <div class="- topic/p p">Таким образом, мы понимаем, что информирование об ошибке состоит из двух частей:<ol class="- topic/ol ol" id="script00029__ol_mkq_bdx_c3b" data-ofbid="script00029__ol_mkq_bdx_c3b">
+               <li class="- topic/li li">Некоторого действия, которое укажет вызывающему коду, что обнаружена ошибка.</li>
+               <li class="- topic/li li">Набор данных, который описывает обнаруженную ошибку.</li>
+            </ol></div>
+         <p class="- topic/p p">Для обнаружения ошибки служит механизм <dfn class="- topic/term term">исключений</dfn> и <dfn class="- topic/term term">обработки исключительных ситуаций</dfn> (или <dfn class="- topic/term term">обработка
+               исключений</dfn>). Исключения (и механизм работы с ними) - это и есть то действие, которое сообщает об ошибке. А для получения
+            информации об ошибке служат специальные <dfn class="- topic/term term">типы исключений</dfn>.</p>
+         <p class="- topic/p p"><dfn class="- topic/term term">Исключение</dfn> - это событие, которое возникает во время наступления нештатной ситуации (ошибки) при исполнении кода программы.
+            Например, ошибка деления чисел на 0, ошибка доступа к файлу, выход индекса за границы массива и т.д. При наступлении ошибки будет
+               <dfn class="- topic/term term">выброшено исключение</dfn>. Когда выбрасывается исключение, работа программы на текущем уровне вложенности прерывается и
+            управление передается на предыдущий уровень по порядку вызова методов языка (по стеку вызовов). Если исключение не обработано на очередном
+            уровне, то ошибка "поднимается" по уровням вложенности вызовов языка до тех пор, пока не достигнет собственно среды исполнения. Если
+            исключение "дошло" до среды исполнения, то это означает следующее:</p>
+         <ul class="- topic/ul ul" id="script00029__ul_a4h_cfx_c3b" data-ofbid="script00029__ul_a4h_cfx_c3b">
+            <li class="- topic/li li">Исполнение программы прервано.</li>
+            <li class="- topic/li li">Все данные, которые были сформированы (и не сохранены) до возникновения ошибки - потеряны.</li>
+            <li class="- topic/li li">Пользователь увидит техническое сообщение, которое может не нести никакого прикладного смысла для пользователя.</li>
+         </ul>
+         <p class="- topic/p p">Чтобы упростить пользователю борьбу с последствиями ошибок, предназначен механизм <dfn class="- topic/term term">обработки исключений</dfn>. Это специальный
+            механизм, который определяет наступление ошибки (выбрасывание исключения) и затем передает управление в специальное место программы, где
+            можно выполнить действия, связанные с ошибкой. Такое место называется <dfn class="- topic/term term">обработчик исключений</dfn>. При этом информация об ошибке
+            поступит в обработчик исключений в виде специального объекта языка (базовым типом для которого выступает <span class="+ topic/keyword pr-d/apiname keyword apiname">Исключение</span>),
+            тип которого будем называть <dfn class="- topic/term term">типом исключения</dfn>.</p>
+      </section>
+      <section class="- topic/section section" id="script00029__поймать-подробнее" data-ofbid="script00029__поймать-подробнее"><h2 class="- topic/title title sectiontitle">Обработка исключений</h2>
+         
+         <p class="- topic/p p">Для обработки исключений предназначена специальная конструкция обработки исключений <span class="+ topic/keyword pr-d/apiname keyword apiname">попытка</span><span class="+ topic/keyword pr-d/apiname keyword apiname"> -
+               </span><span class="+ topic/keyword pr-d/apiname keyword apiname">поймать</span>:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xbsl"><span class="+ topic/keyword pr-d/apiname keyword apiname">попытка</span>
+    // безопасный код
+[<span class="+ topic/keyword pr-d/apiname keyword apiname">поймать</span> ИмяПеременной1<span class="+ topic/keyword pr-d/apiname keyword apiname">:</span> ТипИсключения1
+    // обработка исключения типа ТипИсключения1]
+[<span class="+ topic/keyword pr-d/apiname keyword apiname">поймать</span> ИмяПеременной2<span class="+ topic/keyword pr-d/apiname keyword apiname">:</span> ТипИсключения2<span class="+ topic/keyword pr-d/apiname keyword apiname">|</span>ТипИсключения3
+    // обработка исключений с типом ТипИсключения2 или ТипИсключения3]
+[<span class="+ topic/keyword pr-d/apiname keyword apiname">поймать</span> ИмяПеременной3<span class="+ topic/keyword pr-d/apiname keyword apiname">:</span> <span class="+ topic/keyword pr-d/apiname keyword apiname">Исключение</span>
+    // обработка исключений остальных типов]
+[<span class="+ topic/keyword pr-d/apiname keyword apiname">вконце</span>
+    // завершающая секция]
+<span class="+ topic/keyword pr-d/apiname keyword apiname">;</span></pre>
+         <p class="- topic/p p">Рассмотрим, как работает описанная конструкция. Если в тексте модуля, отмеченного комментарием <code class="+ topic/ph pr-d/codeph ph codeph">// безопасный код</code> (причем
+            на любом уровне вложенности вызовов от рассматриваемого места), произойдет ошибка, приводящая к выбрасыванию исключения, то:</p>
+         <div class="- topic/p p">
+            <ol class="- topic/ol ol" id="script00029__ol_qhf_3hx_c3b" data-ofbid="script00029__ol_qhf_3hx_c3b">
+               <li class="- topic/li li">Исполнение кода будет безусловно прервано. Станут недоступны те переменные, которые объявлены в той области видимости, где возникло
+                  исключение.</li>
+               <li class="- topic/li li">Будет определен тип исключения. В зависимости от типа исключения:<ul class="- topic/ul ul" id="script00029__ul_of4_yhx_c3b" data-ofbid="script00029__ul_of4_yhx_c3b">
+                     <li class="- topic/li li">Подбор обработчика исключений происходит в порядке описания. Обработчик считается подходящим в том случае, если тип
+                        исключения обработчика совпадает с типом обрабатываемого исключению. При этом будет учитываться иерархия типов. Обработчиком
+                        исключения в данном случае называется блок кода, следующий после конструкции <code class="+ topic/ph pr-d/codeph ph codeph">поймать <dfn class="- topic/term term">ИмяПеременной</dfn>:
+                              <dfn class="- topic/term term">ТипИсключения</dfn></code>.</li>
+                  </ul><ul class="- topic/ul ul" id="script00029__ul_dz4_23x_c3b" data-ofbid="script00029__ul_dz4_23x_c3b">
+                     <li class="- topic/li li">В обработчик для типа <span class="+ topic/keyword pr-d/apiname keyword apiname">Исключение</span> управление будет передаваться для всех исключений, которые не были
+                        перехвачены ранее. Это произойдет потому, что тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Исключение</span> является базовым типом для любого
+                        исключения.</li>
+                  </ul><ul class="- topic/ul ul" id="script00029__ul_sf3_bjx_c3b" data-ofbid="script00029__ul_sf3_bjx_c3b">
+                     <li class="- topic/li li">Если в обработчике исключения нет обработки нужного типа исключения (включая обработчик любого исключения) - значит
+                        исключение будет передано на предыдущий уровень по стеку вызовов методов.</li>
+                  </ul></li>
+               <li class="- topic/li li" id="script00029__вконце-подробнее" data-ofbid="script00029__вконце-подробнее">Перед тем, как управление будет передано коду, расположенному после синтаксического элемента
+                     <code class="+ topic/ph pr-d/codeph ph codeph">;</code>, завершающего блок <code class="+ topic/ph pr-d/codeph ph codeph"><span class="+ topic/keyword pr-d/apiname keyword apiname">попытка</span> - <span class="+ topic/keyword pr-d/apiname keyword apiname">поймать</span></code>, управление
+                  передается блоку кода <span class="+ topic/keyword pr-d/apiname keyword apiname">вконце</span>. Сюда же управление предается и в том случае, если никакого исключения в безопасном
+                  коде не произошло. В данном блоке имеет смысл размещать код, который должен выполнить какие-то действия вне зависимости от того,
+                  удачно или неудачно завершился безопасный фрагмент кода. Блок <span class="+ topic/keyword pr-d/apiname keyword apiname">вконце</span> выполняется даже если в блоках
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">попытка</span> и <span class="+ topic/keyword pr-d/apiname keyword apiname">поймать</span> используются ключевые слова <span class="+ topic/keyword pr-d/apiname keyword apiname">возврат</span>,
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">прервать</span> или <span class="+ topic/keyword pr-d/apiname keyword apiname">продолжить</span>. Тело блока <span class="+ topic/keyword pr-d/apiname keyword apiname">вконце</span> будет выполнено
+                  непосредственно перед возвратом значения или продолжением/прерыванием цикла. Хорошим примером может явится открытие файла в
+                  безопасном фрагменте и закрытие этого файла в блоке кода <span class="+ topic/keyword pr-d/apiname keyword apiname">вконце</span>. Очевидно, что закрывать файл в безопасном блоке
+                  кода в этом случае не требуется. <div class="- topic/note note important note_important"><span class="note__title">Важно:</span> Секция <span class="+ topic/keyword pr-d/apiname keyword apiname">вконце</span> не может содержать ключевых слов, которые
+                     могут прервать исполнение секции (<span class="+ topic/keyword pr-d/apiname keyword apiname">возврат</span>, <span class="+ topic/keyword pr-d/apiname keyword apiname">прервать</span>,
+                  <span class="+ topic/keyword pr-d/apiname keyword apiname">продолжить</span>).</div></li>
+            </ol>
+         </div>
+      </section>
+      <section class="- topic/section section" id="script00029__как-вызвать-исключение" data-ofbid="script00029__как-вызвать-исключение"><h2 class="- topic/title title sectiontitle">Как вызвать исключение</h2>
+         
+         <div class="- topic/p p">Исключения возникают по нескольким причинам:<ul class="- topic/ul ul" id="script00029__ul_g3g_q5s_flb" data-ofbid="script00029__ul_g3g_q5s_flb">
+               <li class="- topic/li li">Выполнение операции, недопустимой в языке (например, деление на 0). В этом случае исключение будет сформировано <span class="- topic/ph ph">«1С:Кабинетом сотрудника»</span>.</li>
+               <li class="- topic/li li">С помощью инструкции <span class="+ topic/keyword pr-d/apiname keyword apiname">выбросить</span>.</li>
+            </ul></div>
+         <p class="- topic/p p">Рекомендуемый способ выбрасывания исключения - это применение инструкции <span class="+ topic/keyword pr-d/apiname keyword apiname">выбросить</span>. В качестве параметра данной
+            инструкции выступает объект, описывающий исключение. Тип такого объекта является потомком типа <span class="+ topic/keyword pr-d/apiname keyword apiname">Исключение</span>. Этот объект
+            может быть создан с помощью конструктора или получен в обработчике какого-либо исключения. Можно выбрасывать исключения как для
+            стандартных, так и для собственных типов исключений. Стандартное исключение можно создать самостоятельно, если для такого исключения в
+            колонке <span class="+ topic/ph hi-d/tt ph tt">Конструктор</span> таблицы <a class="- topic/xref xref" href="#script00029__table_xrg_lff_djb">Типы исключений языка</a> установлена отметка <span class="+ topic/ph hi-d/tt ph tt">Да</span>.</p>
+      </section>
+      <section class="- topic/section section" id="script00029__исключение-подробнее" data-ofbid="script00029__исключение-подробнее"><h2 class="- topic/title title sectiontitle">Объявление типа исключения</h2>
+         
+         <p class="- topic/p p">Для того, чтобы создать новый тип исключения, следует воспользоваться специальной конструкцией, имеющей следующий синтаксис:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xbsl"><span class="- topic/ph ph">[<span class="+ topic/keyword pr-d/apiname keyword apiname">экспорт</span>]</span>
+<span class="+ topic/keyword pr-d/apiname keyword apiname">исключение</span> &lt;ИмяТипаИсключения&gt;
+    [<span class="+ topic/keyword pr-d/apiname keyword apiname">пер</span> ИмяПоля1<span class="+ topic/keyword pr-d/apiname keyword apiname">:</span> ТипПоля1]
+    [<span class="+ topic/keyword pr-d/apiname keyword apiname">пер</span> ИмяПоля2<span class="+ topic/keyword pr-d/apiname keyword apiname">:</span> ТипПоля2]
+    [<span class="+ topic/keyword pr-d/apiname keyword apiname">знч</span> ИмяПоля3<span class="+ topic/keyword pr-d/apiname keyword apiname">:</span> ТипПоля3]
+    ...
+    [<span class="+ topic/keyword pr-d/apiname keyword apiname">конструктор</span>(ИмяПоля1)]
+    [<span class="+ topic/keyword pr-d/apiname keyword apiname">конструктор</span>(ИмяПоля1, ИмяПоля2)]
+<span class="+ topic/keyword pr-d/apiname keyword apiname">;</span></pre>
+         <p class="- topic/p p">В некотором смысле, описание типа исключения подобно описанию структуры: каждый тип исключения может содержать поля, которые будут
+            содержать информацию, специфическую для этого типа исключения. Следует помнить, что при описании исключения не допускаются значения
+            инициализации. Кроме полей, созданных разработчиком данного типа исключения, каждый тип исключения содержит некоторый набор
+            предопределенных полей, описание которых приведено в разделе <a class="- topic/xref xref" href="#script00029__section_o5b_wds_d3b">Описание исключения</a>.</p>
+         <p class="- topic/p p">В описании исключения могут быть описаны конструкторы исключения. Они описываются с применением ключевого слова
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">конструктор</span>. Описание конструктора аналогично описанию конструктора для типа <span class="+ topic/keyword pr-d/apiname keyword apiname">структура</span>, но в
+            качестве параметров, дополнительно к именам свойств, можно использовать поля <span class="+ topic/keyword pr-d/apiname keyword apiname">Описание</span> и <span class="+ topic/keyword pr-d/apiname keyword apiname">Причина</span>
+            базового типа <span class="+ topic/keyword pr-d/apiname keyword apiname">Исключение</span>. Если описывается несколько конструкторов - они должны различаться числом аргументов. При
+            объявлении конструктора не поддерживается указание значения по умолчанию и указание типов аргументов конструктора. </p>
+         <div class="- topic/p p"><span class="- topic/ph ph">«1С:Кабинет сотрудника»</span> неявно генерирует следующие конструкторы (если явно не объявлены конструкторы с таким же количеством
+               параметров):<ul class="- topic/ul ul" id="script00029__ul_qml_qdf_djb" data-ofbid="script00029__ul_qml_qdf_djb">
+               <li class="- topic/li li">Поле <span class="+ topic/keyword pr-d/apiname keyword apiname">Описание</span> в качестве первого параметра и все поля исключения в порядке объявления - второй и последующие
+                  параметры.</li>
+               <li class="- topic/li li">Поле <span class="+ topic/keyword pr-d/apiname keyword apiname">Описание</span> в качестве первого параметра, поле <span class="+ topic/keyword pr-d/apiname keyword apiname">Причина</span> в качестве последнего параметра и
+                  все поля исключения в порядке объявления - начиная со второго параметра и до поля <span class="+ topic/keyword pr-d/apiname keyword apiname">Причина</span>.</li>
+            </ul></div>
+         <p class="- topic/p p">Рассмотрим пример пользовательского исключения. Допустим, нам необходимо выбросить исключение при ошибке чтения файла. Создадим для этого
+            тип исключения <span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеЧтенияФайла</span>, где будет дополнительное поле - имя файла.</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock language-xbsl">исключение ИсключениеЧтенияФайла
+    пер ИмяФайла: Строка
+;</pre>
+         <div class="- topic/p p">Теперь для того, чтобы создать объект, описывающий это исключения, следует написать следующий код:
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>новый ИсключениеЧтенияФайла("Ошибка чтения файла", "path\file.txt")</code></pre>Первым параметром конструктора идет текстовое
+            представление ошибки, затем идут столько значений, сколько полей указано у нашего исключения и последним, необязательным параметром,
+            является исключение, которое явилось причиной выбрасываемого исключения. В этом случае будет образовываться цепочка вложенных исключений.
+            Наиболее вложенное исключение (или самое нижнее) будет описывать исходную причину ошибки, а самое верхнее исключение в цепочке будет
+            содержать текст ошибки для пользователя. Когда необходимо сохранить исходную причину ошибки, но при этом все-таки сохранить сам факт
+            исключения с тем, чтобы обработкой занимались обработчики исключения в вызывающем коде, следует создать свой тип исключения, а
+            перехваченное исключение указать в качестве причины создаваемого. В случае рассматриваемого исключения
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеЧтенияФайла</span>, создание исключения будет выглядеть следующим образом:
+            <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>новый ИсключениеЧтенияФайла("Ошибка чтения файла", "path\file.txt", ФайловаяОшибка)</code></pre>В этом примере
+               <code class="+ topic/ph pr-d/codeph ph codeph">ФайловаяОшибка</code> - это объект, описывающий исключение, перехват которого привел к необходимости выбрасывания исключения
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеЧтенияФайла</span>.</div>
+         <p class="- topic/p p">Описание пользовательского исключения допускает создание собственных конструкторов. Но для исключения
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеЧтенияФайла</span> собственный конструктор не нужен, т.к. единственное, что можно сделать в этом случае -
+            поменять местами имя файла и описание исключения. Переопределять конструктор стоит тогда, когда создаваемое исключение содержит несколько
+            полей со специфическими данными и автоматически создаваемый конструктор по каким-то причинам не устраивает.</p>
+      </section>
+      <section class="- topic/section section" id="script00029__section_o5b_wds_d3b" data-ofbid="script00029__section_o5b_wds_d3b"><h2 class="- topic/title title sectiontitle">Описание исключения</h2>
+         
+         <p class="- topic/p p">Каждое исключение обладает следующими стандартными свойствами:</p>
+         <dl class="- topic/dl dl">
+            
+               <dt class="- topic/dthd dthd"><strong>Поле</strong></dt>
+               <dd class="- topic/ddhd ddhd"><strong>Описание</strong></dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Описание</dt>
+               <dd class="- topic/dd dd">Тип: <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Содержит текстовое представление ошибки, описываемой данным типом исключения.</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">Причина</dt>
+               <dd class="- topic/dd dd">Тип: <code class="+ topic/ph pr-d/codeph ph codeph">Исключение?</code>. Содержит исключение, которое непосредственно послужило причиной возникновения данного
+                  исключения.</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ПодавленныеИсключения</dt>
+               <dd class="- topic/dd dd">Тип: <span class="+ topic/keyword pr-d/apiname keyword apiname">ЧитаемыйМассив</span> объектов типа <span class="+ topic/keyword pr-d/apiname keyword apiname">Исключение</span>. Содержит список подавленных
+                  (перехваченных) исключений, который привел к данному.</dd>
+            
+            
+               <dt class="- topic/dt dt dlterm">ПоследовательностьВызовов</dt>
+               <dd class="- topic/dd dd">Тип: <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span>. Текстовое представление стека вызовов, начиная от самой первой ошибки.</dd>
+            
+         </dl>
+      </section>
+      <section class="- topic/section section" id="script00029__section_r2d_k45_23b" data-ofbid="script00029__section_r2d_k45_23b"><h2 class="- topic/title title sectiontitle">Работа с закрываемыми ресурсами</h2>
+         
+         <p class="- topic/p p">Если в одной области видимости требуется отслеживать состояние нескольких закрываемых объектов, то все эти объекты необходимо явно
+            объявить с использованием модификатора <span class="+ topic/keyword pr-d/apiname keyword apiname">исп</span>. При выходе из области видимости <span class="- topic/ph ph">«1С:Кабинет сотрудника»</span>
+            автоматически закроет все объекты, объявленные с таким модификатором.</p>
+         <p class="- topic/p p">Инициализация закрываемых объектов выполняется в порядке их (объектов) объявления. Закрытие объектов выполняется в порядке, обратном
+            порядку инициализации. Если при работе с закрываемым ресурсом возможно возникновение перехватываемого исключения, то правильно будет
+            реализовать саму работу в блоке безопасного кода инструкции <span class="+ topic/keyword pr-d/apiname keyword apiname">попытка</span>.</p>
+         <div class="- topic/p p">Поведение <span class="- topic/ph ph">«1С:Кабинета сотрудника»</span> зависит от того, сколько закрываемых ресурсов используется в безопасном коде инструкции
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">попытка</span>. Если в безопасном коде используется один закрываемый ресурс, то:<ul class="- topic/ul ul" id="script00029__ul_h1z_khy_flb" data-ofbid="script00029__ul_h1z_khy_flb">
+               <li class="- topic/li li">Если инициализация закрываемого ресурса выполнена с ошибкой <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code> - весь блок <span class="+ topic/keyword pr-d/apiname keyword apiname">попытка</span> попытка
+                  завершается преждевременно по причине выбрасывания исключения <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>.</li>
+               <li class="- topic/li li">Если инициализация ресурса завершена успешно, а блок безопасного кода завершает преждевременно с исключением
+                  <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>, то:<ul class="- topic/ul ul" id="script00029__ul_ats_5hy_flb" data-ofbid="script00029__ul_ats_5hy_flb">
+                     <li class="- topic/li li">Если закрытие ресурса выполняется успешно, то блок безопасного кода завершается преждевременно по причине выбрасывания
+                        исключения <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>.</li>
+                     <li class="- topic/li li">Если автоматическое закрытие ресурса завершается исключением <code class="+ topic/ph pr-d/codeph ph codeph">Искл2</code>, то блок безопасного кода завершается
+                        преждевременно по причине выбрасывания исключения <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>, а исключение <code class="+ topic/ph pr-d/codeph ph codeph">Искл2</code> попадает в
+                        список подавленных исключений <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>.</li>
+                  </ul></li>
+               <li class="- topic/li li">Если и инициализация ресурса и его использование завершено успешно, а закрытие ресурса завершается преждевременно с выбрасывания
+                  исключения <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>, то безопасный код завершает "преждевременно" с выбрасыванием исключения
+                  <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>.</li>
+            </ul></div>
+         <div class="- topic/p p">Если в безопасном коде используется несколько закрываемых ресурсов, то:<ul class="- topic/ul ul" id="script00029__ul_vmp_k3y_flb" data-ofbid="script00029__ul_vmp_k3y_flb">
+               <li class="- topic/li li">Если инициализация какого-либо ресурса завершается исключением <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>, то:<ul class="- topic/ul ul" id="script00029__ul_ic1_wly_flb" data-ofbid="script00029__ul_ic1_wly_flb">
+                     <li class="- topic/li li">Если автоматическое закрытие всех ранее инициализированных ресурсов завершено успешно, то безопасный блок завершается
+                        преждевременно с выбрасыванием исключения <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>.</li>
+                     <li class="- topic/li li">Если автоматическое закрытие всех ранее инициализированных ресурсов завершается преждевременно с выбрасыванием исключений
+                           <code class="+ topic/ph pr-d/codeph ph codeph">Искл2</code> - <code class="+ topic/ph pr-d/codeph ph codeph">ИсклN</code>, то безопасный блок завершается преждевременно с выбрасыванием исключения
+                           <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>, а исключения <code class="+ topic/ph pr-d/codeph ph codeph">Искл2</code> - <code class="+ topic/ph pr-d/codeph ph codeph">ИсклN</code> будут добавлены в список подавленных
+                        исключений для исключения <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>.</li>
+                  </ul></li>
+               <li class="- topic/li li">Если инициализация всех ресурсов завершилась успешно, а исключение <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code> возникло в блоке безопасного кода, то:<ul class="- topic/ul ul" id="script00029__ul_rh1_v5y_flb" data-ofbid="script00029__ul_rh1_v5y_flb">
+                     <li class="- topic/li li">Если автоматическое закрытие всех ранее инициализированных ресурсов завершено успешно, то безопасный блок завершается
+                        преждевременно с выбрасыванием исключения <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>.</li>
+                     <li class="- topic/li li">Если автоматическое закрытие всех ранее инициализированных ресурсов завершается преждевременно с выбрасыванием исключений
+                           <code class="+ topic/ph pr-d/codeph ph codeph">Искл2</code> - <code class="+ topic/ph pr-d/codeph ph codeph">ИсклN</code>, то безопасный блок завершается преждевременно с выбрасыванием исключения
+                           <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>, а исключения <code class="+ topic/ph pr-d/codeph ph codeph">Искл2</code> - <code class="+ topic/ph pr-d/codeph ph codeph">ИсклN</code> будут добавлены в список подавленных
+                        исключений для исключения <code class="+ topic/ph pr-d/codeph ph codeph">Искл1</code>.</li>
+                  </ul></li>
+               <li class="- topic/li li">Если безопасный блок завершился успешно, то:<ul class="- topic/ul ul" id="script00029__ul_gxk_bvy_flb" data-ofbid="script00029__ul_gxk_bvy_flb">
+                     <li class="- topic/li li">Если автоматическое закрытие всех, кроме одного, ранее инициализированных ресурсов завершено успешно, то безопасный блок
+                        завершается "преждевременно" с выбрасыванием исключения, которое возникло при аварийном закрытии единственного ресурса.</li>
+                     <li class="- topic/li li">Если преждевременно завершается закрытие более одного закрываемого ресурса, то безопасный блок завершается "преждевременно" с
+                        выбрасыванием того исключения, которое при закрытии ресурсов возникло первым, а остальные исключения будут размещены в списке
+                        подавленных исключений первого исключения. Следует помнить, что закрытие ресурсов (в том числе автоматическое) выполняется в
+                        порядке, обратном объявлению ресурсов. Таким образом - "первым" будет исключение, которое возникло при закрытии
+                           <strong class="+ topic/ph hi-d/b ph b">последнего</strong> закрываемого ресурса в порядке объявления.</li>
+                  </ul></li>
+            </ul></div>
+         <p class="- topic/p p">Возможно вложенное использование конструкций обработки исключений.</p>
+      </section>
+      <div class="- topic/example example"><h2 class="- topic/title title sectiontitle">Пример использования закрываемого объекта</h2>
+         
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    попытка 
+        пер Файл = Файлы.Создать(СредаИсполнения.ПолучитьПеременную("temp") + "\\test.txt")
+        исп Поток = Файл.ОткрытьПотокЗаписи()
+        Поток.Записать("1-я строка\н")
+        Поток.Записать("2-я строка\н")
+        Поток.Записать("3-я строка\н")
+        Консоль.Записать("Файл записан!")
+    поймать Искл: Исключение
+        // попадем сюда, если хоть какое-то исключение случилось
+        // здесь поток записи уже закрыт
+        // переменная Поток здесь уже отсутствует
+        Консоль.Записать(Искл.ПоследовательностьВызовов)
+        Консоль.Записать(Искл)
+    вконце
+        // попадем сюда в любом случае
+        // здесь поток записи уже закрыт!
+        // переменная Поток здесь уже отсутствует
+        Консоль.Записать("Файловый поток закрыт, переменная недоступна (выход из области видимости)")
+    ;
+;</code></pre>
+      </div>
+      <section class="- topic/section section" id="script00029__section_dhm_w2f_djb" data-ofbid="script00029__section_dhm_w2f_djb"><h2 class="- topic/title title sectiontitle">Встроенные типы исключений</h2>
+         
+         <div class="- topic/p p">Ниже перечислены исключения, которые могут выбрасываться во время работы программы. Если для какого-либо типа исключения указано наличие
+            конструктора, то это означает, что предоставляется возможность самостоятельно выбросить исключение указанного типа и для такого исключения
+            определены следующие конструкторы:<ul class="- topic/ul ul" id="script00029__ul_iqn_2ff_djb" data-ofbid="script00029__ul_iqn_2ff_djb">
+               <li class="- topic/li li">Без параметров.</li>
+               <li class="- topic/li li">Только описание.</li>
+               <li class="- topic/li li">Только причина исключения (при необходимости создать вложенное исключение).</li>
+               <li class="- topic/li li">Описание и причина исключения.</li>
+            </ul></div>
+         <div class="- topic/p p">
+            <table class="- topic/table table frame-all" id="script00029__table_xrg_lff_djb" data-ofbid="script00029__table_xrg_lff_djb"><caption class="- topic/title title tablecap" caption-side="top" is-repeated="true"><span class="table--title-label">Табл.<span class="table--title-label-number"> 1</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Типы исключений языка</span></caption><colgroup><col style="width:42.857142857142854%"/><col style="width:14.285714285714285%"/><col style="width:42.857142857142854%"/></colgroup><thead class="- topic/thead thead">
+                     <tr class="- topic/row">
+                        <th class="- topic/entry entry align-left colsep-1 rowsep-1" id="script00029__table_xrg_lff_djb__entry__1">Имя</th>
+                        <th class="- topic/entry entry align-left colsep-1 rowsep-1" id="script00029__table_xrg_lff_djb__entry__2">Конструктор</th>
+                        <th class="- topic/entry entry align-left colsep-0 rowsep-1" id="script00029__table_xrg_lff_djb__entry__3">Описание</th>
+                     </tr>
+                  </thead><tbody class="- topic/tbody tbody">
+                     <tr class="- topic/row">
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеАрифметики</span></td>
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__2"></td>
+                        <td class="- topic/entry entry align-left colsep-0 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__3">Исключение, возникающее при выполнении арифметических операций. Например, данное исключение возникнет при выполнении
+                           операции деления на 0.</td>
+                     </tr>
+                     <tr class="- topic/row">
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеПроверкиТипа</span></td>
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__2"></td>
+                        <td class="- topic/entry entry align-left colsep-0 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__3">Исключение выбрасывается при несоответствии типа формального параметра типу фактического значения.</td>
+                     </tr>
+                     <tr class="- topic/row">
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеСравнения</span></td>
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__2"></td>
+                        <td class="- topic/entry entry align-left colsep-0 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__3">Исключение возникает при попытке сравнения объектов, которые нельзя сравнивать.</td>
+                     </tr>
+                     <tr class="- topic/row">
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеДинамическогоВыполнения</span></td>
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__2"></td>
+                        <td class="- topic/entry entry align-left colsep-0 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__3">Исключение, которое выбрасывается при выполнении динамического кода.</td>
+                     </tr>
+                     <tr class="- topic/row">
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеНедопустимыйАргумент</span></td>
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__2">Да</td>
+                        <td class="- topic/entry entry align-left colsep-0 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__3">Исключение выбрасывается в том случае, если аргумент не удовлетворяет ограничениям.</td>
+                     </tr>
+                     <tr class="- topic/row">
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеНедопустимыйФормат</span></td>
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__2">Да</td>
+                        <td class="- topic/entry entry align-left colsep-0 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__3">Исключение выбрасывается в том случае, если аргумент имеет тип <span class="+ topic/keyword pr-d/apiname keyword apiname">Строка</span> и нарушен формат, который
+                           ожидается в этой строке. Например, при формировании форматной строки.</td>
+                     </tr>
+                     <tr class="- topic/row">
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеНедопустимоеСостояние</span></td>
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__2">Да</td>
+                        <td class="- topic/entry entry align-left colsep-0 rowsep-1" headers="script00029__table_xrg_lff_djb__entry__3">Исключение выбрасывается в том случае, если действие выполняется для объекта, состояние которого не поддерживается
+                           данным методом.</td>
+                     </tr>
+                     <tr class="- topic/row">
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-0" headers="script00029__table_xrg_lff_djb__entry__1"><span class="+ topic/keyword pr-d/apiname keyword apiname">ИсключениеИндексВнеГраниц</span></td>
+                        <td class="- topic/entry entry align-left colsep-1 rowsep-0" headers="script00029__table_xrg_lff_djb__entry__2">Да</td>
+                        <td class="- topic/entry entry align-left colsep-0 rowsep-0" headers="script00029__table_xrg_lff_djb__entry__3">Исключение выбрасывается если переданное значение индекса выходит за допустимые рамки.</td>
+                     </tr>
+                  </tbody></table>
+         </div>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#script00029__section_om3_mbx_c3b" data-tocid="script00029__section_om3_mbx_c3b">Общая информация</a></div></li><li class="section-item"><div class="section-title"><a href="#script00029__%D0%BF%D0%BE%D0%B9%D0%BC%D0%B0%D1%82%D1%8C-%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5" data-tocid="script00029__поймать-подробнее">Обработка исключений</a></div></li><li class="section-item"><div class="section-title"><a href="#script00029__%D0%BA%D0%B0%D0%BA-%D0%B2%D1%8B%D0%B7%D0%B2%D0%B0%D1%82%D1%8C-%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5" data-tocid="script00029__как-вызвать-исключение">Как вызвать исключение</a></div></li><li class="section-item"><div class="section-title"><a href="#script00029__%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%B5%D0%B5" data-tocid="script00029__исключение-подробнее">Объявление типа исключения</a></div></li><li class="section-item"><div class="section-title"><a href="#script00029__section_o5b_wds_d3b" data-tocid="script00029__section_o5b_wds_d3b">Описание исключения</a></div></li><li class="section-item"><div class="section-title"><a href="#script00029__section_r2d_k45_23b" data-tocid="script00029__section_r2d_k45_23b">Работа с закрываемыми ресурсами</a></div></li><li class="section-item"><div class="section-title"><a href="#script00029__section_dhm_w2f_djb" data-tocid="script00029__section_dhm_w2f_djb">Встроенные типы исключений</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>

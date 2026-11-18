@@ -1,0 +1,269 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="ru" lang="ru" whc:version="21.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2021"/><meta name="copyright" content="(C) Copyright 2021"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="description" content="Описывает работу с массивом."/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="script00033"/>        
+      <title>Массив</title><!--  Generated with Oxygen version 23.1, build number 2021060401.  --><meta name="wh-path2root" content="../../../../"/><meta name="wh-source-relpath" content="core/dita-src/script/topics/script00033.dita"/><meta name="wh-out-relpath" content="core/dita-src/script/topics/script00033.html"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/><link rel="stylesheet" href="../../../../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/app/topic-page.css?buildId=2021060401"/><script type="text/javascript" src="../../../../oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script><script data-main="../../../../oxygen-webhelp/app/topic-page.js" src="../../../../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/template/blue.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../../oxygen-webhelp/template/its.css?buildId=2021060401"/><link rel="stylesheet" type="text/css" href="../../../../its.css"/></head>
+
+    <body id="script00033" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="21.0">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../../../../index.html" class=" wh_logo d-none d-sm-block "><img src="../../../../oxygen-webhelp\template\images/icon.png" alt="  «1С:Кабинет сотрудника». Руководство администратора  "/></a>
+                    <div class=" wh_publication_title "><a href="../../../../index.html"><span class="booktitle">  <span class="ph mainbooktitle"><span class="ph">«1С:Кабинет сотрудника»</span>. Руководство <span class="ph">администратора</span></span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="ess00036-d1571e270-mi" data-tocid="ess00036-d1571e270" data-state="leaf" class=" topicref " data-id="ess00036"><span class="title"><a href="../../../../topics/ess00036.html">Системные требования</a></span></span></li><li role="menuitem"><span id="ess00003-d1571e279-mi" data-tocid="ess00003-d1571e279" data-state="leaf" class=" topicref " data-id="ess00003"><span class="title"><a href="../../../../topics/ess00003.html">Что такое <span class="ph">«1С:Кабинет сотрудника»</span></a></span></span></li><li role="menuitem"><span id="ess00042-d1571e291-mi" data-tocid="ess00042-d1571e291" data-state="leaf" class=" topicref " data-id="ess00042"><span class="title"><a href="../../../../topics/ess00042.html">Общая схема работы</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="ess00022-d1571e300-mi" data-tocid="ess00022-d1571e300" data-state="not-ready" class=" topicref " data-id="ess00022"><span class="title"><a href="../../../../topics/ess00022.html">Установка и запуск</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="core00075-d1571e341-mi" data-tocid="core00075-d1571e341" data-state="not-ready" class=" topicref " data-id="core00075"><span class="title"><a href="../../../../core/dita-src/topics/core00075.html">Сервер</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e783-mi" data-tocid="tocId-d1571e783" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../topics/ess00105.html">Администрирование 1С:КC</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e857-mi" data-tocid="tocId-d1571e857" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../topics/ess00047.html">Администрирование 1С:ЗУП</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1571e899-mi" data-tocid="tocId-d1571e899" data-state="not-ready" class=" topicref "><span class="title"><a href="../../../../core/dita-src/topics/core00154.html">Известные проблемы и способы их решения</a></span></span></li><li role="menuitem"><span id="i348-d1571e918-mi" data-tocid="i348-d1571e918" data-state="leaf" class=" topicref " data-id="i348"><span class="title"><a href="../../../../topics/ess00001.html">Авторские права</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../../../../search.html"><div><input type="search" placeholder="Я ищу... " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Я ищу..."><span class="search_input_text">Я ищу...</span></button></div></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Включить/выключить подсветку найденного" title="Включить/выключить подсветку найденного"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Свернуть разделы" title="Свернуть разделы"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Напечатать" aria-label="Напечатать"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+   <h1 class="- topic/title title topictitle1" id="ariaid-title1">Массив</h1>
+   
+   <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc">Описывает работу с массивом.</p>
+      <section class="- topic/section section" id="script00033__general" data-ofbid="script00033__general"><h2 class="- topic/title title sectiontitle">Общая информация</h2>
+         
+         <p class="- topic/p p"><dfn class="- topic/term term">Массив</dfn> представляет собой структуру данных, которая хранит некоторый набор значений. Элементы массива могут быть как
+            одинакового, так и различного типа. Идентификация элементов массива выполняется по индексу. </p>
+      </section>
+      <section class="- topic/section section" id="script00033__size" data-ofbid="script00033__size"><h2 class="- topic/title title sectiontitle">Размер массива</h2>
+         
+         <p class="- topic/p p">Любой массив в каждый момент времени имеет определенный размер. Размер массива можно изменять динамически, например, добавив или удалив
+            элемент массива.</p>
+      </section>
+      <section class="- topic/section section" id="script00033__mutable" data-ofbid="script00033__mutable"><h2 class="- topic/title title sectiontitle">Изменяемые и неизменяемые массивы</h2>
+         
+         <p class="- topic/p p">Массивы могут быть неизменяемыми и изменяемыми:</p>
+         <ul class="- topic/ul ul" id="script00033__ul_bcp_lrg_gpb" data-ofbid="script00033__ul_bcp_lrg_gpb">
+            <li class="- topic/li li">в неизменяемом массиве нельзя изменить ни значение элемента массива, ни размер самого массива. Неизменяемый массив будет называться
+                  <em class="+ topic/ph hi-d/i ph i">фиксированным массивом</em>;</li>
+            <li class="- topic/li li">в изменяемом массиве возможно как изменение любого элемента массива, так и изменение параметров самого массива. Изменяемый массив
+               будет называться <em class="+ topic/ph hi-d/i ph i">массивом</em> или <em class="+ topic/ph hi-d/i ph i">обычным массивом</em>. </li>
+         </ul>
+         <p class="- topic/p p">Соответственно, тип для неизменяемого (фиксированного) массива называется <span class="+ topic/keyword pr-d/apiname keyword apiname">ЧитаемыйМассив</span>, а тип для обычного
+            массива — <span class="+ topic/keyword pr-d/apiname keyword apiname">Массив</span>.</p>
+      </section>
+      <section class="- topic/section section" id="script00033__create" data-ofbid="script00033__create"><h2 class="- topic/title title sectiontitle">Создание массива</h2>
+         
+         <p class="- topic/p p">Создание массива выполняется стандартным способом:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    пер ПустойМассив = новый Массив()
+    пер МассивСДанными = [1, 2, 3]
+    пер МассивКопия = новый Массив(МассивСДанными)
+    пер ДляРаботы = новый Массив()
+    ДляРаботы.Добавить(1)
+    ДляРаботы.Добавить(2)
+    пер Коэффициенты: Массив
+    Коэффициенты = [1, 2 , 3]
+;</code></pre>
+         <p class="- topic/p p">Так как все созданные выше массивы являются изменяемыми, то любой из созданных массивов можно заполнить необходимыми данными с помощью
+            встроенного языка. При создании массива копированием в новый массив переносятся все элементы массива-источника.</p>
+         <p class="- topic/p p">Создание фиксированного массива выполняется аналогично изменяемому.</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    пер НеизмМассивСДанными: ЧитаемыйМассив = [1, 2, 3]
+    пер МатКонст = [3.141592654, 2.718281828]
+    пер НеизмКонст = новый ЧитаемыйМассив(МатКонст)
+;</code></pre>
+         <p class="- topic/p p">Элементами массива могут быть значения произвольных типов. В следующем примере приводится несколько вариантов создания массивов с
+            различным наполнением.</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    пер Матрица = [[], []]
+    пер СложныйМассив = [ Неопределено, 1, [], ["один", "два"]]
+    пер Матрица2: Массив
+    Матрица2.Добавить(новый Массив())
+    Матрица2.Добавить(новый Массив())
+;</code></pre>
+         <p class="- topic/p p">Во всех приведенных примерах создавались переменные, которые хранили ссылки на массивы значений. Однако язык предоставляет возможность
+            использовать массив, не объявляя для этого отдельную переменную. Для этого можно использовать специальный синтаксис <code class="+ topic/ph pr-d/codeph ph codeph">[элемент0,
+               ..., элементN]</code>, где каждый элемент — это выражение на встроенном языке.</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    для Расширение из ["*.epf", "*.erf"]
+        Консоль.Записать("Текущее расширение - " + Расширение)
+        // какое-то полезное действие
+    ;
+    ВывестиМассив([3.141592654, 2.718281828])
+;
+
+метод ВывестиМассив(ЧтоВыводим: ЧитаемыйМассив)
+    для Элемент из ЧтоВыводим
+        Консоль.Записать(Элемент)
+    ;
+;</code></pre>
+      </section>
+      <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Использование обобщенных типов для массивов</h2>
+         
+         <p class="- topic/p p">При определении массивов рекомендуется указывать типы элементов массивов, то есть использовать обобщенные типы, как описано в разделе
+               <a class="- topic/xref xref" href="script00128.html">Обобщенные типы</a>. Например:</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    пер МассивЧисел : Массив&lt;Число&gt; = [1, 2, 3]
+    пер МассивСтрок : Массив&lt;Строка&gt; = ["a", "b", "c"]
+    пер ПустойМассивСтрок = новый Массив&lt;Строка&gt;()
+;</code></pre>
+      </section>
+      <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Использование массива</h2>
+         
+         <p class="- topic/p p">Для обращения к элементу массива используется <dfn class="- topic/term term">индекс</dfn>. Индекс массива является целым числом, значение которого может
+            находиться в диапазоне от 0 до 2<sup class="+ topic/ph hi-d/sup ph sup">32</sup>. Массив из N элементов индексируется от 0 до N–1, где 0 — это индекс первого элемента в
+            массиве. Обращение по индексу, указывающем за границу массива, приведет к исключению. Если значение индекса является дробным числом (не
+            целочисленным), то обращение по такому индексу приведет к ошибке.</p>
+         <div class="- topic/p p">Для обращения к элементам массива можно использовать один из следующих способов:<ul class="- topic/ul ul" id="script00033__ol_rgl_mly_thb" data-ofbid="script00033__ol_rgl_mly_thb">
+               <li class="- topic/li li">С помощью операции доступа по индексу <span class="+ topic/keyword pr-d/apiname keyword apiname">[]</span>. В этом случае индекс требуемого элемента массива нужно указать внутри
+                  квадратных скобок <span class="+ topic/keyword pr-d/apiname keyword apiname">[]</span>. Обращение к 5 элементу массива <code class="+ topic/ph pr-d/codeph ph codeph">Коэффициенты</code> будет выглядеть следующим
+                  образом: <code class="+ topic/ph pr-d/codeph ph codeph">Коэффициенты[4]</code>.</li>
+               <li class="- topic/li li">Функциональный способ. В этом случае индекс нужного элемента массива нужно указать в качестве параметра метода
+                     <span class="+ topic/keyword pr-d/apiname keyword apiname">Получить()</span> соответствующего массива. Обращение к 5 элементу массива <code class="+ topic/ph pr-d/codeph ph codeph">Коэффициенты</code> будет
+                  выглядеть следующим образом: <code class="+ topic/ph pr-d/codeph ph codeph">Коэффициенты.Получить(4)</code>.</li>
+            </ul></div>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    пер Данные: Массив&lt;Число&gt; = [1, 2, 3]
+    Консоль.Записать(Данные[0])
+    Консоль.Записать(Данные.Получить(1))
+;</code></pre>
+      </section>
+      <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Перебор элементов массива</h2>
+         
+         <p class="- topic/p p">При необходимости перебрать все элементы массива, можно воспользоваться любым вариантом организации цикла. Такие примеры будут приведены
+            далее.</p>
+         <p class="- topic/p p"></p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    пер Данные: Массив&lt;Число&gt; = [1, 2, 3]
+    // обход циклом "для"
+    для Индекс = 0 по Данные.Граница() 
+        Консоль.Записать(Данные.Получить(Индекс))        
+    ;
+    // обход с помощью итератора
+    для Элемент из Данные
+        Консоль.Записать(Элемент)        
+    ;
+    // обход циклом "пока"
+    пер Индекс = 0
+    пока Индекс &lt;= Данные.Граница()
+        Консоль.Записать(Данные.Получить(Индекс))
+        Индекс += 1        
+    ;
+;</code></pre>
+      </section>
+      <section class="- topic/section section"><h2 class="- topic/title title sectiontitle">Массив как параметр или возвращаемое значение</h2>
+         
+         <p class="- topic/p p">Теперь разберемся, каким образом следует пользоваться массивами в том случае, когда массив является параметром метода или возвращаемым
+            значением. Для типа формального параметра метода следует использовать тип <span class="+ topic/keyword pr-d/apiname keyword apiname">ЧитаемыйМассив</span>. В этом случае в качестве
+            параметра можно передать как фиксированный, так и обычный массив.</p>
+         <pre class="+ topic/pre pr-d/codeblock pre codeblock"><code>метод Скрипт()
+    пер МатКонст = &lt;Число&gt;[3.141592654, 2.718281828]
+    МетодСМассивом(МатКонст)
+    МетодСМассивом(новый ЧитаемыйМассив(МатКонст))
+    МетодСМассивом([7, 6, 5, 4, 3, 2])
+;
+
+метод МетодСМассивом(ПараметрМассив: ЧитаемыйМассив)
+    Консоль.Записать(ПараметрМассив.ПолучитьТип())
+    для ЭлементМассива из ПараметрМассив
+        Консоль.Записать("Индекс = " + ПараметрМассив.Найти(ЭлементМассива) + ", значение = " + ЭлементМассива)
+    ;
+;</code></pre>
+         <p class="- topic/p p">В данном примере в качестве параметра метода <span class="+ topic/keyword pr-d/apiname keyword apiname">МетодСМассивом()</span> выступает значение типа
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">ЧитаемыйМассив</span>. Это позволяет нам передавать в этот метод как обычный массив (первый и третий случай вызова в
+            методе <span class="+ topic/keyword pr-d/apiname keyword apiname">Скрипт()</span>), так и фиксированный массив (второй случай вызова). Такая возможность предоставляется потому, что тип
+               <span class="+ topic/keyword pr-d/apiname keyword apiname">Массив</span> является потомком типа <span class="+ topic/keyword pr-d/apiname keyword apiname">ЧитаемыйМассив</span>.</p>
+         <p class="- topic/p p">Если изменить типа параметра <code class="+ topic/ph pr-d/codeph ph codeph">ПараметрМассив</code> метода <code class="+ topic/ph pr-d/codeph ph codeph">МетодСМассивом()</code> на <span class="+ topic/keyword pr-d/apiname keyword apiname">Массив</span>, то
+            попытка вызвать метод с фиксированным массивом в качестве параметра приведет к ошибке компиляции из-за несовпадения типов.</p>
+      </section>
+      <section class="- topic/section section" id="script00033__section_yz1_144_vhb" data-ofbid="script00033__section_yz1_144_vhb"><h2 class="- topic/title title sectiontitle">Сравнение массивов</h2>
+         
+         <p class="- topic/p p">Допустимо сравнение массивов на равенство (или неравенство). Два массива являются равными, если равны их размеры и каждый элемент первого
+            массива содержится во втором массиве. Если элемент массива является другим массивом, выполняется попытка рекурсивного сравнения.</p>
+      </section>
+   </div>
+</article></main></div>
+                        
+                        
+                        <!--
+    
+Oxygen WebHelp Plugin
+Copyright (c) 1998-2021 Syncro Soft SRL, Romania.  All rights reserved.
+
+--><div id="wh_feedback">
+    <div id="cmts"><!----></div>
+    <script>
+        var webHelpType = "responsive";
+    </script>   
+</div>
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">На этой странице</div><ul><li class="section-item"><div class="section-title"><a href="#script00033__general" data-tocid="script00033__general">Общая информация</a></div></li><li class="section-item"><div class="section-title"><a href="#script00033__size" data-tocid="script00033__size">Размер массива</a></div></li><li class="section-item"><div class="section-title"><a href="#script00033__mutable" data-tocid="script00033__mutable">Изменяемые и неизменяемые массивы</a></div></li><li class="section-item"><div class="section-title"><a href="#script00033__create" data-tocid="script00033__create">Создание массива</a></div></li><li class="section-item"><div class="section-title"><a href="#script00033__section_yz1_144_vhb" data-tocid="script00033__section_yz1_144_vhb">Сравнение массивов</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="21.0">
+  <div class=" footer-container mx-auto ">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<p>© <a href="https://v8.1c.ru/" shape="rect">ООО «1С-Софт»</a>, 1996 – 2025.</p>
+
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img"/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+    </body>
+</html>
